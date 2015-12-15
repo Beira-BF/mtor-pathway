@@ -1,0 +1,31 @@
+T2	Protein 18 21	p27
+T3	Protein 142 145	p27
+T4	Protein 161 165	KIP1
+T5	Protein 397 400	p27
+T6	Protein 428 431	p27
+T7	Protein 508 517	ubiquitin
+T8	Protein 552 555	p27
+T9	Protein 703 706	p27
+*	Equiv T3 T4
+T1	Complex 461 471	cyclin-Cdk
+T10	Phosphorylation 402 417	Phosphorylation
+E1	Phosphorylation:T10 Theme:T6
+T11	Regulation 418 427	regulates
+E2	Regulation:T11 Theme:E3 Cause:E1
+T12	Binding 432 439	binding
+E3	Binding:T12 Theme:T6 Theme:T1
+T13	Negative_regulation 447 457	inhibition
+E4	Negative_regulation:T13 Cause:T6 Theme:T1
+E5	Regulation:T11 Theme:E4 Cause:E1
+T14	Protein_catabolism 527 538	proteolysis
+E6	Protein_catabolism:T14 Theme:T6
+T15	Positive_regulation 518 526	mediated
+E7	Positive_regulation:T15 Cause:T7 Theme:E6
+E8	Regulation:T11 Cause:E1 Theme:E6
+T16	Localization 487 499	localization
+E9	Localization:T16 Theme:T6
+E10	Regulation:T11 Cause:E1 Theme:E9
+T17	Negative_regulation 559 570	inactivated
+E11	Negative_regulation:T17 Theme:T8
+T18	Gene_expression 707 717	expression
+E12	Gene_expression:T18 Theme:T9

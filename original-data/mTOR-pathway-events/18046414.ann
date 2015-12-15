@@ -1,0 +1,49 @@
+T1	Protein 0 4	mTOR
+T2	Protein 57 60	YY1
+T3	Protein 61 71	PGC-1alpha
+T4	Protein 193 204	PGC)-1alpha
+T5	Protein 385 414	mammalian target of rapamycin
+T6	Protein 416 420	mTOR
+T7	Protein 518 522	mTOR
+T8	Protein 586 590	mTOR
+T9	Protein 806 816	PGC-1alpha
+T10	Protein 818 850	oestrogen-related receptor alpha
+T11	Protein 1034 1044	yin-yang 1
+T12	Protein 1046 1049	YY1
+T13	Protein 1073 1077	mTOR
+T14	Protein 1082 1092	PGC-1alpha
+T15	Protein 1107 1110	YY1
+T16	Protein 1198 1201	YY1
+T17	Protein 1276 1280	mTOR
+T18	Protein 1308 1311	YY1
+T19	Protein 1331 1335	mTOR
+T20	Protein 1361 1364	YY1
+T21	Protein 1404 1414	PGC-1alpha
+T22	Protein 1485 1489	mTOR
+T23	Complex 57 71	YY1-PGC-1alpha
+*	Equiv T5 T6
+T24	Protein 703 707	mTOR
+T25	Simple_molecule 945 951	oxygen
+*	Equiv T11 T12
+T26	Regulation 5 13	controls
+E1	Regulation:T26 Cause:T1 Theme:T23
+T27	Drug 718 727	rapamycin
+T29	Negative_regulation 708 717	inhibitor
+E3	Negative_regulation:T29 Cause:T27 Theme:T24
+T30	Gene_expression 742 757	gene expression
+E4	Gene_expression:T30 Theme:T10
+T31	Negative_regulation 728 737	decreased
+E5	Negative_regulation:T31 Cause:T27 Theme:E4
+E6	Gene_expression:T30 Theme:T9
+E7	Negative_regulation:T31 Cause:T27 Theme:E6
+T32	Drug 1219 1228	rapamycin
+T33	Protein 1285 1291	raptor
+T34	Binding 1292 1302	interacted
+E9	Binding:T34 Theme:T33 Theme:T18 Theme:T17
+T35	Negative_regulation 1317 1327	inhibition
+E10	Negative_regulation:T35 Cause:E9 Theme:T19
+T28	Binding 1368 1376	interact
+E2	Binding:T28 Theme:T20 Theme:T19
+M1	Negation E2
+T36	Positive_regulation 1389 1400	coactivated
+E8	Positive_regulation:T36 Cause:T21 Theme:T19

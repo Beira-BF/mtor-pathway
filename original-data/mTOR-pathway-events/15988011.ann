@@ -1,0 +1,99 @@
+T1	Protein 0 4	Mip1
+T2	Protein 9 14	MEKK2
+T3	Protein 45 50	MEKK2
+T4	Protein 685 689	Mip1
+T5	Protein 706 711	MEKK2
+T6	Protein 819 823	Mip1
+T7	Protein 834 839	MEKK2
+T8	Protein 863 868	MEKK2
+T9	Protein 908 913	JNKK2
+T10	Protein 915 940	c-Jun N-terminal kinase 1
+T11	Protein 942 946	JNK1
+T12	Protein 949 988	extracellular signal-regulated kinase 5
+T13	Protein 1027 1032	MEKK2
+T14	Protein 1076 1080	Mip1
+T15	Protein 1081 1086	MEKK2
+T16	Protein 1200 1204	Mip1
+T17	Protein 1239 1244	MEKK2
+T18	Protein 1333 1338	MEKK2
+T19	Protein 81 113	Mitogen-activated protein kinase
+T20	Protein 115 119	MAPK
+*	Equiv T19 T20
+T21	Protein 277 281	MAPK
+T22	Protein 301 312	MAPK kinase
+T23	Protein 347 365	MAPK kinase kinase
+T24	Protein 367 372	MAP3K
+*	Equiv T23 T24
+T25	Protein 481 487	MAP3Ks
+T26	Protein 564 568	MAPK
+T27	Protein 658 663	MEKK2
+T28	Protein 797 802	MEKK2
+*	Equiv T10 T11
+T29	Protein 994 998	AP-1
+T30	RNA 1219 1224	siRNA
+T31	Protein 1254 1257	JNK
+T32	Protein 1262 1266	AP-1
+T33	Binding 15 26	interacting
+E1	Binding:T33 Theme:T2 Theme:T1
+T34	Binding 51 63	dimerization
+E2	Binding:T34 Theme:T3
+T35	Positive_regulation 68 78	activation
+E3	Positive_regulation:T35 Theme:T3
+T36	Regulation 36 44	controls
+E4	Regulation:T36 Cause:T1 Theme:E3
+E5	Regulation:T36 Cause:T1 Theme:E2
+T37	Positive_regulation 285 294	activated
+E6	Positive_regulation:T37 Cause:T22 Theme:T21
+T38	Positive_regulation 331 340	activated
+E7	Positive_regulation:T38 Cause:T23 Theme:T22
+T39	Positive_regulation 450 460	activation
+E8	Positive_regulation:T39 Theme:T25
+T40	Regulation 435 445	regulation
+E9	Regulation:T40 Theme:T25
+T41	Binding 664 675	interacting
+E10	Binding:T41 Theme:T27 Theme:T4
+T42	Regulation 696 705	regulates
+E11	Regulation:T42 Cause:T4 Theme:E12
+T43	Binding 712 724	dimerization
+E12	Binding:T43 Theme:T5
+T44	Positive_regulation 729 739	activation
+E13	Positive_regulation:T44 Cause:E14 Theme:T5
+T45	Binding 743 760	forming a complex
+E14	Binding:T45 Theme:T28
+T46	Phosphorylation 779 796	nonphosphorylated
+E15	Phosphorylation:T46 Theme:T28
+M1	Negation E15
+E16	Regulation:T42 Cause:T4 Theme:E13
+T47	Negative_regulation 824 833	prevented
+E17	Negative_regulation:T47 Theme:E18 Cause:T6
+T48	Positive_regulation 840 850	activation
+E18	Positive_regulation:T48 Theme:T7 Cause:E19
+T49	Negative_regulation 854 862	blocking
+E19	Negative_regulation:T49 Theme:E20
+T50	Binding 869 884	dimer formation
+E20	Binding:T50 Theme:T8
+T51	Negative_regulation 900 907	blocked
+E21	Negative_regulation:T51 Cause:T6 Theme:E22
+T52	Positive_regulation 1013 1023	activation
+E22	Positive_regulation:T52 Cause:T13 Theme:T12
+E23	Positive_regulation:T52 Cause:T13 Theme:T11
+E24	Positive_regulation:T52 Cause:T13 Theme:T9
+E25	Positive_regulation:T52 Cause:T13 Theme:T29
+E26	Negative_regulation:T51 Cause:T6 Theme:E25
+E27	Negative_regulation:T51 Cause:T6 Theme:E23
+E28	Negative_regulation:T51 Cause:T6 Theme:E24
+T53	Complex 1076 1086	Mip1-MEKK2
+T54	Dissociation 1099 1110	dissociated
+E29	Dissociation:T54 Complex:T53 Participant:T15 Participant:T14
+T55	Gene_expression 1205 1215	expression
+E30	Gene_expression:T55 Theme:T16
+T56	Positive_regulation 1276 1286	activation
+E31	Positive_regulation:T56 Theme:T31
+E32	Positive_regulation:T56 Theme:T32
+T57	Positive_regulation 1245 1253	mediated
+E33	Positive_regulation:T57 Cause:T17 Theme:E32
+E34	Positive_regulation:T57 Cause:T17 Theme:E31
+T58	Regulation 1339 1349	regulation
+E35	Regulation:T58 Theme:T18
+T59	Positive_regulation 1354 1364	activation
+E36	Positive_regulation:T59 Theme:T18

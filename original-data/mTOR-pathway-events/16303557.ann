@@ -1,0 +1,121 @@
+T1	Protein 30 38	GSK3beta
+T2	Protein 66 78	beta-catenin
+T3	Protein 203 215	beta-catenin
+T4	Protein 270 278	GSK3beta
+T5	Protein 431 439	GSK3beta
+T6	Protein 440 444	Axin
+T7	Protein 475 487	beta-catenin
+T8	Protein 567 579	beta-catenin
+T9	Protein 748 756	GSK3beta
+T10	Protein 757 761	Axin
+T11	Protein 850 858	GSK3beta
+T12	Protein 903 915	beta-catenin
+T13	Protein 934 938	Axin
+T16	Protein 1074 1082	GSK3beta
+T17	Protein 1083 1088	Axin2
+T18	Protein 1093 1101	GSK3beta
+T19	Protein 1102 1106	Axin
+T20	Protein 1151 1163	beta-catenin
+T21	Protein 1283 1291	GSK3beta
+T22	Protein 1292 1297	Axin2
+T23	Protein 1322 1334	beta-catenin
+T24	Protein 1514 1522	GSK3beta
+T25	Protein 1523 1528	Axin2
+T27	Protein 1714 1726	beta-catenin
+T28	Protein 1778 1786	GSK3beta
+T29	Protein 1787 1791	Axin
+T30	Protein 1862 1874	beta-catenin
+T33	Protein 1946 1954	GSK3beta
+T34	Protein 1955 1959	Axin
+T35	Protein 2005 2017	beta-catenin
+T36	Dissociation 799 808	disrupted
+E1	Dissociation:T36 Complex:T47 Participant:T10 Participant:T9
+T37	Protein 7 10	Wnt
+T38	Protein 157 160	Wnt
+T39	Protein 295 299	Axin
+T40	Protein 335 338	Wnt
+T41	Protein 358 368	Disheveled
+T42	Protein 370 373	Dvl
+*	Equiv T41 T42
+T43	Complex 431 444	GSK3beta/Axin
+T44	Protein 523 526	Wnt
+T45	Protein 541 545	GSK3
+T46	Protein 720 723	Wnt
+T47	Complex 748 761	GSK3beta/Axin
+T48	Protein 814 817	Wnt
+T49	Protein 859 863	Axin
+T14	Protein 1048 1051	Wnt
+T15	Complex 1074 1088	GSK3beta/Axin2
+T50	Complex 1093 1106	GSK3beta/Axin
+T51	Protein 1130 1133	Wnt
+T52	Protein 109 115	Galpha
+T53	Protein 993 1002	Galpha(o)
+T54	Protein 1006 1015	Galpha(q)
+T55	Protein 1228 1237	GTPgammaS
+T56	Protein 1266 1269	Wnt
+T57	Complex 1283 1297	GSK3beta/Axin2
+T58	Dissociation 1275 1282	disrupt
+E2	Dissociation:T58 Complex:T57 Participant:T21 Participant:T22
+T59	Protein 1378 1387	Galpha(o)
+T60	Protein 1452 1458	Wnt-3a
+T61	Protein 1484 1487	Wnt
+T62	Complex 1514 1528	GSK3beta/Axin2
+T63	Protein 1393 1395	Fz
+T26	Protein 1533 1542	Galpha(o)
+T64	Protein 1543 1545	Fz
+T65	Complex 1533 1545	Galpha(o)/Fz
+T66	Protein 1655 1658	Wnt
+T67	Dissociation 1764 1774	disruption
+E3	Dissociation:T67 Complex:T68 Participant:T28 Participant:T29
+T68	Complex 1778 1791	GSK3beta/Axin
+T69	Protein 1820 1823	Wnt
+T31	Protein 1884 1893	Galpha(o)
+T32	Protein 1898 1907	Galpha(q)
+T70	Protein 1933 1936	Wnt
+T71	Complex 1946 1959	GSK3beta/Axin
+T72	Dissociation 1960 1970	disruption
+E4	Dissociation:T72 Complex:T71 Participant:T34 Participant:T33
+T73	Positive_regulation 11 18	induced
+E5	Positive_regulation:T73 Theme:E6 Cause:T37
+T74	Regulation 19 26	changes
+E6	Regulation:T74 Theme:E7
+T75	Binding 39 51	associations
+E7	Binding:T75 Theme:T1
+T76	Positive_regulation 97 105	mediated
+E8	Positive_regulation:T76 Cause:T52 Theme:E7
+T77	Phosphorylation 236 251	phosphorylation
+E9	Phosphorylation:T77 Theme:T3
+T78	Catalysis 236 251	phosphorylation
+E10	Catalysis:T78 Cause:T4 Theme:E9
+T79	Positive_regulation 378 386	required
+E11	Positive_regulation:T79 Theme:E12 Cause:T42
+T80	Negative_regulation 403 410	inhibit
+E12	Negative_regulation:T80 Theme:T43
+T81	Regulation 527 537	regulation
+E13	Regulation:T81 Cause:T44 Theme:T45
+T82	Positive_regulation 809 813	upon
+E14	Positive_regulation:T82 Cause:T48 Theme:E1
+T83	Complex 850 863	GSK3beta/Axin
+T84	Protein_catabolism 939 950	degradation
+E15	Protein_catabolism:T84 Theme:T13
+T85	Dissociation 1060 1070	disruption
+E16	Dissociation:T85 Participant:T16 Participant:T17 Complex:T15
+E17	Dissociation:T85 Participant:T18 Participant:T19 Complex:T50
+T86	Positive_regulation 1052 1059	induced
+E18	Positive_regulation:T86 Cause:T14 Theme:E16
+E19	Positive_regulation:T86 Cause:T14 Theme:E17
+T87	Binding 1363 1374	association
+E20	Binding:T87 Theme:T59 Theme:T63
+T88	Regulation 1498 1505	effects
+E21	Regulation:T88 Cause:T61 Theme:T65
+E22	Regulation:T88 Cause:T61 Theme:T62
+T89	Regulation 1641 1651	regulation
+E23	Regulation:T89 Theme:T27
+T90	Positive_regulation 1808 1816	response
+E24	Positive_regulation:T90 Cause:T69 Theme:E3
+T91	Regulation 1918 1929	contributes
+E25	Regulation:T91 Cause:T32 Theme:E4
+T92	Positive_regulation 1937 1945	mediated
+E26	Positive_regulation:T92 Cause:T70 Theme:E4
+T93	Binding 1792 1804	interactions
+E27	Binding:T93 Theme:T29 Theme:T28 Product:T68

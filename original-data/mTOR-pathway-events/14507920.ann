@@ -1,0 +1,103 @@
+T1	Protein 22 28	PHAS-I
+T2	Protein 49 56	insulin
+T3	Protein 86 91	eIF4E
+T4	Protein 94 101	Insulin
+T5	Protein 177 183	PHAS-I
+T6	Protein 216 222	PHAS-I
+T7	Protein 223 228	eIF4E
+T8	Protein 386 392	PHAS-I
+T9	Protein 397 402	eIF4E
+T10	Protein 440 447	insulin
+T11	Protein 496 502	PHAS-I
+T12	Protein 622 629	insulin
+T13	Protein 652 658	PHAS-I
+T14	Protein 664 669	eIF4E
+T15	Protein 805 811	PHAS-I
+T16	Protein 881 888	Insulin
+T17	Protein 913 918	eIF4E
+T18	Protein 924 931	PHAS-II
+T19	Protein 1020 1025	eIF4E
+T20	Protein 1184 1190	PHAS-I
+T21	Protein 1202 1207	eIF4E
+T22	Protein 1286 1292	PHAS-I
+T23	Protein 1293 1298	eIF4E
+T24	Protein 1418 1425	insulin
+T25	Dissociation 68 80	dissociation
+E1	Dissociation:T25 Participant:T3 Participant:T1
+T26	Positive_regulation 57 67	stimulated
+E2	Positive_regulation:T26 Cause:T2 Theme:E1
+T27	Phosphorylation 113 128	phosphorylation
+E3	Phosphorylation:T27 Theme:T5
+T28	Protein 154 159	eIF4E
+T29	Binding 160 167	binding
+E4	Binding:T29 Theme:T5 Theme:T28
+T30	Positive_regulation 102 112	stimulates
+E5	Positive_regulation:T30 Cause:T4 Theme:E3
+T31	Positive_regulation 185 192	leading
+E6	Positive_regulation:T31 Theme:E7 Cause:T4
+T32	Dissociation 196 208	dissociation
+E7	Dissociation:T32 Participant:T6 Participant:T7 Complex:T33
+T33	Complex 216 236	PHAS-I.eIF4E complex
+T34	Regulation 355 366	controlling
+E8	Regulation:T34 CSite:T37 Theme:E10
+E9	Regulation:T34 CSite:T36 Theme:E10
+T35	Binding 371 382	association
+E10	Binding:T35 Theme:T8 Theme:T9
+T36	Entity 290 296	Ser-64
+T37	Entity 301 308	Ser-111
+T38	Protein 1054 1062	PHAS-III
+T39	Complex 1286 1306	PHAS-I.eIF4E complex
+T40	Protein 1340 1347	PHAS-II
+T41	Protein 1357 1365	PHAS-III
+T42	Regulation 429 436	effects
+E11	Regulation:T42 Cause:T10 Theme:E8
+M1	Speculation E11
+E12	Regulation:T42 Cause:T10 Theme:E9
+M2	Speculation E12
+T43	Phosphorylation 574 589	phosphorylation
+E13	Phosphorylation:T43 Theme:T11 Site:T44
+T44	Entity 519 525	Ala-64
+T45	Entity 529 536	Ala-111
+E14	Phosphorylation:T43 Theme:T11 Site:T45
+T46	Positive_regulation 633 640	promote
+E15	Positive_regulation:T46 Theme:E16 Cause:T12
+T47	Dissociation 641 648	release
+E16	Dissociation:T47 Participant:T13 Participant:T14
+T48	Positive_regulation 609 617	required
+E17	Positive_regulation:T48 Theme:E15
+M3	Negation E17
+T49	Phosphorylation 771 786	phosphorylation
+E18	Phosphorylation:T49 Theme:T15
+T50	Phosphorylation 832 847	phosphorylation
+E19	Phosphorylation:T50 Site:T54 Theme:T15
+E20	Phosphorylation:T50 Site:T53 Theme:T15
+E21	Phosphorylation:T50 Site:T52 Theme:T15
+T51	Entity 851 857	Thr-36
+T52	Entity 858 860	45
+T53	Entity 862 868	Ser-64
+T54	Entity 873 879	Thr-69
+E22	Phosphorylation:T50 Site:T51 Theme:T15
+T55	Regulation 821 827	affect
+E23	Regulation:T55 Theme:E21
+M4	Negation E23
+E24	Regulation:T55 Theme:E22
+M5	Negation E24
+E25	Regulation:T55 Theme:E20
+M6	Negation E25
+E26	Regulation:T55 Theme:E19
+M7	Negation E26
+T57	Dissociation 902 909	release
+E27	Dissociation:T57 Participant:T17 Participant:T18
+T56	Positive_regulation 889 897	promoted
+E28	Positive_regulation:T56 Cause:T16 Theme:E27
+T58	Binding 1026 1031	bound
+E29	Binding:T58 Theme:T19 Theme:T38
+T59	Regulation 1173 1180	control
+E30	Regulation:T59 Theme:E31
+T60	Binding 1191 1198	binding
+E31	Binding:T60 Theme:T20 Theme:T21
+T61	Dissociation 1266 1278	dissociation
+E32	Dissociation:T61 Complex:T39 Participant:T22 Participant:T23
+T62	Entity 1253 1262	Thr sites
+T63	Phosphorylation 1230 1245	phosphorylation
+E33	Phosphorylation:T63 Site:T62 Theme:T20

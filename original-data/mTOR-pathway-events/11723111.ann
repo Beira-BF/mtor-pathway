@@ -1,0 +1,48 @@
+T1	Protein 213 218	eIF4E
+T2	Protein 490 495	eIF4E
+T3	Protein 711 716	eIF4E
+T4	Protein 823 828	eIF4E
+T5	Protein 1041 1064	eIF4E-binding protein 1
+T6	Protein 1110 1115	eIF4E
+T7	Protein 1150 1173	eIF4E-binding protein 1
+T8	Protein 1255 1260	eIF4E
+T9	Dissociation 801 813	dissociation
+E1	Dissociation:T9 Participant:T3
+T10	Dissociation 1204 1215	dissociated
+E2	Dissociation:T10 Participant:T6
+T11	Protein 19 50	eukaryotic initiation factor 4E
+T12	Protein 180 211	eukaryotic initiation factor 4E
+*	Equiv T12 T1
+T13	Phosphorylation 0 15	Phosphorylation
+E3	Phosphorylation:T13 Theme:T11
+T14	Negative_regulation 60 67	reduces
+E4	Negative_regulation:T14 Cause:E3 Theme:E5
+T15	Binding 72 80	affinity
+E5	Binding:T15 Theme:T11
+T16	Binding 165 172	binding
+E6	Binding:T16 Theme:T12
+T17	Phosphorylation 471 486	phosphorylation
+E7	Phosphorylation:T17 Site:T18 Theme:T2
+T18	Entity 499 507	Ser(209)
+T19	Phosphorylation 692 707	phosphorylation
+E8	Phosphorylation:T19 Theme:T3
+T20	Negative_regulation 726 733	reduces
+E9	Negative_regulation:T20 Theme:E10 Cause:E8
+T21	Binding 738 746	affinity
+E10	Binding:T21 Theme:T3
+T22	Positive_regulation 783 792	increased
+E11	Positive_regulation:T22 Cause:E8 Theme:E1
+T23	Negative_regulation 911 920	decreased
+E12	Negative_regulation:T23 Theme:E13
+T24	Binding 921 928	binding
+E13	Binding:T24 Theme:T4
+T25	Binding 1084 1091	binding
+E14	Binding:T25 Theme:T6
+T26	Phosphorylation 1095 1109	phosphorylated
+E15	Phosphorylation:T26 Theme:T6
+T27	Phosphorylation 1178 1192	phosphorylated
+E16	Phosphorylation:T27 Theme:T6
+T28	Phosphorylation 1237 1254	nonphopshorylated
+E17	Phosphorylation:T28 Theme:T8
+M1	Negation E17
+E18	Dissociation:T10 Participant:T8

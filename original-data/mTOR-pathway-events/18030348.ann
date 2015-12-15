@@ -1,0 +1,104 @@
+T1	Protein 0 6	PRAS40
+T2	Protein 11 15	PRR5
+T3	Protein 37 41	mTOR
+T5	Complex 288 293	TORC1
+T7	Protein 492 496	mTOR
+T8	Protein 576 582	PRAS40
+T9	Protein 613 619	Q6MZQ0
+T10	Protein 620 628	FLJ14213
+T11	Protein 629 637	CAE45978
+T12	Protein 645 649	mTOR
+T13	Protein 668 674	PRAS40
+T14	Complex 681 687	mTORC1
+T15	Protein 710 714	mTOR
+T16	Protein 742 748	PRAS40
+T17	Complex 758 764	mTORC1
+T18	Protein 819 841	eIF-4E binding protein
+T19	Protein 843 848	4E-BP
+T20	Protein 854 860	PRAS40
+T21	Protein 889 895	PRAS40
+T22	Protein 962 970	TNFalpha
+T23	Protein 1044 1050	PRAS40
+T24	Protein 1068 1074	PRAS40
+T25	Protein 1178 1200	proline rich protein 5
+T26	Protein 1202 1206	PRR5
+T28	Protein 1480 1484	TSC1
+T29	Protein 1490 1494	TSC2
+T30	Protein 1515 1519	mTOR
+T31	Protein 1523 1527	TSC1
+T32	Protein 1528 1529	2
+T33	Protein 1747 1751	mTOR
+T34	Protein 1774 1780	PRAS40
+T35	Protein 1785 1790	PRR5L
+T36	Protein 1801 1805	mTOR
+T39	Complex 273 286	TOR complex 1
+*	Equiv T39 T5
+T42	Complex 299 312	TOR complex 2
+T43	Complex 314 319	TORC2
+*	Equiv T42 T43
+T4	Protein 477 490	mammalian TOR
+*	Equiv T4 T7
+T6	Protein 561 564	Akt
+T37	Protein 692 698	Raptor
+T38	Complex 789 795	mTORC1
+*	Equiv T18 T19
+T40	Complex 1136 1142	mTORC1
+T41	Protein 1144 1150	Q6MZQ0
+*	Equiv T25 T26
+T27	Protein 1232 1241	PRR5-Like
+T44	Protein 1243 1248	PRR5L
+*	Equiv T27 T44
+T45	Protein 1251 1256	PRR5L
+T46	Complex 1279 1285	mTORC2
+T47	Protein 1291 1297	Rictor
+T48	Protein 1305 1309	SIN1
+T49	Complex 1324 1330	mTORC2
+T50	Protein 1340 1345	PRR5L
+T51	Complex 1366 1372	mTORC2
+T52	Complex 1424 1430	mTORC2
+T53	Protein 1450 1478	tuberous sclerosis complex 1
+*	Equiv T53 T28
+T54	Complex 1523 1529	TSC1/2
+T55	Protein 1568 1573	PRR5L
+T56	Protein 1604 1609	PRR5L
+T57	Complex 1647 1653	mTORC2
+T58	Complex 1695 1701	mTORC2
+T59	Protein 1714 1719	PRR5L
+T60	Binding 42 53	interactors
+E1	Binding:T60 Theme:T3 Theme:T1
+E2	Binding:T60 Theme:T3 Theme:T2
+T61	Binding 498 505	binding
+E3	Binding:T61 Theme:T7
+T62	Binding 650 657	binding
+E4	Binding:T62 Theme:T12 Theme:T11
+E5	Binding:T62 Theme:T12 Theme:T10
+E6	Binding:T62 Theme:T9 Theme:T12
+E7	Binding:T62 Theme:T8 Theme:T12
+T63	Binding 675 680	binds
+E8	Binding:T63 Theme:T13 Theme:T37
+E9	Binding:T63 Theme:T13 Theme:T14
+T64	Phosphorylation 715 730	phosphorylation
+E10	Phosphorylation:T64 Theme:T13
+T65	Catalysis 715 730	phosphorylation
+E11	Catalysis:T65 Cause:T15 Theme:E10
+T66	Negative_regulation 749 757	inhibits
+E12	Negative_regulation:T66 Cause:T16 Theme:E13
+T67	Phosphorylation 765 784	autophosphorylation
+E13	Phosphorylation:T67 Theme:T17
+T68	Catalysis 765 784	autophosphorylation
+E14	Catalysis:T68 Cause:T17 Theme:E13
+E15	Negative_regulation:T66 Cause:T16 Theme:T38
+T69	Drug 990 999	Rapamycin
+T70	Binding 1257 1262	binds
+E16	Binding:T70 Theme:T45 Theme:T46
+E17	Binding:T70 Theme:T45 Theme:T47
+E18	Binding:T70 Theme:T45 Theme:T48
+T71	Dissociation 1407 1418	dissociates
+E19	Dissociation:T71 Participant:T50 Complex:T52
+T72	Positive_regulation 1496 1511	Hyperactivation
+E20	Positive_regulation:T72 Theme:T30 Cause:T54
+T73	Dissociation 1702 1713	dissociated
+E21	Dissociation:T73 Complex:T58 Participant:T59
+T74	Binding 1806 1816	associated
+E22	Binding:T74 Theme:T36 Theme:T34
+E23	Binding:T74 Theme:T36 Theme:T35

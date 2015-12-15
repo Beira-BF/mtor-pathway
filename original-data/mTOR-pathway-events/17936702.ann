@@ -1,0 +1,50 @@
+T1	Protein 0 4	S6K1
+T2	Protein 47 55	PP1gamma
+T3	Protein 118 122	S6K1
+T4	Protein 144 155	S6 kinase 1
+T5	Protein 157 161	S6K1
+T6	Protein 459 463	S6K1
+T7	Protein 705 713	PP1gamma
+T8	Protein 732 736	S6K1
+T9	Protein 801 809	PP1gamma
+T10	Protein 861 865	S6K1
+T11	Protein 979 987	PP1gamma
+T12	Protein 1017 1021	S6K1
+T13	Protein 1094 1098	S6K1
+T14	Protein 43 46	URI
+T15	Complex 43 55	URI/PP1gamma
+*	Equiv T4 T5
+T16	Protein 366 369	BAD
+T17	Protein 415 418	URI
+T18	Protein 519 522	URI
+T19	Protein 551 581	protein phosphatase (PP)1gamma
+T20	Protein 701 704	URI
+T21	Complex 701 713	URI/PP1gamma
+T22	Protein 765 768	URI
+T23	Protein 879 882	BAD
+T24	Protein 971 974	URI
+T25	Dissociation 14 25	disassembly
+E1	Dissociation:T25 Complex:T15 Participant:T14 Participant:T2
+T26	Positive_regulation 5 13	mediated
+E2	Positive_regulation:T26 Cause:T1 Theme:E1
+T27	Phosphorylation 309 323	phosphorylates
+E3	Phosphorylation:T27 Theme:T16
+T28	Negative_regulation 328 339	inactivates
+E4	Negative_regulation:T28 Theme:T16
+T29	Drug 494 503	rapamycin
+T30	Binding 523 545	forms stable complexes
+E5	Binding:T30 Theme:T18 Theme:T19
+T31	Positive_regulation 678 685	induces
+E6	Positive_regulation:T31 Theme:E7 Cause:E8
+T32	Dissociation 686 697	disassembly
+E7	Dissociation:T32 Complex:T21 Participant:T20 Participant:T7
+T33	Phosphorylation 746 761	phosphorylation
+E8	Phosphorylation:T33 Site:T34 Theme:T22
+T34	Entity 772 782	serine 371
+T35	Positive_regulation 737 745	mediated
+E9	Positive_regulation:T35 Cause:T8 Theme:E8
+T36	Negative_regulation 851 860	decreases
+E10	Negative_regulation:T36 Theme:T10
+T37	Phosphorylation 883 898	phosphorylation
+E11	Phosphorylation:T37 Theme:T23
+E12	Negative_regulation:T36 Theme:E11

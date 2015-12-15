@@ -1,0 +1,32 @@
+T1	Protein 20 28	cyclin E
+T2	Protein 82 90	Cyclin E
+T3	Protein 133 137	Cdk2
+T4	Protein 480 488	cyclin E
+T5	Protein 588 591	CCT
+T6	Protein 645 653	cyclin E
+T7	Protein 692 695	CCT
+T8	Protein 706 714	cyclin E
+T9	Protein 767 775	cyclin E
+T10	Protein 1010 1014	Cdk2
+T11	Protein 1079 1087	cyclin E
+T12	Dissociation 966 974	released
+E1	Dissociation:T12 Participant:T9 Participant:T17
+T13	Protein 232 240	cyclin E
+T14	Protein 76 79	CCT
+T15	Protein 554 557	CCT
+T16	Complex 588 599	CCT complex
+T17	Protein 895 898	CCT
+T18	Protein_catabolism 217 228	degradation
+E2	Protein_catabolism:T18 Theme:T13
+T19	Ubiquitination 287 301	ubiquitination
+E3	Ubiquitination:T19 Theme:T13
+T20	Regulation 274 283	regulated
+E4	Regulation:T20 Cause:E3 Theme:E2
+T21	Translation 756 766	translated
+E5	Translation:T21 Theme:T9
+T22	Binding 868 873	bound
+E6	Binding:T22 Theme:T9 Theme:T17
+T23	Binding 955 961	folded
+E7	Binding:T23 Theme:T9 Theme:T17
+T24	Binding 994 1004	associated
+E8	Binding:T24 Theme:T10 Theme:T9

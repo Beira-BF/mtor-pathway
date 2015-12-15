@@ -1,0 +1,59 @@
+T1	Protein 41 48	p27Kip1
+T2	Protein 104 111	p27Kip1
+T3	Protein 255 258	p27
+T4	Protein 399 402	p27
+T5	Protein 450 453	Lyn
+T6	Protein 479 482	BCR
+T7	Protein 525 528	p27
+T8	Protein 540 548	cyclin A
+T9	Protein 549 553	Cdk2
+T10	Protein 634 637	p27
+T11	Protein 661 665	Cdk2
+T12	Protein 760 763	p27
+T13	Protein 817 821	Cdk2
+T14	Protein 853 857	Skp2
+T15	Protein 940 943	p27
+T16	Protein 1009 1012	p27
+T17	Protein 1041 1044	p27
+T18	Protein 483 486	ABL
+T19	Regulation 62 71	regulated
+E1	Regulation:T19 Theme:T1
+T20	Binding 143 150	binding
+E2	Binding:T20 Theme:T2
+T21	Regulation 273 282	regulated
+E3	Regulation:T21 Theme:T3
+T22	Phosphorylation 298 313	phosphorylation
+E4	Phosphorylation:T22 Theme:T3
+T23	Entity 365 368	Y88
+T24	Phosphorylation 410 424	phosphorylated
+E5	Phosphorylation:T24 Site:T23 Theme:T4
+T25	Catalysis 410 424	phosphorylated
+E6	Catalysis:T25 Cause:T5 Theme:E5
+E7	Catalysis:T25 Theme:E5 Cause:T18
+E8	Catalysis:T25 Theme:E5 Cause:T6
+T26	Entity 488 491	Y88
+T27	Binding 529 536	binding
+E9	Binding:T27 Theme:T7 Theme:T40
+T28	Negative_regulation 517 524	prevent
+E10	Negative_regulation:T28 Cause:E11 Theme:E9
+M1	Negation E10
+T29	Phosphorylation 492 507	phosphorylation
+E11	Phosphorylation:T29 Site:T26 Theme:T7
+T30	Entity 741 744	Y88
+T31	Phosphorylation 745 759	phosphorylated
+E12	Phosphorylation:T31 Site:T30 Theme:T12
+T32	Phosphorylation 782 796	phosphorylated
+E13	Phosphorylation:T32 Theme:T12 Site:T33
+T33	Entity 800 813	threonine 187
+T34	Catalysis 782 796	phosphorylated
+E14	Catalysis:T34 Cause:T13 Theme:E13
+T35	Positive_regulation 836 844	promotes
+E15	Positive_regulation:T35 Theme:E16 Cause:E13
+T36	Protein_catabolism 868 879	degradation
+E16	Protein_catabolism:T36 Theme:T12
+T37	Positive_regulation 858 867	dependent
+E17	Positive_regulation:T37 Cause:T14 Theme:E16
+T38	Entity 589 592	Y88
+T39	Phosphorylation 574 588	phosphorylated
+E18	Phosphorylation:T39 Site:T38 Theme:T7
+T40	Complex 540 553	cyclin A/Cdk2

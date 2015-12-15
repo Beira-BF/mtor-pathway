@@ -1,0 +1,32 @@
+T1	Protein 0 5	p70S6
+T2	Protein 595 623	insulin-like growth factor 1
+T3	Protein 625 630	IGF-1
+T4	Protein 643 648	IGF-1
+T5	Protein 735 741	p70S6K
+T6	Protein 94 97	BAD
+T7	Protein 409 412	BAD
+T8	Protein 554 557	BAD
+T9	Protein 676 679	BAD
+T11	Negative_regulation 54 66	inactivating
+E2	Negative_regulation:T11 Cause:T1 Theme:T6
+T10	Protein 231 237	p70S6K
+T12	Protein 341 347	p70S6K
+T13	Phosphorylation 390 405	phosphorylation
+E1	Phosphorylation:T13 Theme:T7
+T14	Catalysis 390 405	phosphorylation
+E3	Catalysis:T14 Cause:T12 Theme:E1
+T15	Drug 460 469	Rapamycin
+T16	Protein 500 506	p70S6K
+T17	Negative_regulation 470 479	inhibited
+E4	Negative_regulation:T17 Cause:T15 Theme:T16
+T18	Phosphorylation 524 539	phosphorylation
+E5	Phosphorylation:T18 Site:T19 Theme:T8
+T19	Entity 543 550	Ser-136
+*	Equiv T2 T3
+T20	Phosphorylation 657 672	phosphorylation
+E6	Phosphorylation:T20 Site:T21 Theme:T9
+T21	Entity 680 687	Ser-136
+T22	Positive_regulation 649 656	induced
+E7	Positive_regulation:T22 Cause:T4 Theme:E6
+T23	Protein 705 711	p70S6K
+T24	Protein 877 880	BAD

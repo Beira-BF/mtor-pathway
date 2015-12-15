@@ -1,0 +1,29 @@
+T1	Protein 52 56	TSC1
+T2	Protein 137 141	mTOR
+T3	Complex 255 259	TSC2
+T4	Protein 271 275	mTOR
+T5	Protein 323 327	TSC2
+T6	Protein 414 418	mTOR
+T7	Complex 33 39	mTORC1
+T8	Protein 57 58	2
+T9	Complex 52 58	TSC1/2
+T10	Protein 210 214	GSK3
+T11	Protein 219 223	AMPK
+T12	Protein 331 335	GSK3
+T13	Protein 489 492	Wnt
+T14	Protein 362 365	Wnt
+T15	Protein 14 17	Wnt
+T16	Regulation 123 133	regulation
+E1	Regulation:T16 Theme:T2 Cause:T9
+T17	Positive_regulation 241 251	activation
+E2	Positive_regulation:T17 Cause:T10 Theme:T3
+T18	Negative_regulation 263 270	inhibit
+E3	Negative_regulation:T18 Theme:T4 Cause:E2
+E4	Positive_regulation:T17 Cause:T11 Theme:T3
+E5	Negative_regulation:T18 Cause:E4 Theme:T4
+T19	Phosphorylation 304 319	phosphorylation
+E6	Phosphorylation:T19 Theme:T5
+T20	Catalysis 304 319	phosphorylation
+E7	Catalysis:T20 Cause:T12 Theme:E6
+T21	Negative_regulation 348 358	suppressed
+E8	Negative_regulation:T21 Cause:T14 Theme:E6

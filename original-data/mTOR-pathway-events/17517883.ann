@@ -1,0 +1,113 @@
+T1	Protein 42 48	PRAS40
+T2	Protein 82 121	mammalian target of rapamycin complex 1
+T3	Protein 174 180	PRAS40
+T6	Protein 358 364	PRAS40
+T7	Protein 392 396	S6K1
+T8	Protein 401 407	4E-BP1
+T9	Protein 622 628	PRAS40
+T10	Complex 829 835	mTORC1
+T11	Protein 876 882	PRAS40
+T12	Protein 1067 1073	PRAS40
+T13	Protein 1249 1253	Rheb
+T14	Protein 1276 1282	PRAS40
+T15	Protein 1317 1321	S6K1
+T16	Protein 1326 1332	4E-BP1
+T17	Protein 1421 1425	S6K1
+T18	Protein 1429 1435	4E-BP1
+T19	Protein 1466 1472	PRAS40
+T20	Protein 1615 1619	S6K1
+T21	Protein 1624 1630	4E-BP1
+T22	Protein 1656 1662	PRAS40
+T23	Complex 1847 1853	mTORC1
+T24	Protein 4 40	proline-rich Akt substrate of 40 kDa
+*	Equiv T24 T1
+T25	Protein 128 172	proline-rich Akt substrate of 40 kilodaltons
+*	Equiv T25 T3
+T26	Protein 202 208	raptor
+T4	Complex 260 306	mammalian target of rapamycin (mTOR) complex 1
+T5	Protein 260 289	mammalian target of rapamycin
+T27	Protein 291 295	mTOR
+*	Equiv T5 T27
+T28	Complex 308 314	mTORC1
+*	Equiv T4 T28
+T29	Complex 324 330	mTORC2
+T30	Protein 559 565	PRAS40
+T31	Protein 577 583	raptor
+T32	Protein 760 766	PRAS40
+T33	Protein 778 784	raptor
+T34	Complex 1027 1053	tuberous sclerosis complex
+T35	Drug 1342 1351	rapamycin
+T36	Protein 1549 1555	PRAS40
+T37	Complex 1682 1688	mTORC1
+T38	Binding 209 216	binding
+E1	Binding:T38 Theme:T26 Theme:T3
+T39	Phosphorylation 233 247	phosphorylated
+E2	Phosphorylation:T39 Theme:T3 Site:T41
+T40	Catalysis 233 247	phosphorylated
+E3	Catalysis:T40 Theme:E2 Cause:T4
+E4	Phosphorylation:T39 Theme:T3 Site:T41
+E5	Catalysis:T40 Cause:T29 Theme:E4
+M1	Negation E5
+T41	Entity 366 374	Ser(183)
+T43	Binding 381 388	binding
+E7	Binding:T43 Theme:T7 Theme:T8 Theme:T44
+T44	Protein 411 417	raptor
+T42	Binding 566 573	binding
+E6	Binding:T42 Theme:T30 Theme:T31
+T45	Negative_regulation 597 606	inhibited
+E8	Negative_regulation:T45 Theme:E6
+T46	Binding 767 774	binding
+E9	Binding:T46 Theme:T32 Theme:T33
+T47	Negative_regulation 794 803	abolished
+E10	Negative_regulation:T47 Theme:E9
+T48	Phosphorylation 836 851	phosphorylation
+E11	Phosphorylation:T48 Site:T49 Theme:T10
+T49	Entity 858 866	Ser(183)
+T50	Entity 884 892	Ser(183)
+T51	Phosphorylation 898 912	phosphorylated
+E12	Phosphorylation:T51 Site:T50 Theme:T11
+T52	Phosphorylation 935 950	phosphorylation
+E13	Phosphorylation:T52 Theme:T11
+T53	Negative_regulation 955 964	inhibited
+E14	Negative_regulation:T53 Cause:T54 Theme:E13
+T54	Drug 968 977	rapamycin
+T55	Simple_molecule 982 996	2-deoxyglucose
+E16	Negative_regulation:T53 Cause:T55 Theme:E13
+E15	Negative_regulation:T53 Cause:T34 Theme:E13
+T56	Entity 1075 1083	Ser(183)
+T57	Phosphorylation 1085 1100	phosphorylation
+E17	Phosphorylation:T57 Site:T56 Theme:T12
+T58	Negative_regulation 1110 1119	inhibited
+E18	Negative_regulation:T58 Theme:E17
+T59	Negative_regulation 1200 1210	inhibition
+E19	Negative_regulation:T59 Theme:E17
+T60	Negative_regulation 1215 1223	reversed
+E20	Negative_regulation:T60 Theme:E19 Cause:E21
+T61	Gene_expression 1227 1241	overexpression
+E21	Gene_expression:T61 Theme:T13
+T62	Gene_expression 1262 1275	Overexpressed
+E22	Gene_expression:T62 Theme:T14
+T63	Negative_regulation 1283 1293	suppressed
+E23	Negative_regulation:T63 Cause:T14 Theme:E24
+T64	Phosphorylation 1298 1313	phosphorylation
+E24	Phosphorylation:T64 Theme:T15 Site:T65
+E25	Phosphorylation:T64 Theme:T16 Site:T65
+E26	Negative_regulation:T63 Cause:T14 Theme:E25
+T65	Entity 1342 1383	rapamycin-sensitive phosphorylation sites
+T66	Gene_expression 1403 1417	overexpression
+E27	Gene_expression:T66 Theme:T18
+E28	Gene_expression:T66 Theme:T17
+T67	Negative_regulation 1436 1446	suppressed
+E29	Negative_regulation:T67 Theme:E31 Cause:T18
+E30	Negative_regulation:T67 Theme:E31 Cause:T17
+T68	Phosphorylation 1447 1462	phosphorylation
+E31	Phosphorylation:T68 Site:T69 Theme:T19
+T69	Entity 1474 1482	Ser(183)
+E32	Negative_regulation:T67 Cause:T17 Theme:E34
+E33	Negative_regulation:T67 Cause:T18 Theme:E34
+T70	Binding 1492 1499	binding
+E34	Binding:T70 Theme:T71 Theme:T19
+T71	Protein 1503 1509	raptor
+T72	Phosphorylation 1591 1606	phosphorylation
+E35	Phosphorylation:T72 Theme:T21
+E36	Phosphorylation:T72 Theme:T20

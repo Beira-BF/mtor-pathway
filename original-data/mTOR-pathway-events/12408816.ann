@@ -1,0 +1,67 @@
+T2	Protein 174 178	TOR1
+T3	Protein 183 187	TOR2
+T4	Complex 420 425	TORC1
+T5	Protein 436 440	TOR1
+T6	Protein 444 448	TOR2
+T7	Protein 470 474	LST8
+T8	Complex 476 481	TORC2
+T9	Protein 491 495	TOR2
+T10	Protein 497 501	AVO1
+T11	Protein 513 517	AVO2
+T12	Protein 519 526	YMR068w
+T13	Protein 529 533	AVO3
+T14	Protein 535 542	YER093c
+T15	Protein 549 553	LST8
+T16	Complex 576 581	TORC1
+T17	Complex 587 592	TORC1
+T18	Complex 648 653	TORC1
+T19	Complex 737 742	TORC2
+T20	Complex 748 753	TORC2
+T21	Complex 805 810	TORC2
+T22	Protein 847 851	TOR2
+T24	Complex 994 999	TORC1
+T25	Complex 1013 1018	TORC2
+T26	Dissociation 593 603	disruption
+E1	Dissociation:T26 Complex:T17
+T27	Dissociation 754 764	disruption
+E2	Dissociation:T27 Complex:T20
+T1	Drug 120 129	rapamycin
+T28	Drug 222 231	rapamycin
+T29	Protein 250 254	TOR2
+T30	Protein 298 303	actin
+T31	Drug 322 331	rapamycin
+T32	Complex 405 418	TOR Complex 1
+*	Equiv T32 T4
+T33	Protein 450 454	KOG1
+T34	Protein 456 463	YHR186c
+*	Equiv T33 T34
+T35	Protein 503 510	YOL078w
+*	Equiv T10 T35
+*	Equiv T11 T12
+*	Equiv T13 T14
+T36	Complex 555 569	FKBP-rapamycin
+T37	Drug 560 569	rapamycin
+T38	Complex 708 722	FKBP-rapamycin
+T39	Drug 713 722	rapamycin
+T40	Drug 611 620	rapamycin
+T41	Drug 667 676	rapamycin
+T42	Drug 824 833	rapamycin
+T23	Drug 40 49	rapamycin
+T43	Localization 278 290	polarization
+E3	Localization:T43 Theme:T30 atLoc:T44
+T44	Entity 304 316	cytoskeleton
+T45	Regulation 268 277	regulates
+E4	Regulation:T45 Cause:T29 Theme:E3
+T46	Positive_regulation 332 343	insensitive
+E5	Positive_regulation:T46 Cause:T31 Theme:E4
+T47	Binding 570 575	binds
+E6	Binding:T47 Theme:T36 Theme:T16
+T48	Binding 732 736	bind
+E7	Binding:T48 Theme:T38 Theme:T19
+M1	Negation E7
+T49	Protein 775 780	actin
+T50	Positive_regulation 811 819	mediates
+E8	Positive_regulation:T50 Cause:T21 Theme:T22
+T51	Positive_regulation 834 845	insensitive
+E9	Positive_regulation:T51 Cause:T42 Theme:T22
+M2	Negation E9

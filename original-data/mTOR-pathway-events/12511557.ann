@@ -1,0 +1,86 @@
+T1	Protein 50 62	beta-catenin
+T2	Protein 216 220	TSC1
+T3	Protein 224 228	TSC2
+T4	Protein 259 267	hamartin
+T5	Protein 272 279	tuberin
+T6	Protein 446 450	TSC2
+T7	Protein 502 509	tuberin
+T8	Protein 546 555	cyclin D1
+T9	Protein 560 569	cyclin D1
+T10	Protein 613 625	beta-catenin
+T11	Protein 699 707	hamartin
+T12	Protein 712 719	tuberin
+T13	Protein 748 760	beta-catenin
+T14	Protein 844 848	TSC2
+T15	Protein 893 901	hamartin
+T16	Protein 916 923	tuberin
+T17	Protein 940 947	tuberin
+T18	Protein 957 969	beta-catenin
+T19	Protein 1013 1017	TSC1
+T20	Protein 1018 1022	TSC2
+T21	Protein 1046 1051	Wnt-1
+T22	Protein 1157 1169	beta-catenin
+T23	Protein 1209 1217	hamartin
+T24	Protein 1222 1229	tuberin
+T25	Protein 1259 1271	beta-catenin
+T26	Protein 1301 1309	hamartin
+T27	Protein 1314 1321	tuberin
+T28	Protein 1349 1380	glycogen synthase kinase 3 beta
+T29	Protein 1385 1389	Axin
+T30	Protein 1423 1428	Wnt-1
+T31	Protein 1469 1477	hamartin
+T32	Protein 1482 1489	tuberin
+T33	Protein 1510 1522	beta-catenin
+T34	Protein 1570 1582	beta-catenin
+T35	Complex 4 28	tuberin-hamartin complex
+T36	Protein 4 11	tuberin
+T37	Protein 12 20	hamartin
+T38	Negative_regulation 29 49	negatively regulates
+E1	Negative_regulation:T38 Cause:T35 Theme:T1
+T39	Complex 84 110	Tuberous sclerosis complex
+T40	Complex 112 115	TSC
+*	Equiv T39 T40
+T41	Binding 295 299	form
+E2	Binding:T41 Theme:T5 Theme:T4 Product:T61
+T42	Negative_regulation 488 498	inhibition
+E3	Negative_regulation:T42 Theme:T7
+T43	Positive_regulation 529 542	up-regulation
+E4	Positive_regulation:T43 Theme:T8
+T44	Regulation 513 523	associated
+E5	Regulation:T44 Cause:E3 Theme:E4
+T45	Protein 609 612	Wnt
+T46	Positive_regulation 731 739	mediated
+E6	Positive_regulation:T46 Cause:T11 Theme:T13
+M1	Speculation E6
+E7	Positive_regulation:T46 Cause:T12 Theme:T13
+M2	Speculation E7
+T47	Protein 783 795	beta-catenin
+T48	Gene_expression 879 889	expression
+E8	Gene_expression:T48 Theme:T15
+E9	Gene_expression:T48 Theme:T16
+E10	Gene_expression:T48 Theme:T17
+M3	Negation E10
+E11	Negative_regulation:T50 Cause:E8 Theme:T18
+E12	Negative_regulation:T51 Cause:E9 Theme:T18
+E13	Negative_regulation:T50 Cause:E10 Theme:T18
+T50	Negative_regulation 949 956	reduced
+T51	Negative_regulation 949 956	reduced
+T49	Complex 1013 1030	TSC1-TSC2 complex
+T52	Protein 1063 1066	Tcf
+T53	Protein 1067 1070	LEF
+T54	Positive_regulation 1052 1062	stimulated
+E14	Positive_regulation:T54 Cause:T21 Theme:T53
+E15	Positive_regulation:T54 Cause:T21 Theme:T52
+T55	Negative_regulation 1036 1045	inhibited
+E16	Negative_regulation:T55 Cause:T49 Theme:E15
+E17	Negative_regulation:T55 Cause:T49 Theme:E14
+T56	Negative_regulation 1106 1116	inhibition
+E18	Negative_regulation:T56 Theme:E14 Cause:T22
+E19	Negative_regulation:T56 Theme:E15 Cause:T22
+T57	Protein 1181 1191	Disheveled
+T58	Complex 1259 1291	beta-catenin degradation complex
+T59	Negative_regulation 1490 1509	negatively regulate
+E20	Negative_regulation:T59 Cause:T31 Theme:T33
+E21	Negative_regulation:T59 Cause:T32 Theme:T33
+T60	Complex 1570 1602	beta-catenin degradation complex
+T61	Complex 302 320	functional complex

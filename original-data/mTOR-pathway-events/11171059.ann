@@ -1,0 +1,141 @@
+T1	Protein 19 45	elongation factor-2 kinase
+T2	Protein 106 116	calmodulin
+T3	Protein 140 166	Elongation factor-2 kinase
+T4	Protein 168 174	eEF-2K
+T5	Protein 258 277	elongation factor-2
+T6	Protein 279 284	eEF-2
+T7	Protein 326 332	eEF-2K
+T8	Protein 444 454	calmodulin
+T9	Protein 473 479	eEF-2K
+T10	Protein 643 649	eEF-2K
+T11	Tag 876 901	glutathione S-transferase
+T12	Protein 908 914	eEF-2K
+T13	Protein 1055 1061	eEF-2K
+T14	Protein 1448 1454	eEF-2K
+T15	Protein 1497 1500	Myc
+T16	Protein 1508 1514	eEF-2K
+T17	Protein 1667 1673	eEF-2K
+T18	Protein 1720 1726	eEF-2K
+T19	Protein 1732 1742	luciferase
+T20	Protein 1779 1789	luciferase
+T22	Protein 1864 1874	luciferase
+T25	Protein 2187 2193	eEF-2K
+T26	Phosphorylation 0 15	Phosphorylation
+E1	Phosphorylation:T26 Site:T27 Theme:T1
+T27	Entity 49 59	serine 499
+T28	Protein 63 92	cAMP-dependent protein kinase
+T29	Catalysis 0 15	Phosphorylation
+E2	Catalysis:T29 Cause:T28 Theme:E1
+T30	Ion 101 105	Ca2+
+*	Equiv T3 T4
+T31	Phosphorylation 222 237	phosphorylation
+E3	Phosphorylation:T31 Theme:T5
+T32	Negative_regulation 242 254	inactivation
+E4	Negative_regulation:T32 Cause:T4 Theme:T5
+*	Equiv T5 T6
+T33	Catalysis 222 237	phosphorylation
+E5	Catalysis:T33 Theme:E3 Cause:T4
+T34	Ion 437 443	Ca(2+)
+T35	Protein 367 396	cAMP-dependent protein kinase
+T36	Protein 398 401	PKA
+*	Equiv T35 T36
+T37	Phosphorylation 340 354	phosphorylated
+E6	Phosphorylation:T37 Theme:T7
+T38	Catalysis 340 354	phosphorylated
+E7	Catalysis:T38 Theme:E6 Cause:T35
+T39	Positive_regulation 417 424	induces
+E8	Positive_regulation:T39 Theme:T9 Cause:E6
+T40	Simple_molecule 566 570	cAMP
+T41	Simple_molecule 726 730	cAMP
+T42	Ion 620 626	Ca(2+)
+T43	Protein 456 459	CaM
+*	Equiv T43 T8
+T44	Protein 627 630	CaM
+E9	Regulation:T46 Theme:T9 Cause:T43
+E10	Regulation:T46 Cause:T34 Theme:T9
+M1	Negation E10
+M2	Negation E9
+T46	Regulation 461 472	independent
+T45	Tag 903 906	GST
+*	Equiv T11 T45
+T47	Regulation 631 642	independent
+E11	Regulation:T47 Cause:T44 Theme:T10
+M3	Negation E11
+E12	Regulation:T47 Cause:T42 Theme:T10
+M4	Negation E12
+T48	Gene_expression 862 872	expression
+E13	Gene_expression:T48 Theme:T12
+T49	Protein 1003 1006	PKA
+T50	Phosphorylation 985 999	phosphorylated
+E14	Phosphorylation:T50 Theme:T12
+T51	Catalysis 985 999	phosphorylated
+E15	Catalysis:T51 Cause:T49 Theme:E14
+T52	Protein 1032 1037	Arg-C
+T53	Tag 1051 1054	GST
+T54	Entity 1231 1238	Ser-365
+T55	Entity 1243 1250	Ser-499
+T56	Phosphorylation 1210 1225	phosphorylation
+E16	Phosphorylation:T56 Site:T55 Theme:T13
+E17	Phosphorylation:T56 Theme:T13 Site:T54
+T57	Catalysis 1210 1225	phosphorylation
+E18	Catalysis:T57 Theme:E16
+E19	Catalysis:T57 Theme:E17
+T58	Ion 1425 1431	Ca(2+)
+T59	Protein 1432 1435	CaM
+T60	Regulation 1436 1447	independent
+E20	Regulation:T60 Cause:T58 Theme:T14
+M5	Negation E20
+E21	Regulation:T60 Cause:T59 Theme:T14
+M6	Negation E21
+T61	Positive_regulation 1418 1424	induce
+E22	Positive_regulation:T61 Theme:T14 Cause:E24
+T62	Phosphorylation 1400 1414	phosphorylated
+E23	Phosphorylation:T62 Site:T55 Theme:T13
+E24	Phosphorylation:T62 Site:T54 Theme:T13
+E25	Positive_regulation:T61 Cause:E23 Theme:T14
+T63	Gene_expression 1483 1493	expression
+E26	Gene_expression:T63 Theme:T16
+T64	Simple_molecule 1560 1581	chlorophenylthio-cAMP
+T65	Simple_molecule 1583 1591	CPT-cAMP
+*	Equiv T64 T65
+T66	Entity 1606 1613	Ser-499
+T67	Phosphorylation 1614 1629	phosphorylation
+E27	Phosphorylation:T67 Site:T66 Theme:T16
+T68	Positive_regulation 1636 1643	induced
+E28	Positive_regulation:T68 Cause:E27 Theme:T17
+T69	Regulation 1655 1666	independent
+E29	Regulation:T69 Cause:T71 Theme:T17
+M7	Negation E29
+E30	Regulation:T69 Cause:T70 Theme:T17
+M8	Negation E30
+T70	Ion 1644 1650	Ca(2+)
+T71	Protein 1651 1654	CaM
+T72	Gene_expression 1693 1706	Co-expression
+E31	Gene_expression:T72 Theme:T19
+E32	Gene_expression:T72 Theme:T18
+T73	Gene_expression 1790 1800	expression
+E33	Gene_expression:T73 Theme:T20
+T21	Protein 1816 1828	eEF-2K S499D
+T23	Protein 1974 1986	eEF-2K S499D
+T24	Gene_expression 1802 1812	Expression
+E34	Gene_expression:T24 Theme:T21
+T74	Gene_expression 1875 1885	expression
+E35	Gene_expression:T74 Theme:T22
+T75	Negative_regulation 1851 1860	reduction
+E36	Negative_regulation:T75 Cause:E34 Theme:E35
+T76	Gene_expression 1924 1933	expressed
+E37	Gene_expression:T76 Theme:T21
+T77	Gene_expression 2017 2026	expressed
+E38	Gene_expression:T77 Theme:T23
+T78	Gene_expression 2080 2090	expression
+E39	Gene_expression:T78 Theme:T23
+T79	Negative_regulation 2057 2068	suppression
+E40	Negative_regulation:T79 Theme:E39
+T80	Positive_regulation 2042 2049	leading
+E41	Positive_regulation:T80 Theme:E40 Cause:T23
+T81	Phosphorylation 2139 2154	phosphorylation
+E42	Phosphorylation:T81 Site:T82 Theme:T25
+T82	Entity 2158 2165	Ser-499
+T83	Protein 2197 2200	PKA
+T84	Catalysis 2139 2154	phosphorylation
+E43	Catalysis:T84 Cause:T83 Theme:E42

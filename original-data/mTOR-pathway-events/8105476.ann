@@ -1,0 +1,32 @@
+T1	Protein 4 27	t-complex polypeptide 1
+T2	Protein 192 215	t-complex polypeptide 1
+T3	Protein 217 221	TCP1
+T4	Protein 444 457	alpha-tubulin
+T5	Protein 459 471	beta-tubulin
+T6	Protein 716 720	TCP1
+T7	Protein 770 774	TCP1
+T8	Protein 902 906	TCP1
+T10	Protein 56 63	tubulin
+T11	Protein 68 73	actin
+*	Equiv T2 T3
+T12	Protein 477 482	actin
+T13	Protein 633 640	tubulin
+T14	Protein 858 865	tubulin
+T15	Protein 870 875	actin
+T16	Complex 902 914	TCP1 complex
+T17	Complex 4 35	t-complex polypeptide 1 complex
+T18	Protein 255 262	tubulin
+T19	Protein 267 272	actin
+T20	Gene_expression 273 283	biogenesis
+E2	Gene_expression:T20 Theme:T18
+E3	Gene_expression:T20 Theme:T19
+T21	Gene_expression 432 443	synthesized
+E4	Gene_expression:T21 Theme:T12
+E5	Gene_expression:T21 Theme:T5
+E6	Gene_expression:T21 Theme:T4
+T9	Dissociation 582 590	released
+E1	Dissociation:T9 Participant:T4 Participant:T5 Participant:T12
+T22	Binding 645 665	forming heterodimers
+E7	Binding:T22 Theme:T13
+T23	Binding 850 857	folding
+E8	Binding:T23 Theme:T14 Theme:T15 Product:T16

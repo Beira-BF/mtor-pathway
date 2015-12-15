@@ -1,0 +1,29 @@
+T1	Protein 51 55	mTOR
+T2	Protein 72 101	mammalian target of rapamycin
+T3	Protein 103 107	mTOR
+T4	Protein 322 326	mTOR
+T5	Protein 494 498	mTOR
+T6	Protein 563 567	mTOR
+T7	Protein 651 655	mTOR
+T8	Protein 725 729	mTOR
+T9	Protein 863 867	mTOR
+*	Equiv T2 T3
+T10	Simple_molecule 272 289	phosphatidic acid
+T11	Simple_molecule 291 293	PA
+*	Equiv T10 T11
+T12	Simple_molecule 453 455	PA
+T13	Protein 402 417	phospholipase D
+T15	Positive_regulation 428 440	accumulation
+E2	Positive_regulation:T15 Theme:T12
+T16	Positive_regulation 418 427	dependent
+E3	Positive_regulation:T16 Cause:T13 Theme:E2
+T17	Simple_molecule 521 523	PA
+T18	Binding 533 543	interacted
+E4	Binding:T18 Theme:T17 Theme:T6
+T19	Drug 588 597	rapamycin
+T20	Binding 608 619	interaction
+E5	Binding:T20 Theme:T6 Theme:T17
+T14	Simple_molecule 719 721	PA
+T21	Regulation 704 715	involvement
+E1	Regulation:T21 Cause:T14 Theme:T8
+T22	Drug 988 997	rapamycin

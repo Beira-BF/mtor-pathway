@@ -1,0 +1,88 @@
+T1	Protein 52 58	PRAS40
+T2	Complex 72 111	mammalian target of rapamycin complex 1
+T5	Protein 237 241	mTOR
+T6	Protein 251 256	mLST8
+T7	Protein 262 268	PRAS40
+T8	Protein 309 315	PRAS40
+T9	Complex 364 370	mTORC1
+T10	Complex 396 402	mTORC1
+T11	Protein 418 425	insulin
+T12	Protein 427 433	PRAS40
+T13	Complex 477 483	mTORC1
+T14	Complex 684 690	mTORC1
+T15	Protein 734 740	PRAS40
+T16	Complex 819 825	mTORC1
+T17	Protein 854 860	PRAS40
+T18	Protein 1345 1351	PRAS40
+T19	Protein 1438 1444	PRAS40
+T20	Protein 1475 1479	mTOR
+T21	Protein 1516 1522	PRAS40
+T22	Protein 14 50	proline-rich Akt substrate of 40 kDa
+*	Equiv T22 T1
+T23	Complex 113 119	mTORC1
+*	Equiv T2 T23
+T24	Drug 152 161	rapamycin
+T3	Complex 172 218	mammalian target of rapamycin (mTOR) complex 1
+T4	Complex 220 226	mTORC1
+T25	Protein 203 207	mTOR
+T26	Protein 172 201	mammalian target of rapamycin
+*	Equiv T26 T25
+T27	Protein 243 249	raptor
+T28	Protein 270 306	proline-rich Akt substrate of 40 kDa
+*	Equiv T7 T28
+T29	Protein 1167 1173	14-3-3
+T30	Protein 1221 1224	Akt
+T31	Protein 1225 1241	protein kinase B
+*	Equiv T30 T31
+T32	Complex 1359 1365	mTORC1
+T33	Complex 1389 1395	mTORC1
+T34	Regulation 0 10	Regulation
+E1	Regulation:T34 Theme:T22
+T35	Binding 355 360	bound
+E2	Binding:T35 Theme:T9 Theme:T8
+T36	Negative_regulation 331 349	negative regulator
+E3	Negative_regulation:T36 Cause:T8 Theme:T9
+T37	Dissociation 379 390	dissociates
+E4	Dissociation:T37 Participant:T8 Complex:T10
+T38	Positive_regulation 406 414	response
+E5	Positive_regulation:T38 Cause:T11 Theme:E4
+T39	Phosphorylation 493 508	phosphorylation
+E6	Phosphorylation:T39 Site:T40 Theme:T12
+T40	Entity 515 522	Ser-183
+T41	Catalysis 493 508	phosphorylation
+E7	Catalysis:T41 Cause:T13 Theme:E6
+T42	Entity 675 682	Ser-183
+T43	Phosphorylation 696 710	phosphorylates
+E8	Phosphorylation:T43 Site:T45 Theme:T15
+T44	Entity 711 718	Ser-212
+T45	Entity 723 730	Ser-221
+E9	Phosphorylation:T43 Site:T44 Theme:T15
+E10	Phosphorylation:T43 Site:T42 Theme:T15
+T46	Catalysis 696 710	phosphorylates
+E11	Catalysis:T46 Cause:T14 Theme:E8
+E12	Catalysis:T46 Cause:T14 Theme:E9
+E13	Catalysis:T46 Cause:T14 Theme:E10
+T47	Phosphorylation 835 850	phosphorylation
+E14	Phosphorylation:T47 Theme:T17
+T48	Positive_regulation 826 834	mediated
+E15	Positive_regulation:T48 Cause:T16 Theme:E14
+T49	Phosphorylation 908 922	phosphorylated
+E16	Phosphorylation:T49 Site:T42 Theme:T15
+E17	Phosphorylation:T49 Site:T45 Theme:T15
+E18	Phosphorylation:T49 Site:T44 Theme:T15
+T50	Binding 1150 1161	interaction
+E19	Binding:T50 Theme:T29 Site:T51 Theme:T17
+T51	Entity 1123 1130	Ser-221
+T52	Entity 1208 1215	Thr-246
+T53	Phosphorylation 1242 1256	phosphorylated
+E20	Phosphorylation:T53 Site:T52 Theme:T17
+T54	Catalysis 1242 1256	phosphorylated
+E21	Catalysis:T54 Cause:T31 Theme:E20
+T55	Negative_regulation 1322 1332	inhibitory
+E22	Negative_regulation:T55 Cause:T18 Theme:T32
+T56	Positive_regulation 1403 1413	activation
+E23	Positive_regulation:T56 Theme:T33
+T57	Phosphorylation 1448 1462	phosphorylated
+E24	Phosphorylation:T57 Theme:T19
+T58	Catalysis 1448 1462	phosphorylated
+E25	Catalysis:T58 Cause:T20 Theme:E24

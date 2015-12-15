@@ -1,0 +1,78 @@
+T1	Protein 19 42	p90 ribosomal S6 kinase
+T2	Protein 591 595	RSK1
+T4	Protein 752 756	RSK1
+T5	Protein 872 876	RSK1
+T6	Protein 964 968	RSK1
+T8	Protein 1035 1039	RSK1
+T10	Protein 1286 1290	RSK1
+T11	Protein 1295 1299	RSK2
+T12	Protein 1370 1374	RSK3
+T13	Protein 1448 1452	RSK3
+T14	Protein 1485 1489	RSK1
+T15	Protein 1494 1498	RSK2
+T16	Protein 1568 1572	RSK3
+T17	Protein 44 47	RSK
+*	Equiv T1 T17
+T18	Phosphorylation 0 15	Phosphorylation
+E1	Phosphorylation:T18 Theme:T1
+T19	Protein 109 112	RSK
+T21	Binding 607 611	form
+E2	Binding:T21 Theme:T3 Theme:T2 Product:T20
+T3	Protein 600 606	ERK1/2
+T20	Complex 614 621	complex
+T22	Dissociation 665 676	dissociates
+E3	Dissociation:T22 Complex:T20 Participant:T3 Participant:T2
+T23	Complex 703 710	Complex
+T24	Dissociation 711 723	dissociation
+E4	Dissociation:T24 Complex:T23 Participant:T3 Participant:T2
+T25	Phosphorylation 733 748	phosphorylation
+E5	Phosphorylation:T25 Theme:T4 Site:T26
+T26	Entity 757 767	serine 749
+T27	Positive_regulation 724 732	requires
+E6	Positive_regulation:T27 Cause:E5 Theme:E4
+T28	Entity 900 910	serine 749
+T29	Phosphorylation 914 928	phosphorylated
+E7	Phosphorylation:T29 Site:T28 Theme:T5
+T30	Entity 936 960	N-terminal kinase domain
+T31	Catalysis 914 928	phosphorylated
+E8	Catalysis:T31 Cause:T6 Theme:E7 CSite:T30
+T7	Protein 995 1001	ERK1/2
+T37	Protein 1221 1227	ERK1/2
+T39	Phosphorylation 1040 1059	autophosphorylation
+E10	Phosphorylation:T39 Theme:T8 Site:T28
+T40	Catalysis 1040 1059	autophosphorylation
+E11	Catalysis:T40 Cause:T8 Theme:E10
+T32	Dissociation 1002 1014	dissociation
+E9	Dissociation:T32 Participant:T7 Complex:T20
+T33	Positive_regulation 1018 1026	mediated
+E12	Positive_regulation:T33 Cause:E10 Theme:E9
+T34	Negative_regulation 1123 1135	inactivating
+E13	Negative_regulation:T34 Theme:T35 Site:T9
+T35	Protein 1153 1157	RSK1
+T9	Entity 1158 1172	kinase domains
+T36	Regulation 1195 1204	regulated
+E14	Regulation:T36 Theme:E15
+T38	Dissociation 1205 1217	dissociation
+E15	Dissociation:T38 Complex:T20 Participant:T37
+T41	Negative_regulation 1173 1182	disrupted
+E16	Negative_regulation:T41 Cause:E13 Theme:E15
+T43	Protein 502 505	RSK
+T44	Protein 401 404	RSK
+T45	Positive_regulation 405 415	activation
+E17	Positive_regulation:T45 Theme:T44 Cause:T46
+T46	Protein 419 422	ERK
+T47	Binding 436 447	interaction
+E18	Binding:T47 Site:T48 Theme:T43 Theme:T46
+T48	Entity 488 498	C terminus
+T49	Binding 534 545	interaction
+E19	Binding:T49 Theme:T43 Theme:T46
+T50	Regulation 515 525	regulation
+E20	Regulation:T50 Theme:E19
+T51	Protein 1406 1412	ERK1/2
+T52	Protein 1324 1330	ERK1/2
+T42	Dissociation 1308 1318	dissociate
+E21	Dissociation:T42 Complex:T52 Participant:T11 Participant:T10
+T53	Binding 1383 1393	associated
+E22	Binding:T53 Theme:T12 Theme:T51
+T54	Positive_regulation 1573 1583	activation
+E23	Positive_regulation:T54 Theme:T16

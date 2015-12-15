@@ -1,0 +1,75 @@
+T1	Protein 12 16	TSC2
+T2	Protein 98 105	tuberin
+T3	Protein 122 126	TSC2
+T4	Protein 143 172	mammalian target of rapamycin
+T5	Protein 174 178	mTOR
+T6	Protein 265 272	tuberin
+T7	Protein 308 312	mTOR
+T8	Protein 398 406	hamartin
+T9	Protein 450 458	hamartin
+T10	Protein 495 502	tuberin
+T11	Protein 526 533	tuberin
+T13	Protein 597 601	Rheb
+T14	Protein 644 651	tuberin
+T15	Protein 720 724	Rheb
+T16	Protein 756 763	tuberin
+T17	Protein 836 840	Rheb
+T18	Protein 856 863	tuberin
+T19	Protein 924 931	tuberin
+T20	Protein 1047 1055	hamartin
+T21	Protein 33 36	AKT
+*	Equiv T4 T5
+T23	Protein 673 676	AKT
+T24	Protein 901 907	14-3-3
+T25	Protein 941 947	14-3-3
+T26	Protein 963 966	AKT
+T27	Protein 1080 1084	Rheb
+T28	Negative_regulation 20 29	inhibited
+E1	Negative_regulation:T28 Theme:T1 Cause:E2
+T29	Phosphorylation 46 61	phosphorylation
+E2	Phosphorylation:T29 Theme:T1
+T30	Positive_regulation 37 45	mediated
+E3	Positive_regulation:T30 Cause:T21 Theme:E2
+T31	Positive_regulation 133 142	increases
+E4	Positive_regulation:T31 Cause:T3 Theme:T4
+*	Equiv T2 T3
+T32	Gene_expression 254 264	expressing
+E5	Gene_expression:T32 Theme:T6
+T33	Negative_regulation 294 304	repression
+E6	Negative_regulation:T33 Theme:T7
+T34	Localization 459 470	colocalizes
+E7	Localization:T34 Theme:T9 atLoc:T36
+T35	Phosphorylation 476 494	hypophosphorylated
+E8	Phosphorylation:T35 Theme:T10
+M1	Negation E8
+E9	Localization:T34 Theme:T10 atLoc:T36
+T36	Entity 510 518	membrane
+T37	Negative_regulation 589 596	repress
+E10	Negative_regulation:T37 Cause:T11 Theme:T13
+T12	Phosphorylation 655 669	phosphorylated
+E11	Phosphorylation:T12 Theme:T14
+T22	Catalysis 655 669	phosphorylated
+E12	Catalysis:T22 Cause:T23 Theme:E11
+T38	Localization 681 693	translocates
+E13	Localization:T38 toLoc:T39 Theme:T14
+T39	Entity 701 708	cytosol
+T40	Negative_regulation 725 735	repression
+E14	Negative_regulation:T40 Theme:T15
+T41	Phosphorylation 737 752	Phosphorylation
+E15	Phosphorylation:T41 Site:T42 Theme:T16
+E16	Phosphorylation:T41 Site:T43 Theme:T16
+T42	Entity 767 778	serines 939
+T43	Entity 783 786	981
+T44	Localization 845 855	partitions
+E17	Localization:T44 atLoc:T45 Theme:T18
+T45	Entity 871 878	cytosol
+T46	Binding 892 897	bound
+E18	Binding:T46 Theme:T24 Theme:T18
+T47	Binding 932 937	bound
+E19	Binding:T47 Theme:T19 Theme:T25
+T48	Phosphorylation 967 982	phosphorylation
+E20	Phosphorylation:T48 Theme:T19
+T49	Catalysis 967 982	phosphorylation
+E21	Catalysis:T49 Cause:T26 Theme:E20
+T50	Positive_regulation 951 959	response
+E22	Positive_regulation:T50 Cause:E20 Theme:E19

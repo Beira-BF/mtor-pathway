@@ -1,0 +1,102 @@
+T1	Protein 0 3	p27
+T2	Protein 23 26	Src
+T3	Protein 51 59	cyclin E
+T4	Protein 60 64	Cdk2
+T5	Protein 88 95	p27Kip1
+T6	Protein 190 193	Src
+T7	Protein 204 207	p27
+T8	Protein 245 248	p27
+T9	Protein 314 317	p27
+T10	Protein 333 336	Src
+T11	Protein 364 367	p27
+T12	Protein 400 403	p27
+T13	Protein 424 432	cyclin E
+T14	Protein 433 437	Cdk2
+T15	Protein 459 462	Src
+T16	Protein 484 487	p27
+T17	Protein 488 496	cyclin E
+T18	Protein 497 501	Cdk2
+T19	Protein 555 558	Src
+T20	Protein 571 575	Cdk2
+T21	Protein 597 600	p27
+T22	Protein 641 649	cyclin E
+T23	Protein 650 654	Cdk2
+T24	Protein 678 682	Cdk2
+T25	Protein 693 696	p27
+T26	Protein 736 739	Src
+T27	Protein 783 786	p27
+T28	Protein 821 824	Src
+T29	Protein 856 859	p27
+T30	Protein 1002 1005	p27
+T31	Protein 1087 1090	Src
+T32	Protein 281 284	Src
+T33	Protein 381 384	Src
+T34	Protein 669 677	cyclin E
+T35	Protein 974 977	Src
+T36	Phosphorylation 4 19	phosphorylation
+E1	Phosphorylation:T36 Theme:T1
+T37	Catalysis 4 19	phosphorylation
+E2	Catalysis:T37 Cause:T2 Theme:E1
+T38	Complex 51 64	cyclin E-Cdk2
+T39	Complex 424 437	cyclin E-Cdk2
+T40	Complex 484 501	p27-cyclin E-Cdk2
+T41	Complex 641 654	cyclin E-Cdk2
+T42	Complex 669 682	cyclin E-Cdk2
+T43	Negative_regulation 37 47	inhibition
+E3	Negative_regulation:T43 Theme:T38
+T44	Regulation 27 36	regulates
+E4	Regulation:T44 Cause:E1 Theme:E3
+T45	Regulation 194 203	regulates
+E5	Regulation:T45 Cause:T6 Theme:T7
+T46	Phosphorylation 226 241	phosphorylation
+E6	Phosphorylation:T46 Site:T47 Theme:T8
+E7	Phosphorylation:T46 Site:T48 Theme:T8
+T47	Entity 252 263	tyrosine 74
+T48	Entity 268 279	tyrosine 88
+T49	Gene_expression 337 351	overexpression
+E8	Gene_expression:T49 Theme:T10
+T50	Protein_catabolism 368 379	proteolysis
+E9	Protein_catabolism:T50 Theme:T11
+T51	Positive_regulation 352 363	accelerates
+E10	Positive_regulation:T51 Theme:E9 Cause:E8
+T52	Catalysis 226 241	phosphorylation
+E11	Catalysis:T52 Cause:T6 Theme:E6
+E12	Catalysis:T52 Cause:T6 Theme:E7
+T53	Phosphorylation 385 399	phosphorylated
+E13	Phosphorylation:T53 Theme:T12
+T54	Catalysis 385 399	phosphorylated
+E14	Catalysis:T54 Cause:T33 Theme:E13
+T55	Negative_regulation 416 423	inhibit
+E15	Negative_regulation:T55 Cause:T12 Theme:T39
+T56	Negative_regulation 476 483	reduces
+E16	Negative_regulation:T56 Cause:T15 Theme:T40
+T57	Phosphorylation 536 551	phosphorylation
+E17	Phosphorylation:T57 Theme:T21
+T58	Negative_regulation 559 566	impairs
+E18	Negative_regulation:T58 Theme:E19 Cause:E17
+T59	Negative_regulation 576 586	inhibitory
+E19	Negative_regulation:T59 Theme:T20 Cause:T21
+T60	Catalysis 536 551	phosphorylation
+E20	Catalysis:T60 Cause:T19 Theme:E17
+T61	Negative_regulation 605 612	reduces
+E21	Negative_regulation:T61 Cause:E17 Theme:E22
+T62	Binding 630 637	binding
+E22	Binding:T62 Theme:T21 Theme:T41
+T63	Protein_catabolism 697 708	proteolysis
+E23	Protein_catabolism:T63 Theme:T25
+T64	Positive_regulation 683 692	dependent
+E24	Positive_regulation:T64 Theme:E23 Cause:T42
+T65	Positive_regulation 658 668	facilitate
+E25	Positive_regulation:T65 Theme:E23 Cause:E17
+T66	Negative_regulation 775 782	reduced
+E26	Negative_regulation:T66 Theme:T27
+T67	Positive_regulation 825 835	activation
+E27	Positive_regulation:T67 Theme:T28
+T68	Negative_regulation 840 847	reduced
+E28	Negative_regulation:T68 Theme:T29
+T69	Drug 928 937	tamoxifen
+T70	Negative_regulation 978 988	inhibition
+E29	Negative_regulation:T70 Theme:T35
+T71	Positive_regulation 993 1001	increase
+E30	Positive_regulation:T71 Cause:E29 Theme:T30
+T72	Drug 1025 1034	tamoxifen

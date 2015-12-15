@@ -1,0 +1,76 @@
+T1	Protein 33 39	eIF-4E
+T2	Protein 300 306	eIF-4E
+T3	Protein 389 392	p25
+T4	Protein 476 482	eIF-4E
+T6	Protein 710 716	eIF-4E
+T7	Protein 810 816	eIF-4E
+T9	Protein 1160 1164	p220
+T10	Protein 1169 1172	p25
+T11	Protein 1318 1324	eIF-4E
+T12	Protein 1441 1444	p25
+T13	Protein 1533 1536	p25
+T14	Dissociation 1370 1382	dissociation
+E1	Dissociation:T14 Complex:T25
+T16	Complex 74 80	eIF-4F
+T17	Protein 130 146	protein kinase C
+T18	Protein 168 184	protein kinase C
+T20	Complex 268 274	eIF-4F
+T15	Complex 446 452	eIF-4F
+T19	Complex 649 655	eIF-4F
+T21	Complex 799 805	eIF-4F
+T24	Protein 1119 1125	eIF-4E
+T25	Complex 1146 1152	eIF-4F
+T26	Complex 1718 1724	eIF-4F
+T27	Binding 0 11	Association
+E2	Binding:T27 Theme:T1 Theme:T16
+T28	Phosphorylation 149 164	Phosphorylation
+E3	Phosphorylation:T28 Theme:T20
+M1	Speculation E3
+E4	Phosphorylation:T28 Theme:T2
+M2	Speculation E4
+T29	Catalysis 149 164	Phosphorylation
+E5	Catalysis:T29 Cause:T18 Theme:E3
+E6	Catalysis:T29 Cause:T18 Theme:E4
+T30	Phosphorylation 340 355	phosphorylation
+E7	Phosphorylation:T30 Theme:T3
+T31	Phosphorylation 606 620	phosphorylated
+E8	Phosphorylation:T31 Theme:T5
+T5	Protein 657 667	eIF-4F p25
+T22	Phosphorylation 689 697	modified
+E9	Phosphorylation:T22 Theme:T6
+T8	Protein 906 916	eIF-4F p25
+T23	Dephosphorylation 885 902	Dephosphorylation
+E10	Dephosphorylation:T23 Theme:T8
+T32	Protein 949 965	protein kinase C
+T33	Phosphorylation 929 943	phosphorylated
+E11	Phosphorylation:T33 Theme:T8
+T34	Catalysis 929 943	phosphorylated
+E12	Catalysis:T34 Cause:T32 Theme:E11
+T35	Dephosphorylation 1043 1060	dephosphorylation
+E13	Dephosphorylation:T35 Theme:T24
+T36	Phosphorylation 1104 1118	phosphorylated
+E14	Phosphorylation:T36 Theme:T24
+T37	Phosphorylation 1127 1142	Phosphorylation
+E15	Phosphorylation:T37 Theme:T10
+E16	Phosphorylation:T37 Theme:T9
+E17	Phosphorylation:T37 Theme:T25
+T38	Phosphorylation 1299 1317	non-phosphorylated
+E18	Phosphorylation:T38 Theme:T11
+M3	Negation E18
+T39	Phosphorylation 1332 1346	phosphorylated
+E19	Phosphorylation:T39 Theme:T25
+T40	Binding 1426 1437	interaction
+E20	Binding:T40 Theme:T12
+T41	Regulation 1488 1495	affects
+E21	Regulation:T41 Cause:E20 Theme:E23
+T42	Phosphorylation 1496 1511	phosphorylation
+E22	Phosphorylation:T42 Theme:T13
+T43	Dephosphorylation 1512 1529	dephosphorylation
+E23	Dephosphorylation:T43 Theme:T13
+E24	Regulation:T41 Cause:E20 Theme:E22
+T44	Phosphorylation 1556 1571	phosphorylation
+E25	Phosphorylation:T44 Theme:T13
+T45	Dephosphorylation 1572 1589	dephosphorylation
+E26	Dephosphorylation:T45 Theme:T13
+T46	Phosphorylation 1672 1687	phosphorylation
+E27	Phosphorylation:T46 Theme:T13

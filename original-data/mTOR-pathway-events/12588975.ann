@@ -1,0 +1,74 @@
+T1	Protein 178 183	eIF4E
+T2	Protein 224 229	eIF4F
+T3	Protein 292 297	eIF4F
+T4	Protein 343 349	4E-BP1
+T5	Protein 372 377	eIF4E
+T6	Protein 433 439	4E-BP1
+T7	Protein 512 518	4E-BP1
+T8	Protein 522 527	eIF4E
+T9	Protein 655 661	4E-BP1
+T10	Protein 955 961	4E-BP1
+T11	Protein 965 970	eIF4E
+T12	Protein 1244 1250	4E-BP1
+T13	Protein 1289 1295	4E-BP1
+T14	Protein 1314 1319	eIF4E
+T15	Protein 1354 1360	4E-BP2
+T16	Protein 1448 1454	4E-BP3
+T17	Protein 1591 1596	eIF4E
+T18	Protein 1612 1619	insulin
+T19	Protein 18 56	initiation factor 4E-binding protein 1
+T20	Phosphorylation 127 142	phosphorylation
+E1	Phosphorylation:T20 Theme:T19
+T21	Protein 145 176	Eukaryotic initiation factor 4E
+*	Equiv T21 T1
+T22	Binding 185 190	binds
+E2	Binding:T22 Theme:T1
+T23	Complex 224 239	eIF4F complexes
+T24	Binding 218 223	forms
+E3	Binding:T24 Theme:T21 Product:T23
+T25	Negative_regulation 301 308	blocked
+E4	Negative_regulation:T25 Theme:T3 Cause:T4
+T26	Entity 411 422	118-residue
+T27	Binding 357 366	interacts
+E5	Binding:T27 Theme:T4 Site:T26 Theme:T5
+T28	Binding 501 508	Binding
+E6	Binding:T28 Theme:T7 Theme:T8
+T29	Regulation 531 540	regulated
+E7	Regulation:T29 Cause:E8 Theme:E6
+T30	Phosphorylation 567 582	phosphorylation
+E8	Phosphorylation:T30 Theme:T7
+T31	Regulation 685 695	regulating
+E9	Regulation:T31 Cause:T9 Theme:E10 CSite:T33
+T32	Phosphorylation 700 715	phosphorylation
+E10	Phosphorylation:T32 Theme:T9
+T33	Entity 641 651	C terminus
+T34	Phosphorylation 757 772	phosphorylation
+E11	Phosphorylation:T34 Theme:T9 Site:T35
+T35	Entity 785 795	C terminus
+T36	Entity 888 893	Ser65
+T37	Phosphorylation 869 884	phosphorylation
+E12	Phosphorylation:T37 Site:T36 Theme:T9
+T38	Entity 797 801	S101
+*	Equiv T38 T35
+T39	Entity 904 919	C-terminal site
+T40	Entity 921 925	S112
+*	Equiv T39 T40
+T41	Binding 944 951	binding
+E13	Binding:T41 Theme:T11 Site:T40 Theme:T10
+T42	Phosphorylation 991 1006	phosphorylation
+E14	Phosphorylation:T42 Theme:T11
+T43	Regulation 979 990	influencing
+E15	Regulation:T43 Theme:E14
+M1	Negation E15
+T44	Regulation 1061 1071	influences
+E16	Regulation:T44 Theme:E17 Site:T48
+T45	Phosphorylation 1072 1087	phosphorylation
+E17	Phosphorylation:T45 Site:T47 Theme:T11
+T46	Drug 1120 1129	rapamycin
+T47	Entity 1120 1147	rapamycin-insensitive sites
+T48	Entity 1034 1060	conserved C-terminal motif
+T49	Phosphorylation 1270 1285	phosphorylation
+E18	Phosphorylation:T49 Theme:T13
+T50	Binding 1303 1310	binding
+E19	Binding:T50 Theme:T12 Theme:T14
+T51	Protein 1365 1367	-3

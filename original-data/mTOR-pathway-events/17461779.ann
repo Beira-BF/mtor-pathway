@@ -1,0 +1,82 @@
+T2	Protein 85 89	mTOR
+T3	Protein 91 120	mammalian target of rapamycin
+T4	Protein 196 200	mTOR
+T5	Protein 248 252	mTOR
+T7	Complex 314 320	mTORC1
+T8	Protein 349 353	mTOR
+T9	Protein 396 400	mTOR
+T10	Complex 529 535	mTORC2
+T11	Protein 551 554	PKB
+T12	Protein 556 572	protein kinase B
+T13	Protein 701 709	Protor-1
+T14	Protein 747 755	Protor-2
+T15	Protein 850 858	Protor-1
+T16	Protein 862 870	Protor-2
+T17	Protein 1059 1063	mTOR
+T18	Protein 1068 1073	mLST8
+T19	Protein 1092 1100	Protor-1
+T20	Protein 1102 1106	Sin1
+T21	Protein 1184 1192	Protor-1
+T22	Protein 1203 1211	Protor-1
+T23	Protein 1286 1294	Protor-1
+T24	Dissociation 1048 1058	dissociate
+E1	Dissociation:T24 Participant:T17 Complex:T62
+T1	Complex 64 78	mTOR complex-2
+T25	Protein 36 42	Rictor
+T26	Protein 18 24	Protor
+*	Equiv T2 T3
+T27	Complex 223 232	complex 1
+T28	Protein 253 259	Raptor
+T6	Protein 294 298	mTOR
+T29	Protein 300 305	mLST8
+T30	Protein 354 360	Rictor
+T31	Protein 402 407	mLST8
+T32	Protein 408 412	Sin1
+T33	Complex 421 427	mTORC2
+T34	Complex 430 436	mTORC1
+T35	Protein 470 473	S6K
+T36	Protein 474 484	(S6 kinase
+*	Equiv T35 T36
+*	Equiv T11 T12
+T37	Protein 733 741	Rictor-1
+T38	Protein 770 776	Rictor
+T39	Complex 799 805	mTORC2
+T40	Complex 918 924	mTORC2
+T41	Protein 943 949	Raptor
+T42	Complex 975 981	mTORC1
+T43	Protein 1111 1117	Rictor
+T44	Protein 1149 1155	Rictor
+T45	Complex 1254 1260	mTORC2
+T46	Protein 1306 1312	Rictor
+T47	Complex 1332 1338	mTORC2
+T48	Binding 43 50	binding
+E2	Binding:T48 Theme:T25 Theme:T26 Product:T1
+*	Equiv T7 T27
+T49	Complex 327 336	complex 2
+*	Equiv T49 T33
+T50	Phosphorylation 437 451	phosphorylates
+E3	Phosphorylation:T50 Theme:T35 Site:T52
+T51	Catalysis 437 451	phosphorylates
+E4	Catalysis:T51 Cause:T34 Theme:E3
+T52	Entity 512 518	Thr389
+T53	Phosphorylation 536 550	phosphorylates
+E5	Phosphorylation:T53 Theme:T11 Site:T55
+T54	Catalysis 536 550	phosphorylates
+E6	Catalysis:T54 Cause:T10 Theme:E5
+T55	Entity 599 606	(Ser473
+T56	Binding 756 764	interact
+E7	Binding:T56 Theme:T13 Theme:T38 Product:T39
+E8	Binding:T56 Theme:T14 Theme:T38 Product:T39
+E9	Dissociation:T24 Participant:T18 Complex:T62
+T57	Gene_expression 1170 1180	expression
+E10	Gene_expression:T57 Theme:T21
+T58	Regulation 1156 1165	regulates
+E11	Regulation:T58 Cause:T44 Theme:E10
+T59	Regulation 1219 1227	required
+E12	Regulation:T59 Cause:T22 Theme:E13
+M1	Negation E12
+T60	Binding 1236 1244	assembly
+E13	Binding:T60 Product:T45
+T61	Binding 1313 1320	binding
+E14	Binding:T61 Theme:T46 Theme:T23 Product:T47
+T62	Complex 1081 1088	complex

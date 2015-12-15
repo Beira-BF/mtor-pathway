@@ -1,0 +1,91 @@
+T1	Protein 18 25	S6K1 II
+T2	Protein 243 272	mammalian target of rapamycin
+T3	Protein 397 401	S6K1
+T4	Protein 406 408	-2
+T5	Protein 463 470	S6K1 II
+T7	Protein 659 662	CK2
+T9	Protein 743 750	S6K1 II
+T11	Protein 958 965	S6K1 II
+T12	Protein 970 973	CK2
+T14	Protein 1121 1124	CK2
+T15	Protein 1324 1327	CK2
+T16	Protein 1438 1445	S6K1 II
+T17	Protein 1601 1605	S17E
+T18	Protein 1731 1735	S17E
+T19	Protein 1855 1859	S6K1
+T20	Protein 1877 1881	CRM1
+T21	Protein 1968 1975	S6K1 II
+T22	Protein 1980 1983	CK2
+T24	Protein 2054 2057	CK2
+T8	Protein 710 717	S6K1 II
+T6	Protein 475 481	S6K1 I
+T25	Protein 57 60	CK2
+T26	Protein 209 238	phosphatidylinositol 3-kinase
+T27	Protein 654 657	CK2
+*	Equiv T27 T7
+T10	Protein 755 762	CK2beta
+T13	Protein 1065 1072	S6K1 II
+T28	Protein 1092 1095	CK2
+T29	Protein 1177 1184	S6K1 II
+T30	Simple_molecule 1570 1582	leptomycin B
+T31	Protein 1662 1669	S6K1 II
+T32	Protein 1447 1451	S17E
+T23	Protein 2028 2035	S6K1 II
+T33	Entity 0 7	Nuclear
+T34	Localization 8 14	export
+E1	Localization:T34 toLoc:T33 Theme:T1
+T35	Regulation 29 38	regulated
+E2	Regulation:T35 Cause:E3 Theme:E1
+T36	Phosphorylation 61 76	phosphorylation
+E3	Phosphorylation:T36 Site:T37 Theme:T25
+T37	Entity 80 86	Ser-17
+T38	Localization 517 526	shuttling
+E4	Localization:T38 fromLoc:T39 toLoc:T40 Theme:T6
+E5	Localization:T38 fromLoc:T39 toLoc:T40 Theme:T5
+T39	Entity 497 504	Nuclear
+T40	Entity 505 516	cytoplasmic
+E6	Localization:T38 toLoc:T39 fromLoc:T40 Theme:T6
+E7	Localization:T38 toLoc:T39 fromLoc:T40 Theme:T5
+T41	Positive_regulation 544 551	induced
+E8	Positive_regulation:T41 Theme:E4
+E9	Positive_regulation:T41 Theme:E6
+E10	Positive_regulation:T41 Theme:E5
+E11	Positive_regulation:T41 Theme:E7
+T42	Binding 675 682	binding
+E12	Binding:T42 Theme:T7 Theme:T8
+T43	Regulation 687 697	regulatory
+E13	Regulation:T43 Cause:T7 Theme:T8
+T44	Binding 723 734	interaction
+E14	Binding:T44 Theme:T9 Theme:T10
+T45	Binding 938 949	interaction
+E15	Binding:T45 Theme:T11 Theme:T12
+T46	Phosphorylation 1125 1140	phosphorylation
+E16	Phosphorylation:T46 Theme:T29 Site:T47
+T47	Entity 1167 1173	Ser-17
+T48	Catalysis 1125 1140	phosphorylation
+E17	Catalysis:T48 Cause:T14 Theme:E16
+T49	Entity 1260 1266	Ser-17
+T50	Phosphorylation 1299 1314	phosphorylation
+E18	Phosphorylation:T50 Site:T49 Theme:T15
+T51	Phosphorylation 1402 1417	phosphorylation
+E19	Phosphorylation:T51 Theme:T16
+T52	Entity 1465 1476	cytoplasmic
+T53	Localization 1477 1489	localization
+E20	Localization:T53 atLoc:T52 Theme:T32
+T54	Entity 1709 1716	nuclear
+T55	Localization 1717 1723	import
+E21	Localization:T55 toLoc:T54 Theme:T18
+T56	Regulation 1863 1871	mediated
+E22	Regulation:T56 Cause:T20 Theme:E23
+T57	Entity 1837 1844	nuclear
+T58	Localization 1845 1851	export
+E23	Localization:T58 toLoc:T57 Theme:T19
+T59	Regulation 2014 2024	regulation
+E24	Regulation:T59 Cause:E26 Theme:E25
+T60	Entity 2036 2043	nuclear
+T61	Localization 2044 2050	export
+E25	Localization:T61 toLoc:T60 Theme:T23
+T62	Phosphorylation 2067 2082	phosphorylation
+E26	Phosphorylation:T62 Theme:T24
+T63	Positive_regulation 2058 2066	mediated
+E27	Positive_regulation:T63 Cause:T24 Theme:E26

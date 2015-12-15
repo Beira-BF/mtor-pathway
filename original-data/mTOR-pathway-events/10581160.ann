@@ -1,0 +1,90 @@
+T1	Protein 2 10	GSK3beta
+T2	Protein 35 39	axin
+T3	Protein 67 79	beta-catenin
+T4	Protein 154 162	GSK3beta
+T5	Protein 290 302	beta-catenin
+T6	Protein 423 427	Axin
+T7	Protein 462 474	beta-catenin
+T8	Protein 479 487	GSK3beta
+T9	Protein 565 577	beta-catenin
+T10	Protein 599 603	Axin
+T11	Protein 751 759	GSK3beta
+T12	Protein 874 878	Axin
+T13	Protein 920 928	GSK3beta
+T14	Protein 1006 1018	beta-catenin
+T15	Protein 1055 1059	Axin
+T16	Protein 1186 1190	Axin
+T17	Protein 1195 1207	beta-catenin
+T18	Protein 1251 1259	GSK3beta
+T20	Protein 1340 1344	Axin
+T21	Protein 1374 1386	beta-catenin
+T23	Phosphorylation 11 26	phosphorylation
+E1	Phosphorylation:T23 Theme:T2
+T24	Catalysis 11 26	phosphorylation
+E2	Catalysis:T24 Theme:E1 Cause:T1
+T25	Binding 50 61	interaction
+E3	Binding:T25 Theme:T3 Theme:T2
+T22	Protein 84 87	Tcf
+T26	Protein 133 136	Wnt
+T27	Receptor 144 152	receptor
+T28	Binding 120 127	binding
+E4	Binding:T28 Theme:T27 Theme:T26
+T29	Binding 456 461	binds
+E5	Binding:T29 Theme:T6 Theme:T7
+E6	Binding:T29 Theme:T6 Theme:T8
+T30	Positive_regulation 533 541	promotes
+E7	Positive_regulation:T30 Theme:E8 Cause:T6
+T31	Phosphorylation 546 561	phosphorylation
+E8	Phosphorylation:T31 Theme:T9
+T32	Entity 625 628	Ser
+T33	Entity 633 636	Thr
+T34	Phosphorylation 607 621	phosphorylated
+E9	Phosphorylation:T34 Site:T33 Theme:T10
+E10	Phosphorylation:T34 Site:T32 Theme:T10
+T35	Entity 697 716	amino acids 600-672
+T36	Phosphorylation 733 747	phosphorylated
+E11	Phosphorylation:T36 Site:T35 Theme:T10
+T37	Catalysis 733 747	phosphorylated
+E12	Catalysis:T37 Cause:T11 Theme:E11
+T38	Entity 888 892	T609
+T39	Entity 897 901	S614
+T40	Phosphorylation 832 847	phosphorylation
+E13	Phosphorylation:T40 Site:T38 Theme:T12
+E14	Phosphorylation:T40 Site:T39 Theme:T12
+T41	Catalysis 929 936	targets
+E15	Catalysis:T41 Cause:T13 Theme:E14
+E16	Catalysis:T41 Cause:T13 Theme:E13
+T43	Protein 1072 1075	Wnt
+T44	Protein 357 360	Lef
+T45	Protein 361 364	Tcf
+T46	Localization 310 322	translocates
+E18	Localization:T46 toLoc:T47 Theme:T5
+T47	Entity 330 337	nucleus
+T48	Negative_regulation 166 175	inhibited
+E19	Negative_regulation:T48 Theme:T4
+T49	Dephosphorylation 251 268	dephosphorylation
+E20	Dephosphorylation:T49 Theme:T5
+T50	Binding 342 351	interacts
+E21	Binding:T50 Theme:T45 Theme:T5
+E22	Binding:T50 Theme:T44 Theme:T5
+T51	Protein 1099 1102	Lef
+T52	Protein 1103 1106	Tcf
+T42	Negative_regulation 1033 1039	reduce
+E17	Negative_regulation:T42 Theme:T15
+T53	Negative_regulation 1159 1165	reduce
+E23	Negative_regulation:T53 Theme:E24
+T54	Binding 1170 1177	binding
+E24	Binding:T54 Theme:T16 Theme:T17
+T55	Negative_regulation 1237 1247	inhibition
+E25	Negative_regulation:T55 Theme:T18
+T56	Protein 1274 1277	Wnt
+T57	Dephosphorylation 1301 1318	dephosphorylation
+E26	Dephosphorylation:T57 Theme:T20 Site:T19
+T19	Entity 1322 1336	GSK3beta sites
+T58	Protein 1322 1330	GSK3beta
+T59	Entity 1006 1031	beta-catenin binding site
+T60	Complex 1396 1419	phosphorylation complex
+T61	Dissociation 1363 1370	release
+E27	Dissociation:T61 Participant:T21 Complex:T60
+T62	Positive_regulation 1346 1355	resulting
+E28	Positive_regulation:T62 Theme:E27 Cause:E26

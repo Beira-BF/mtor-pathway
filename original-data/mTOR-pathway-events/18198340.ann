@@ -1,0 +1,78 @@
+T1	Protein 18 22	TSC1
+T2	Protein 25 29	mTOR
+T3	Protein 70 75	REDD1
+T5	Protein 330 334	TSC1
+T6	Protein 335 336	2
+T7	Protein 345 350	REDD1
+T8	Protein 401 406	TORC1
+T9	Protein 587 592	REDD1
+T11	Protein 649 653	TSC2
+T12	Protein 741 746	REDD1
+T13	Protein 795 799	TSC2
+T14	Complex 825 831	mTORC1
+T15	Protein 856 861	REDD1
+T16	Protein 922 926	TSC2
+T17	Complex 951 957	mTORC1
+T18	Protein 976 980	TSC2
+T19	Protein 1076 1081	REDD1
+T20	Protein 1201 1206	REDD1
+T21	Protein 1275 1280	REDD1
+T22	Protein 1402 1406	TSC1
+T23	Protein 1407 1408	2
+T24	Protein 1451 1456	REDD1
+T25	Protein 23 24	2
+T26	Complex 18 24	TSC1/2
+T27	Protein 85 91	14-3-3
+T4	Complex 201 243	target of rapamycin (TOR) kinase complex 1
+T28	Complex 245 250	TORC1
+*	Equiv T4 T28
+T10	Complex 602 617	mammalian TORC1
+T29	Complex 619 625	mTORC1
+*	Equiv T10 T29
+T30	Protein 713 719	14-3-3
+T31	Protein 800 806	14-3-3
+T32	Protein 888 894	14-3-3
+T33	Protein 927 933	14-3-3
+T34	Protein 1006 1012	14-3-3
+T35	Complex 1050 1056	mTORC1
+T36	Complex 1170 1176	mTORC1
+T37	Complex 1402 1408	TSC1/2
+T38	Regulation 8 17	regulates
+E1	Regulation:T38 Theme:T2
+E2	Regulation:T38 Theme:T26
+T39	Positive_regulation 76 84	mediated
+E3	Positive_regulation:T39 Theme:E4 Cause:T3
+T40	Localization 92 101	shuttling
+E4	Localization:T40 Theme:T27
+T41	Negative_regulation 187 197	inhibition
+E5	Negative_regulation:T41 Theme:T4
+T42	Regulation 387 397	regulation
+E6	Regulation:T42 Theme:T8
+T43	Negative_regulation 593 601	suppress
+E7	Negative_regulation:T43 Cause:T9 Theme:T10
+T44	Binding 685 696	association
+E8	Binding:T44 Theme:T11 Theme:T30
+T45	Dissociation 639 648	releasing
+E9	Dissociation:T45 Participant:T11
+T46	Dissociation 768 780	dissociation
+E10	Dissociation:T46 Complex:T47 Participant:T13 Participant:T31
+T47	Complex 795 806	TSC2/14-3-3
+T48	Negative_regulation 811 821	inhibition
+E11	Negative_regulation:T48 Cause:T12 Theme:T14
+T49	Positive_regulation 750 758	required
+E12	Positive_regulation:T49 Cause:T12 Theme:E10
+T50	Binding 883 887	bind
+E13	Binding:T50 Theme:T15 Theme:T32
+T51	Complex 922 933	TSC2/14-3-3
+T52	Dissociation 934 946	dissociation
+E14	Dissociation:T52 Complex:T51 Participant:T33 Participant:T16
+T53	Negative_regulation 958 968	inhibition
+E15	Negative_regulation:T53 Theme:T17
+T54	Binding 1001 1005	bind
+E16	Binding:T54 Theme:T18 Theme:T34
+M1	Negation E16
+M2	Negation E13
+T55	Regulation 1177 1190	dysregulation
+E17	Regulation:T55 Theme:T36
+T56	Negative_regulation 1256 1271	down-regulation
+E18	Negative_regulation:T56 Theme:T21

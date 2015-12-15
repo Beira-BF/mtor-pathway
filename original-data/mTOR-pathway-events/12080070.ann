@@ -1,0 +1,91 @@
+T1	Protein 550 574	protein kinase C beta II
+T3	Dissociation 1835 1845	Disruption
+E1	Dissociation:T3 Participant:T29 Participant:T28
+T4	Dissociation 1343 1353	disruption
+E2	Dissociation:T4 Participant:T23
+T5	Dissociation 1138 1148	disruption
+E3	Dissociation:T5 Participant:T21 Participant:T20
+T6	Protein 73 78	Hsp70
+T7	Protein 82 98	protein kinase C
+T8	Protein 250 255	Hsp70
+T9	Protein 313 329	protein kinase C
+T10	Protein 345 350	Hsp70
+T11	Protein 413 429	protein kinase C
+T12	Protein 480 485	Hsp70
+T13	Protein 644 660	protein kinase C
+T14	Protein 696 701	Hsp70
+T15	Protein 707 723	protein kinase C
+T16	Protein 819 835	protein kinase C
+T17	Protein 864 869	Hsp70
+T18	Protein 907 912	Hsp70
+T19	Protein 949 965	protein kinase C
+T20	Protein 1082 1087	Hsp70
+T21	Protein 1120 1136	protein kinase C
+T22	Protein 1231 1247	protein kinase C
+T23	Protein 1378 1383	Hsp70
+T2	Protein 1394 1418	protein kinase C beta II
+T24	Protein 1535 1538	Akt
+T25	Protein 1539 1555	protein kinase B
+*	Equiv T24 T25
+T26	Protein 1560 1576	protein kinase A
+T27	Protein 1588 1593	Hsp70
+T28	Protein 1680 1685	Hsp70
+T29	Protein 1741 1757	protein kinase C
+T30	Regulation 48 57	regulates
+E4	Regulation:T30 Theme:E5
+T31	Binding 62 69	binding
+E5	Binding:T31 Theme:T6 Theme:T7
+T32	Positive_regulation 303 312	activated
+E6	Positive_regulation:T32 Theme:T9
+T33	Regulation 256 272	has a novel role
+E7	Regulation:T33 Cause:T8 Theme:E6
+T34	Binding 367 374	binding
+E8	Binding:T34 Theme:T10 Site:T35 Theme:T11
+T35	Entity 392 409	carboxyl terminus
+T36	Binding 499 504	binds
+E9	Binding:T36 Theme:T1 Theme:T12 Site:T38
+T37	Phosphorylation 509 525	unphosphorylated
+E10	Phosphorylation:T37 Site:T38 Theme:T1
+M1	Negation E10
+T38	Entity 538 546	Thr(641)
+T39	Phosphorylation 604 618	phosphorylated
+E11	Phosphorylation:T39 Theme:T13
+T40	Binding 681 692	interaction
+E12	Binding:T40 Theme:T14 Theme:T15
+T41	Negative_regulation 731 740	abolished
+E13	Negative_regulation:T41 Theme:E12 Cause:E14
+T42	Gene_expression 752 765	co-expression
+E14	Gene_expression:T42 Theme:T16
+E15	Gene_expression:T42 Theme:T17
+E16	Negative_regulation:T41 Theme:E12 Cause:E15
+T43	Regulation 922 930	regulate
+E17	Regulation:T43 Cause:T18 Theme:T19
+M2	Negation E17
+T44	Phosphorylation 993 1008	phosphorylation
+E18	Phosphorylation:T44 Theme:T19
+T45	Positive_regulation 1181 1193	accumulation
+E19	Positive_regulation:T45 Theme:E20 Cause:E3
+T46	Dephosphorylation 1214 1230	dephosphorylated
+E20	Dephosphorylation:T46 Theme:T22
+T47	Binding 1583 1587	bind
+E21	Binding:T47 Theme:T27 Theme:T25 Site:T49
+E22	Binding:T47 Theme:T27 Theme:T26 Site:T49
+T48	Phosphorylation 1604 1620	unphosphorylated
+E23	Phosphorylation:T48 Theme:T27 Site:T49
+M3	Negation E23
+T49	Entity 1621 1632	turn motifs
+T50	Binding 1686 1691	binds
+E24	Binding:T50 Site:T52 Theme:T29 Theme:T28
+T51	Dephosphorylation 1696 1712	dephosphorylated
+E25	Dephosphorylation:T51 Site:T52 Theme:T29
+T52	Entity 1713 1730	carboxyl terminus
+T53	Phosphorylation 1801 1819	re-phosphorylation
+E26	Phosphorylation:T53 Theme:T29
+T54	Positive_regulation 1792 1800	allowing
+E27	Positive_regulation:T54 Cause:E24 Theme:E26
+T55	Phosphorylation 1875 1893	re-phosphorylation
+E28	Phosphorylation:T55 Theme:T29
+T56	Negative_regulation 1866 1874	prevents
+E29	Negative_regulation:T56 Theme:E28 Cause:E1
+T57	Negative_regulation 1921 1936	down-regulation
+E30	Negative_regulation:T57 Cause:E1 Theme:T29

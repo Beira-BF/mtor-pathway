@@ -1,0 +1,8 @@
+T1	Protein 27 31	mTOR
+T6	Protein 631 635	mTOR
+T7	Protein 726 730	mTOR
+T2	Drug 105 114	rapamycin
+T3	Protein 616 629	mammalian TOR
+*	Equiv T3 T6
+T4	Positive_regulation 606 615	activates
+E1	Positive_regulation:T4 Theme:T3

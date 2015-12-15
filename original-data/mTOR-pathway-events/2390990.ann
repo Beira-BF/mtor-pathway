@@ -1,0 +1,42 @@
+T1	Protein 40 59	elongation factor 2
+T3	Protein 154 159	eEF-2
+T4	Protein 281 286	eEF-2
+T5	Protein 933 938	eEF-2
+T6	Protein 1109 1114	eEF-2
+T7	Dissociation 1017 1029	dissociation
+E1	Dissociation:T7 Complex:T23 Participant:T6
+T2	Protein 122 152	eukaryotic elongation factor 2
+*	Equiv T2 T3
+T8	Simple_molecule 494 497	GTP
+T9	Simple_molecule 592 595	GTP
+T10	Complex 872 886	ribosome.eEF-2
+T11	Protein 881 886	eEF-2
+T12	Phosphorylation 25 39	phosphorylated
+E2	Phosphorylation:T12 Theme:T1
+T13	Phosphorylation 76 91	phosphorylation
+E3	Phosphorylation:T13 Theme:T2
+T14	Phosphorylation 190 204	phosphorylated
+E4	Phosphorylation:T14 Theme:T3
+T15	Phosphorylation 400 415	phosphorylation
+E5	Phosphorylation:T15 Theme:T4
+T16	Phosphorylation 217 225	modified
+E6	Phosphorylation:T16 Theme:T3
+T17	Phosphorylation 533 547	phosphorylated
+E7	Phosphorylation:T17 Theme:T4
+T18	Phosphorylation 552 562	unmodified
+E8	Phosphorylation:T18 Theme:T4
+M1	Negation E8
+T19	Phosphorylation 737 751	phosphorylated
+E9	Phosphorylation:T19 Theme:T4
+T20	Phosphorylation 840 855	phosphorylation
+E10	Phosphorylation:T20 Theme:T5
+T21	Negative_regulation 856 866	interfered
+E11	Negative_regulation:T21 Cause:E10 Theme:E12
+T22	Binding 887 904	complex formation
+E12	Binding:T22 Theme:T11 Product:T10
+T23	Complex 1048 1067	ribosomal complexes
+T24	Phosphorylation 1079 1089	unmodified
+E13	Phosphorylation:T24 Theme:T6
+M2	Negation E13
+T25	Phosphorylation 1094 1108	phosphorylated
+E14	Phosphorylation:T25 Theme:T6

@@ -1,0 +1,88 @@
+T1	Protein 0 6	PRAS40
+T2	Protein 100 129	Mammalian target of rapamycin
+T3	Protein 131 135	mTOR
+T4	Complex 184 190	mTORC1
+T5	Protein 218 225	insulin
+T6	Complex 241 247	mTORC1
+T7	Protein 263 267	mTOR
+T8	Protein 277 314	regulatory-associated protein of mTOR
+T9	Protein 321 326	mLST8
+T10	Protein 419 432	p70 S6 kinase
+T11	Protein 516 520	mTOR
+T12	Protein 543 550	insulin
+T13	Protein 581 586	4EBP1
+T14	Protein 653 659	PRAS40
+T15	Protein 750 756	PRAS40
+T16	Protein 811 818	Insulin
+T17	Protein 863 869	PRAS40
+T18	Protein 899 905	PRAS40
+T19	Protein 991 997	PRAS40
+T20	Protein 1047 1053	PRAS40
+T21	Protein 1095 1101	4E-BP1
+T22	Protein 1137 1143	PRAS40
+T23	Protein 1158 1164	4E-BP1
+T24	Protein 1212 1218	PRAS40
+T25	Complex 17 23	mTORC1
+*	Equiv T2 T3
+T26	Complex 195 201	mTORC2
+T27	Protein 269 275	raptor
+*	Equiv T27 T8
+T28	Protein 360 407	eukaryotic initiation factor 4E-binding protein
+T29	Protein 409 413	4EBP
+*	Equiv T28 T29
+T30	Protein 623 651	prolinerich Akt substrate 40
+*	Equiv T30 T14
+T31	Complex 686 692	mTORC1
+T32	Complex 879 885	mTORC1
+T33	Complex 915 921	mTORC1
+T34	Protein 1176 1182	raptor
+T35	Complex 1229 1235	mTORC1
+T36	Regulation 7 16	regulates
+E1	Regulation:T36 Cause:T1 Theme:T25
+T37	Positive_regulation 331 340	activated
+E2	Positive_regulation:T37 Cause:T6 Theme:T28
+T38	Phosphorylation 345 359	phosphorylates
+E3	Phosphorylation:T38 Theme:T28
+T39	Catalysis 345 359	phosphorylates
+E4	Catalysis:T39 Cause:T6 Theme:E3
+E5	Positive_regulation:T37 Cause:T6 Theme:T10
+E6	Phosphorylation:T38 Theme:T10
+E7	Catalysis:T39 Cause:T6 Theme:E6
+T40	Positive_regulation 502 512	activation
+E8	Positive_regulation:T40 Theme:T11
+T41	Positive_regulation 571 580	increased
+E9	Positive_regulation:T41 Theme:E10
+T42	Binding 587 594	binding
+E10	Binding:T42 Theme:T43 Theme:T13
+T43	Protein 598 604	raptor
+T44	Binding 666 673	binding
+E11	Binding:T44 Theme:T14 Theme:T31
+T45	Binding 786 797	interaction
+E12	Binding:T45 Theme:T46 Theme:T15
+T46	Protein 803 809	raptor
+T47	Negative_regulation 840 849	decreases
+E13	Negative_regulation:T47 Cause:T16 Theme:E14
+T48	Binding 870 875	bound
+E14	Binding:T48 Theme:T17 Theme:T32
+T49	Negative_regulation 906 914	inhibits
+E15	Negative_regulation:T49 Cause:T18 Theme:T33
+T50	Negative_regulation 969 979	inhibition
+E16	Negative_regulation:T50 Theme:E17
+T51	Binding 998 1009	association
+E17	Binding:T51 Theme:T52 Theme:T19
+T52	Protein 1015 1021	raptor
+T53	Gene_expression 1054 1064	expression
+E18	Gene_expression:T53 Theme:T20
+T54	Negative_regulation 1036 1046	decreasing
+E19	Negative_regulation:T54 Theme:E18
+T55	Positive_regulation 1086 1094	enhances
+E20	Positive_regulation:T55 Theme:E21 Cause:T20
+T56	Binding 1102 1109	binding
+E21	Binding:T56 Theme:T57 Theme:T21
+T57	Protein 1113 1119	raptor
+T58	Negative_regulation 1144 1152	competes
+E22	Negative_regulation:T58 Theme:E23 Cause:T22
+T59	Binding 1165 1172	binding
+E23	Binding:T59 Theme:T23 Theme:T34
+T60	Regulation 1219 1228	regulates
+E24	Regulation:T60 Cause:T24 Theme:T35

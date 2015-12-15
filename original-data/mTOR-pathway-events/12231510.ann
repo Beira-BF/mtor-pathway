@@ -1,0 +1,56 @@
+T2	Protein 41 45	FRAP
+T3	Protein 52 60	CLIP-170
+T4	Protein 70 78	CLIP-170
+T5	Protein 79 85	Restin
+T6	Protein 212 220	CLIP-170
+T7	Protein 299 307	CLIP-170
+T9	Protein 436 440	FRAP
+T10	Protein 454 458	mTOR
+T11	Protein 480 488	CLIP-170
+T12	Protein 490 498	CLIP-170
+T13	Protein 623 627	FRAP
+T14	Protein 719 727	CLIP-170
+T16	Protein 849 857	CLIP-170
+T17	Protein 863 867	FRAP
+T19	Protein 938 946	CLIP-170
+T1	Protein 4 39	FKBP12-rapamycin-associated protein
+*	Equiv T1 T2
+T20	Phosphorylation 245 260	phosphorylation
+E1	Phosphorylation:T20 Theme:T6
+T21	Binding 288 295	binding
+E2	Binding:T21 Theme:T7
+T22	Regulation 275 283	regulate
+E3	Regulation:T22 Cause:E1 Theme:E2
+M1	Speculation E3
+T8	Protein 399 434	FKBP12-rapamycin-associated protein
+*	Equiv T8 T9 T10 T23
+T23	Protein 459 463	RAFT
+T24	Binding 465 474	interacts
+E4	Binding:T24 Theme:T23 Theme:T11
+T25	Phosphorylation 502 516	phosphorylated
+E5	Phosphorylation:T25 Theme:T12 Site:T27
+T26	Entity 554 573	rapamycin-sensitive
+T27	Entity 578 596	-insensitive sites
+E6	Phosphorylation:T25 Theme:T12 Site:T26
+T28	Phosphorylation 605 619	phosphorylated
+E7	Phosphorylation:T28 Site:T29 Theme:T12
+T29	Entity 644 669	rapamycin-sensitive sites
+T30	Catalysis 605 619	phosphorylated
+E8	Catalysis:T30 Cause:T13 Theme:E7
+T31	Drug 684 693	rapamycin
+T32	Drug 554 563	rapamycin
+T33	Drug 644 653	rapamycin
+T34	Binding 731 735	bind
+E9	Binding:T34 Theme:T14
+T35	Negative_regulation 694 703	inhibited
+E10	Negative_regulation:T35 Cause:T31 Theme:E9
+T36	Positive_regulation 816 824	positive
+E11	Positive_regulation:T36 Theme:T16
+T37	Negative_regulation 829 845	negative control
+E12	Negative_regulation:T37 Theme:T16
+T38	Positive_regulation 889 910	positively regulating
+E13	Positive_regulation:T38 Cause:T17 Theme:E14
+T15	Protein 783 791	CLIP-170
+T18	Protein 873 881	CLIP-170
+T39	Binding 918 925	binding
+E14	Binding:T39 Theme:T19

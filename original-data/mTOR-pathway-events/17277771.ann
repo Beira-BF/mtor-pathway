@@ -1,0 +1,110 @@
+T1	Protein 0 7	Insulin
+T2	Protein 22 26	mTOR
+T3	Protein 43 46	Akt
+T4	Protein 47 50	PKB
+T5	Protein 61 67	PRAS40
+T6	Protein 70 77	Insulin
+T7	Protein 160 163	Akt
+T8	Protein 197 200	PKB
+T9	Protein 206 235	mammalian target of rapamycin
+T10	Protein 237 241	mTOR
+T11	Protein 279 283	mTOR
+T12	Protein 351 355	TSC2
+T13	Protein 441 445	TSC2
+T14	Protein 450 454	mTOR
+T15	Protein 505 511	PRAS40
+T16	Protein 526 529	Akt
+T17	Protein 530 533	PKB
+T18	Protein 563 567	mTOR
+T19	Protein 613 617	mTOR
+T20	Protein 619 625	PRAS40
+T21	Protein 636 640	mTOR
+T22	Protein 680 684	mTOR
+T23	Protein 726 730	mTOR
+T24	Protein 831 837	PRAS40
+T25	Protein 847 851	mTOR
+T26	Protein 903 907	mTOR
+T27	Protein 925 929	TSC2
+T28	Protein 931 937	PRAS40
+T29	Protein 960 988	insulin-receptor substrate-1
+T30	Protein 990 995	IRS-1
+T31	Protein 1036 1040	mTOR
+T32	Protein 1070 1076	PRAS40
+T33	Protein 1173 1180	insulin
+T34	Protein 1194 1198	mTOR
+T35	Protein 1224 1230	PRAS40
+T36	Protein 1260 1267	insulin
+T37	Protein 1291 1295	mTOR
+T38	Protein 1357 1364	insulin
+*	Equiv T3 T4
+T39	Protein 179 195	protein kinase B
+*	Equiv T7 T39 T8
+*	Equiv T9 T10
+T40	Protein 265 268	Akt
+T41	Protein 321 349	tuberous sclerosis complex 2
+*	Equiv T41 T12
+T42	Protein 418 421	Akt
+T43	Protein 598 601	Akt
+*	Equiv T29 T30
+T44	Protein 1001 1004	Akt
+T45	Protein 1044 1047	Akt
+T46	Protein 1096 1099	Akt
+T47	Protein 1121 1127	14-3-3
+T48	Protein 1287 1290	Akt
+T49	Regulation 27 35	mediated
+E1	Regulation:T49 Theme:T2 Cause:T5
+T50	Positive_regulation 126 136	activation
+E2	Positive_regulation:T50 Theme:T9 Cause:T6
+E3	Positive_regulation:T50 Theme:T7 Cause:T6
+T51	Positive_regulation 269 278	activates
+E4	Positive_regulation:T51 Cause:T40 Theme:T11
+T52	Phosphorylation 287 302	phosphorylation
+E5	Phosphorylation:T52 Theme:T41
+T53	Negative_regulation 307 317	inhibition
+E6	Negative_regulation:T53 Cause:T40 Theme:T41
+T54	Catalysis 287 302	phosphorylation
+E7	Catalysis:T54 Cause:T40 Theme:E5
+T55	Phosphorylation 422 437	phosphorylation
+E8	Phosphorylation:T55 Theme:T13
+T56	Catalysis 422 437	phosphorylation
+E9	Catalysis:T56 Cause:T42 Theme:E8
+T57	Positive_regulation 455 465	activation
+E10	Positive_regulation:T57 Theme:T14
+*	Equiv T16 T17
+T58	Binding 568 575	binding
+E11	Binding:T58 Theme:T18 Theme:T15
+T59	Positive_regulation 589 597	mediates
+E12	Positive_regulation:T59 Cause:T15 Theme:T43
+T60	Binding 626 631	binds
+E13	Binding:T60 Site:T61 Theme:T21 Theme:T20
+T61	Entity 641 654	kinase domain
+T62	Binding 663 674	interaction
+E14	Binding:T62 Theme:T20 Theme:T22
+T63	Negative_regulation 718 725	inhibit
+E15	Negative_regulation:T63 Cause:E14 Theme:T23
+T64	Binding 820 827	Binding
+E16	Binding:T64 Theme:T24 Theme:T25
+T65	Negative_regulation 838 846	inhibits
+E17	Negative_regulation:T65 Cause:E16 Theme:T25
+T66	Negative_regulation 865 875	suppresses
+E18	Negative_regulation:T66 Theme:E19 Cause:E16
+T67	Positive_regulation 889 899	activation
+E19	Positive_regulation:T67 Theme:T26
+T68	Negative_regulation 938 947	silencing
+E20	Negative_regulation:T68 Theme:T28
+T69	Negative_regulation 948 959	inactivates
+E21	Negative_regulation:T69 Cause:E20 Theme:T29
+E22	Negative_regulation:T69 Cause:E20 Theme:T44
+T70	Phosphorylation 1077 1092	phosphorylation
+E23	Phosphorylation:T70 Theme:T32
+T71	Catalysis 1077 1092	phosphorylation
+E24	Catalysis:T71 Cause:T46 Theme:E23
+T72	Binding 1104 1115	association
+E25	Binding:T72 Theme:T32 Theme:T47
+T73	Positive_regulation 1161 1168	crucial
+E26	Positive_regulation:T73 Cause:E23 Theme:E28
+E27	Positive_regulation:T73 Cause:E25 Theme:E28
+T74	Positive_regulation 1184 1193	stimulate
+E28	Positive_regulation:T74 Theme:T34 Cause:T33
+T75	Regulation 1247 1256	regulator
+E29	Regulation:T75 Cause:T35 Theme:T36

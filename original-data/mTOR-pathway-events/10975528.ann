@@ -1,0 +1,38 @@
+T1	Protein 13 17	PAK1
+T3	Protein 175 180	Cdc42
+T4	Protein 395 399	PAK1
+T5	Protein 506 510	PAK1
+T6	Protein 689 693	PAK1
+T7	Dissociation 490 500	disruption
+E1	Dissociation:T7 Participant:T5 Complex:T11
+T8	Simple_molecule 153 156	GTP
+T9	Protein 184 187	Rac
+T10	Protein 211 216	actin
+T11	Complex 506 516	PAK1 dimer
+T12	Protein 894 898	WASP
+T13	Protein 860 892	Wiskott-Aldrich syndrome protein
+*	Equiv T13 T12
+T14	Negative_regulation 24 37	autoinhibited
+E2	Negative_regulation:T14 Cause:T1 Theme:T1
+T2	Protein 96 117	p21-activated kinases
+T15	Protein 119 123	PAKs
+*	Equiv T2 T15
+T16	Positive_regulation 126 136	stimulated
+E3	Positive_regulation:T16 Theme:T15 Cause:E5
+T17	Binding 140 147	binding
+E4	Binding:T17 Theme:T9 Theme:T15
+E5	Binding:T17 Theme:T3 Theme:T15
+E6	Positive_regulation:T16 Theme:T15 Cause:E4
+T18	Positive_regulation 189 197	modulate
+E7	Positive_regulation:T18 Cause:T15 Theme:E8
+T19	Binding 217 225	assembly
+E8	Binding:T19 Theme:T10
+T20	Binding 418 425	binding
+E9	Binding:T20 Theme:T4
+T21	Positive_regulation 431 438	trigger
+E10	Positive_regulation:T21 Cause:E9 Theme:E1
+T22	Binding 671 678	binding
+E11	Binding:T22 Theme:T6 Site:T23
+T23	Entity 614 643	inhibitory switch (IS) domain
+T24	Binding 759 766	binding
+E12	Binding:T24 Theme:T6

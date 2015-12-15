@@ -1,0 +1,59 @@
+T1	Protein 0 8	IKK beta
+T2	Protein 24 28	TSC1
+T3	Protein 79 83	mTOR
+T4	Protein 94 102	TNFalpha
+T5	Protein 285 305	tuberous sclerosis 1
+T6	Protein 307 311	TSC1
+T7	Protein 313 317	TSC2
+T8	Protein 372 376	mTOR
+T9	Protein 404 408	TSC1
+T10	Protein 409 413	TSC2
+T11	Protein 482 489	IKKbeta
+T12	Protein 524 532	TNFalpha
+T13	Protein 597 601	TSC1
+T14	Entity 616 622	Ser511
+T15	Protein 652 656	TSC1
+T16	Protein 662 669	IKKbeta
+T17	Protein 679 683	TSC1
+T18	Protein 710 714	mTOR
+T19	Protein 826 833	IKKbeta
+T20	Protein 853 857	TSC1
+T21	Protein 885 889	VEGF
+*	Equiv T5 T6
+T22	Complex 307 317	TSC1)/TSC2
+T23	Complex 404 413	TSC1/TSC2
+T24	Negative_regulation 9 20	suppression
+E1	Negative_regulation:T24 Cause:T1 Theme:T2
+T25	Negative_regulation 355 364	repressor
+E2	Negative_regulation:T25 Cause:T22 Theme:T8
+T26	Dissociation 390 400	disruption
+E3	Dissociation:T26 Complex:T23 Participant:T9 Participant:T10
+T27	Binding 563 572	interacts
+E4	Binding:T27 Theme:T11 Theme:T13
+T28	Phosphorylation 582 596	phosphorylates
+E5	Phosphorylation:T28 Site:T30 Theme:T13
+T29	Catalysis 582 596	phosphorylates
+E6	Catalysis:T29 Theme:E5 Cause:T11
+T30	Entity 605 611	Ser487
+E7	Phosphorylation:T28 Site:T14 Theme:T13
+E8	Catalysis:T29 Cause:T11 Theme:E7
+T31	Negative_regulation 637 648	suppression
+E9	Negative_regulation:T31 Theme:T15 Cause:T11
+T32	Negative_regulation 684 695	suppression
+E10	Negative_regulation:T32 Theme:T17
+T33	Positive_regulation 670 678	mediated
+E11	Positive_regulation:T33 Cause:T16 Theme:E10
+T34	Positive_regulation 696 705	activates
+E12	Positive_regulation:T34 Cause:E10 Theme:T18
+T35	Gene_expression 802 812	expression
+E13	Gene_expression:T35 Theme:T19
+T36	Positive_regulation 816 825	activated
+E14	Positive_regulation:T36 Theme:T19
+T37	Entity 858 864	Ser511
+T38	Phosphorylation 865 880	phosphorylation
+E15	Phosphorylation:T38 Site:T37 Theme:T20
+T39	Regulation 837 847	associated
+E16	Regulation:T39 Cause:E13 Theme:E15
+E17	Regulation:T39 Cause:E13 Theme:E18
+T40	Gene_expression 890 900	production
+E18	Gene_expression:T40 Theme:T21

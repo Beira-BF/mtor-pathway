@@ -1,0 +1,73 @@
+T1	Protein 58 64	4E-BP1
+T2	Protein 297 302	eIF4E
+T3	Protein 471 476	eIF4E
+T5	Protein 691 697	4E-BP1
+T6	Protein 1207 1213	4E-BP1
+T7	Protein 1447 1452	eIF4E
+T8	Protein 1537 1543	4E-BP1
+T9	Protein 1549 1554	eIF4E
+T10	Dissociation 1526 1536	dissociate
+E1	Dissociation:T10 Participant:T8 Participant:T9
+T11	Protein 195 200	eIF4E
+T12	Protein 620 625	eIF4E
+T13	Drug 770 779	rapamycin
+T14	Drug 995 1004	rapamycin
+T15	Phosphorylation 13 28	phosphorylation
+E2	Phosphorylation:T15 Theme:T1
+T16	Binding 201 208	binding
+E3	Binding:T16 Theme:T11
+T17	Binding 263 270	binding
+E4	Binding:T17 Theme:T2
+T18	Binding 450 458	interact
+E5	Binding:T18 Theme:T3
+T4	Binding 626 633	binding
+E6	Binding:T4 Theme:T12
+T19	Negative_regulation 606 616	abrogation
+E7	Negative_regulation:T19 Theme:E6
+T20	Phosphorylation 672 687	phosphorylation
+E8	Phosphorylation:T20 Site:T21 Theme:T5
+E9	Phosphorylation:T20 Site:T22 Theme:T5
+T21	Entity 701 707	Thr 37
+T22	Entity 712 717	Thr 4
+T23	Positive_regulation 733 744	insensitive
+E10	Positive_regulation:T23 Cause:T13 Theme:E8
+M1	Negation E10
+E11	Positive_regulation:T23 Cause:T13 Theme:E9
+T24	Phosphorylation 800 815	phosphorylation
+E12	Phosphorylation:T24 Site:T22 Theme:T5
+E13	Phosphorylation:T24 Site:T21 Theme:T5
+T25	Phosphorylation 865 880	phosphorylation
+E14	Phosphorylation:T25 Theme:T5 Site:T27
+T26	Positive_regulation 837 845	required
+E16	Positive_regulation:T26 Cause:E12 Theme:E14
+E17	Positive_regulation:T26 Cause:E13 Theme:E14
+T27	Entity 894 928	nidentified serum-responsive sites
+T28	Phosphorylation 1214 1229	phosphorylation
+E15	Phosphorylation:T28 Theme:T6
+T29	Phosphorylation 1239 1254	phosphorylation
+E18	Phosphorylation:T29 Site:T31 Theme:T6
+E19	Phosphorylation:T29 Site:T30 Theme:T6
+T30	Entity 1258 1264	Thr 37
+T31	Entity 1265 1271	Thr 46
+T32	Entity 1287 1293	Thr 70
+T33	Phosphorylation 1294 1309	phosphorylation
+E20	Phosphorylation:T33 Site:T32 Theme:T6
+T34	Entity 1315 1321	Ser 65
+T35	Phosphorylation 1325 1339	phosphorylated
+E21	Phosphorylation:T35 Site:T34 Theme:T6
+T36	Entity 1387 1393	Ser 65
+T37	Phosphorylation 1368 1383	phosphorylation
+E22	Phosphorylation:T37 Site:T38 Theme:T7
+E23	Phosphorylation:T37 Site:T36 Theme:T7
+T38	Entity 1398 1404	Thr 70
+T39	Binding 1436 1443	binding
+E24	Binding:T39 Theme:T7
+T40	Negative_regulation 1430 1435	block
+E25	Negative_regulation:T40 Theme:E24 Cause:E22
+T41	Phosphorylation 1487 1502	phosphorylation
+E26	Phosphorylation:T41 Theme:T9
+T42	Positive_regulation 1513 1522	necessary
+E27	Positive_regulation:T42 Cause:E26 Theme:E1
+E28	Negative_regulation:T40 Theme:E24 Cause:E23
+M2	Negation E28
+M3	Negation E25

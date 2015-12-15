@@ -1,0 +1,91 @@
+T1	Protein 8 12	mTOR
+T2	Protein 47 73	elongation factor 2 kinase
+T3	Protein 130 140	calmodulin
+T6	Protein 272 279	insulin
+T7	Protein 312 316	mTOR
+T8	Protein 344 351	insulin
+T10	Protein 397 407	calmodulin
+T12	Protein 616 623	insulin
+T14	Protein 855 862	insulin
+T15	Protein 900 910	calmodulin
+T19	Protein 1003 1010	insulin
+T20	Protein 1015 1019	mTOR
+T21	Protein 1048 1052	eEF2
+T22	Protein 1142 1146	mTOR
+T23	Protein 1224 1228	mTOR
+T25	Protein 1373 1377	mTOR
+T26	Simple_molecule 202 209	calcium
+T27	Protein 215 225	calmodulin
+T28	Drug 292 301	rapamycin
+T29	Drug 413 422	rapamycin
+T11	Protein 485 496	eEF2 kinase
+T4	Protein 143 187	Eukaryotic elongation factor 2 (eEF2) kinase
+T5	Protein 377 388	eEF2 kinase
+T9	Drug 629 638	rapamycin
+T13	Protein 750 785	phosphoinositide-dependent kinase 1
+T30	Drug 867 876	rapamycin
+T16	Protein 914 925	eEF2 kinase
+T17	Protein 933 944	eEF2 kinase
+T18	Protein 1340 1351	eEF2 kinase
+T24	Regulation 13 22	regulated
+E1	Regulation:T24 Cause:T1 Theme:E2
+T31	Phosphorylation 23 38	phosphorylation
+E2	Phosphorylation:T31 Theme:T2
+T32	Regulation 74 83	modulates
+E3	Regulation:T32 Cause:E2 Theme:T2
+T33	Binding 119 126	binding
+E4	Binding:T33 Theme:T3 Theme:T2
+E5	Regulation:T32 Cause:E2 Theme:E4
+T34	Positive_regulation 226 235	dependent
+E6	Positive_regulation:T34 Cause:T26 Theme:T4
+E7	Positive_regulation:T34 Cause:T27 Theme:T4
+T35	Regulation 259 268	regulated
+E8	Regulation:T35 Cause:T6 Theme:T4
+T36	Negative_regulation 352 361	decreases
+E9	Negative_regulation:T36 Theme:E10 Cause:T8
+T37	Binding 392 396	bind
+E10	Binding:T37 Theme:T5 Theme:T10
+T38	Positive_regulation 423 432	sensitive
+E11	Positive_regulation:T38 Cause:T29 Theme:E10
+T39	Phosphorylation 461 476	phosphorylation
+E12	Phosphorylation:T39 Site:T40 Theme:T11
+T40	Entity 498 503	Ser78
+T41	Protein 545 555	calmodulin
+T42	Binding 556 563	binding
+E13	Binding:T42 Theme:T41 Theme:T11
+T43	Phosphorylation 571 586	Phosphorylation
+E14	Phosphorylation:T43 Site:T40 Theme:T11
+T44	Positive_regulation 603 612	increased
+E15	Positive_regulation:T44 Cause:T12 Theme:E14
+T45	Positive_regulation 639 648	sensitive
+E16	Positive_regulation:T45 Cause:T9 Theme:E15
+T46	Entity 695 700	Ser78
+T47	Phosphorylation 676 691	phosphorylation
+E17	Phosphorylation:T47 Site:T46 Theme:T11
+T48	Regulation 658 668	Regulation
+E18	Regulation:T48 Theme:E17
+T49	Positive_regulation 706 714	requires
+E19	Positive_regulation:T49 Cause:T13 Theme:E18
+T50	Negative_regulation 829 839	attenuates
+E20	Negative_regulation:T50 Theme:E23
+E21	Negative_regulation:T50 Theme:E24
+T51	Binding 889 896	binding
+E22	Binding:T51 Theme:T15 Theme:T16
+T52	Regulation 844 851	effects
+E23	Regulation:T52 Cause:T14 Theme:E22
+E24	Regulation:T52 Cause:T30 Theme:E22
+E25	Regulation:T52 Cause:T30 Theme:T17
+E26	Regulation:T52 Cause:T14 Theme:T17
+E27	Negative_regulation:T50 Theme:E26
+E28	Negative_regulation:T50 Theme:E25
+T53	Entity 974 979	Ser78
+T54	Phosphorylation 955 970	Phosphorylation
+E29	Phosphorylation:T54 Site:T53 Theme:T11
+T55	Phosphorylation 1053 1068	phosphorylation
+E30	Phosphorylation:T55 Theme:T21
+T56	Regulation 1037 1044	control
+E31	Regulation:T56 Cause:T19 Theme:E30
+E32	Regulation:T56 Cause:T20 Theme:E30
+T57	Phosphorylation 1198 1212	phosphorylated
+E33	Phosphorylation:T57 Site:T53 Theme:T11
+M1	Speculation E33

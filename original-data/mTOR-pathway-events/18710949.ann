@@ -1,0 +1,225 @@
+T1	Protein 19 26	p27Kip1
+T2	Protein 64 73	cyclin D1
+T3	Protein 74 78	Cdk4
+T4	Protein 81 84	p27
+T5	Protein 94 98	Cdk2
+T6	Protein 131 140	cyclin D1
+T7	Protein 141 145	Cdk4
+T8	Protein 193 196	p27
+T9	Protein 267 276	cyclin D1
+T11	Protein 334 337	p27
+T12	Protein 378 381	p27
+T13	Protein 424 427	Akt
+T14	Protein 429 432	PKB
+T15	Protein 433 436	Akt
+T16	Protein 474 477	PKB
+T19	Protein 541 544	p27
+T20	Protein 545 554	cyclin D1
+T21	Protein 555 559	Cdk4
+T22	Protein 589 592	PKB
+T25	Protein 667 670	p27
+T26	Protein 671 680	cyclin D1
+T27	Protein 681 685	Cdk4
+T28	Protein 694 697	p27
+T29	Protein 780 789	cyclin D1
+T30	Protein 794 798	Cdk4
+T33	Protein 851 855	Cdk4
+T34	Protein 881 885	Cdk2
+T35	Protein 913 916	p27
+T36	Protein 932 941	cyclin D1
+T37	Protein 946 950	Cdk4
+T38	Protein 958 967	cyclin D1
+T40	Protein 1005 1008	p27
+T41	Protein 1028 1031	PKB
+T42	Protein 1042 1045	p27
+T43	Protein 1046 1055	cyclin D1
+T44	Protein 1056 1060	Cdk4
+T45	Protein 1100 1104	Cdk4
+T46	Protein 1139 1142	p27
+T47	Protein 1158 1161	p27
+T48	Protein 1162 1171	cyclin D1
+T49	Protein 1172 1176	Cdk4
+T50	Protein 1205 1208	Src
+T51	Protein 1254 1257	p27
+T52	Protein 1296 1305	cyclin D1
+T53	Protein 1306 1314	Cdk4-p27
+T54	Protein 1338 1341	PKB
+T55	Protein 1352 1355	p27
+T56	Protein 1392 1401	cyclin D1
+T58	Protein 1459 1468	cyclin D1
+T60	Protein 1530 1533	p27
+T61	Protein 1562 1565	PKB
+T62	Protein 1577 1580	Src
+T63	Protein 1619 1622	p27
+T64	Protein 1649 1658	cyclin D1
+T65	Protein 1659 1663	Cdk4
+T66	Protein 1713 1717	Cdk2
+T67	Protein 1741 1744	p27
+T68	Protein 1773 1776	Src
+T69	Protein 1786 1789	PKB
+T70	Dissociation 646 657	dissociated
+E1	Dissociation:T70 Complex:T78 Participant:T25 Participant:T26 Participant:T27
+T71	Complex 64 78	cyclin D1-Cdk4
+T72	Complex 131 145	cyclin D1-Cdk4
+T73	Complex 216 233	D-type cyclin-Cdk
+T74	Complex 267 285	cyclin D1-Cdk4-p27
+T75	Protein 407 423	protein kinase B
+*	Equiv T75 T13 T14 T15
+T76	Protein 584 588	PI3K
+T77	Complex 541 559	p27-cyclin D1-Cdk4
+T78	Complex 667 685	p27-cyclin D1-Cdk4
+T79	Complex 881 895	Cdk2 complexes
+T80	Complex 958 976	cyclin D1-Cdk4-p27
+T81	Complex 1042 1060	p27-cyclin D1-Cdk4
+T82	Complex 1158 1176	p27-cyclin D1-Cdk4
+T83	Complex 1296 1314	cyclin D1-Cdk4-p27
+T84	Complex 1392 1410	cyclin D1-Cdk4-p27
+T85	Complex 1459 1477	cyclin D1-Cdk4-p27
+T86	Protein 1570 1573	Abl
+T87	Complex 1649 1663	cyclin D1-Cdk4
+T88	Protein 1704 1712	cyclin E
+T89	Complex 1704 1717	cyclin E-Cdk2
+T90	Protein 1781 1785	PI3K
+T91	Phosphorylation 0 15	Phosphorylation
+E2	Phosphorylation:T91 Theme:T1
+T92	Binding 37 45	assembly
+E3	Binding:T92 Theme:T2 Theme:T3 Product:T71
+T93	Positive_regulation 50 60	activation
+E4	Positive_regulation:T93 Theme:T71
+T94	Regulation 27 36	regulates
+E5	Regulation:T94 Theme:E3 Cause:E2
+E6	Regulation:T94 Theme:E4 Cause:E2
+T95	Regulation 85 93	mediates
+E7	Regulation:T95 Cause:T4 Theme:E8
+T96	Negative_regulation 99 109	inhibition
+E8	Negative_regulation:T96 Theme:T5
+T97	Binding 114 127	is also found
+E9	Binding:T97 Theme:T4 Theme:T72
+T98	Binding 204 212	assembly
+E10	Binding:T98 Theme:T8 Theme:T73
+T99	Binding 286 294	assembly
+E11	Binding:T99 Theme:T11 Product:T74 Theme:T148 Theme:T10 Theme:T9
+T100	Positive_regulation 306 316	activation
+E12	Positive_regulation:T100 Theme:T11
+T101	Regulation 321 330	regulated
+E13	Regulation:T101 Theme:E12 Cause:E15
+E14	Regulation:T101 Theme:E11 Cause:E15
+T102	Phosphorylation 338 353	phosphorylation
+E15	Phosphorylation:T102 Theme:T11
+T103	Phosphorylation 389 403	phosphorylated
+E16	Phosphorylation:T103 Theme:T12 Site:T106
+T104	Catalysis 389 403	phosphorylated
+E17	Catalysis:T104 Cause:T75 Theme:E16
+E18	Phosphorylation:T103 Theme:T12 Site:T105
+E19	Catalysis:T104 Cause:T75 Theme:E18
+T105	Entity 441 445	T157
+T106	Entity 450 454	T198
+T107	Positive_regulation 478 488	activation
+E20	Positive_regulation:T107 Theme:T16
+T17	Protein 511 519	p27pT157
+T18	Protein 524 532	p27pT198
+T108	Positive_regulation 533 540	precede
+E21	Positive_regulation:T108 Theme:E22 Cause:E20
+T109	Binding 560 568	assembly
+E22	Binding:T109 Theme:T19 Theme:T20 Theme:T21 Product:T77
+T23	Protein 620 628	p27pT157
+T24	Protein 633 641	p27pT198
+T110	Negative_regulation 612 619	reduced
+E23	Negative_regulation:T110 Cause:E25 Theme:T23
+E24	Negative_regulation:T110 Cause:E28 Theme:T23
+T111	Negative_regulation 593 603	inhibition
+E25	Negative_regulation:T111 Theme:T76
+E26	Negative_regulation:T111 Theme:T22
+E27	Negative_regulation:T111 Theme:T76
+E28	Negative_regulation:T111 Theme:T22
+E29	Negative_regulation:T110 Theme:T24 Cause:E27
+E30	Negative_regulation:T110 Theme:T24 Cause:E26
+T112	Phosphorylation 722 737	phosphorylation
+E31	Phosphorylation:T112 Theme:T28 Site:T113
+M1	Negation E31
+E32	Phosphorylation:T112 Theme:T28 Site:T114
+M2	Negation E32
+T113	Entity 741 745	T157
+T114	Entity 750 754	T198
+T115	Binding 755 760	bound
+E33	Binding:T115 Theme:T28 Theme:T30
+E34	Binding:T115 Theme:T28 Theme:T29
+T31	Protein 809 817	p27pT157
+T32	Protein 822 830	p27pT198
+T116	Binding 977 994	complex formation
+E35	Binding:T116 Product:T80 Theme:T38 Theme:T39 Theme:T117
+T39	Protein 968 972	Cdk4
+T117	Protein 973 976	p27
+T118	Positive_regulation 951 954	led
+E36	Positive_regulation:T118 Theme:E35
+T119	Phosphorylation 1009 1024	phosphorylation
+E37	Phosphorylation:T119 Theme:T40
+T120	Catalysis 1009 1024	phosphorylation
+E38	Catalysis:T120 Cause:T41 Theme:E37
+T121	Positive_regulation 1032 1041	increased
+E39	Positive_regulation:T121 Cause:E37 Theme:E40
+T122	Binding 1061 1069	assembly
+E40	Binding:T122 Theme:T81
+T123	Regulation 1151 1157	affect
+E41	Regulation:T123 Theme:E42 Cause:T125
+M3	Negation E41
+T124	Binding 1177 1194	complex formation
+E42	Binding:T124 Product:T82 Theme:T49 Theme:T48 Theme:T47
+T125	Protein 1119 1122	Src
+T126	Entity 1226 1234	tyrosine
+T127	Phosphorylation 1235 1250	phosphorylation
+E43	Phosphorylation:T127 Site:T126 Theme:T51
+T128	Positive_regulation 1219 1222	led
+E44	Positive_regulation:T128 Cause:T50 Theme:E43
+T129	Positive_regulation 1272 1282	activation
+E45	Positive_regulation:T129 Cause:T50 Theme:T83
+T130	Positive_regulation 1342 1351	dependent
+E46	Positive_regulation:T130 Cause:T54 Theme:E47
+T131	Phosphorylation 1356 1371	phosphorylation
+E47	Phosphorylation:T131 Theme:T55
+T132	Positive_regulation 1383 1391	increase
+E48	Positive_regulation:T132 Theme:E49 Cause:E47
+T133	Binding 1411 1419	assembly
+E49	Binding:T133 Theme:T134 Theme:T57 Theme:T56 Product:T84
+T57	Protein 1402 1406	Cdk4
+T134	Protein 1407 1410	p27
+T135	Positive_regulation 1478 1488	activation
+E50	Positive_regulation:T135 Theme:T85
+T59	Protein 1469 1473	Cdk4
+T136	Protein 1474 1477	p27
+T137	Positive_regulation 1489 1497	requires
+E51	Positive_regulation:T137 Cause:E52 Theme:E50
+T138	Entity 1502 1510	tyrosine
+T139	Phosphorylation 1511 1526	phosphorylation
+E52	Phosphorylation:T139 Site:T138 Theme:T60
+T140	Positive_regulation 1548 1558	activation
+E53	Positive_regulation:T140 Theme:T86
+E54	Positive_regulation:T140 Theme:T62
+E55	Positive_regulation:T140 Theme:T61
+T141	Phosphorylation 1623 1638	phosphorylation
+E56	Phosphorylation:T141 Theme:T63
+T142	Positive_regulation 1613 1618	drive
+E57	Positive_regulation:T142 Cause:E55 Theme:E56
+E58	Positive_regulation:T142 Cause:E53 Theme:E56
+E59	Positive_regulation:T142 Cause:E54 Theme:E56
+T143	Positive_regulation 1640 1648	increase
+E60	Positive_regulation:T143 Cause:E55 Theme:E67
+E61	Positive_regulation:T143 Cause:E55 Theme:E66
+E62	Positive_regulation:T143 Cause:E53 Theme:E67
+E63	Positive_regulation:T143 Cause:E53 Theme:E66
+E64	Positive_regulation:T143 Cause:E54 Theme:E67
+E65	Positive_regulation:T143 Cause:E54 Theme:E66
+T144	Binding 1664 1672	assembly
+E66	Binding:T144 Theme:T65 Theme:T64 Product:T87
+T145	Positive_regulation 1677 1687	activation
+E67	Positive_regulation:T145 Theme:T87
+T146	Negative_regulation 1693 1699	reduce
+E68	Negative_regulation:T146 Cause:E55 Theme:E71
+E69	Negative_regulation:T146 Cause:E53 Theme:E71
+E70	Negative_regulation:T146 Cause:E54 Theme:E71
+T147	Negative_regulation 1718 1737	inhibitory function
+E71	Negative_regulation:T147 Cause:T89 Theme:T67
+T10	Protein 277 281	Cdk4
+T148	Protein 282 285	p27
+T149	Protein 216 229	D-type cyclin
+T150	Protein 230 233	Cdk

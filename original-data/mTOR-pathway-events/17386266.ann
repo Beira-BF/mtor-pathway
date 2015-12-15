@@ -1,0 +1,78 @@
+T1	Protein 0 6	PRAS40
+T2	Protein 13 20	insulin
+T3	Complex 48 54	mTORC1
+T4	Complex 91 97	mTORC1
+T5	Protein 184 191	insulin
+T6	Protein 247 251	TSC1
+T7	Protein 255 259	TSC2
+T8	Protein 279 286	Insulin
+T9	Protein 321 325	S6K1
+T10	Complex 330 336	mTORC1
+T11	Protein 421 427	PRAS40
+T12	Complex 474 480	mTORC1
+T13	Protein 484 491	insulin
+T14	Complex 543 549	mTORC1
+T15	Protein 592 598	PRAS40
+T16	Protein 621 625	S6K1
+T17	Protein 647 651	rheb
+T18	Protein 775 780	rheb1
+T19	Protein 786 793	Insulin
+T20	Protein 805 808	Akt
+T21	Protein 809 812	PKB
+T22	Protein 841 847	PRAS40
+T23	Complex 882 888	mTORC1
+T24	Protein 958 962	rheb
+T25	Protein 968 974	PRAS40
+T26	Protein 1039 1046	insulin
+T27	Complex 1057 1063	mTORC1
+T28	Complex 372 378	mTORC1
+T29	Complex 678 684	mTORC1
+T30	Complex 741 747	mTORC1
+T31	Simple_molecule 781 784	GTP
+*	Equiv T20 T21
+T32	Complex 994 1000	mTORC1
+T33	Regulation 21 30	regulated
+E1	Regulation:T33 Cause:T2 Theme:T1
+T34	Negative_regulation 31 40	inhibitor
+E2	Negative_regulation:T34 Cause:T1 Theme:T3
+T35	Positive_regulation 287 297	stimulates
+E3	Positive_regulation:T35 Theme:E4 Cause:T8
+T36	Phosphorylation 302 317	phosphorylation
+E4	Phosphorylation:T36 Theme:T9
+T37	Regulation 398 407	regulated
+E5	Regulation:T37 Theme:T28
+M1	Speculation E5
+T38	Protein 433 439	raptor
+T39	Binding 440 451	interacting
+E6	Binding:T39 Theme:T38 Theme:T11
+T40	Binding 465 470	binds
+E7	Binding:T40 Theme:T11 Theme:T12
+T41	Binding 526 537	interaction
+E8	Binding:T41 Theme:T11 Theme:T14
+T42	Negative_regulation 553 562	disrupted
+E9	Negative_regulation:T42 Theme:E8
+T43	Negative_regulation 599 607	inhibits
+E10	Negative_regulation:T43 Cause:T15 Theme:E11
+T44	Phosphorylation 626 641	phosphorylation
+E11	Phosphorylation:T44 Theme:T16
+T45	Positive_regulation 652 659	induced
+E12	Positive_regulation:T45 Cause:T17 Theme:E13
+T46	Positive_regulation 660 670	activation
+E13	Positive_regulation:T46 Theme:T29
+E14	Negative_regulation:T43 Cause:T15 Theme:E13
+T47	Negative_regulation 710 718	prevents
+E15	Negative_regulation:T47 Theme:E16 Cause:T15
+T48	Positive_regulation 729 737	increase
+E16	Positive_regulation:T48 Theme:T30
+T49	Positive_regulation 794 804	stimulates
+E17	Positive_regulation:T49 Cause:T19 Theme:E18
+T50	Phosphorylation 822 837	phosphorylation
+E18	Phosphorylation:T50 Theme:T22
+T51	Positive_regulation 813 821	mediated
+E19	Positive_regulation:T51 Cause:T21 Theme:E18
+T52	Negative_regulation 855 863	prevents
+E20	Negative_regulation:T52 Cause:E18 Theme:E21
+T53	Negative_regulation 868 878	inhibition
+E21	Negative_regulation:T53 Cause:T22 Theme:T23
+T54	Positive_regulation 1047 1056	activates
+E22	Positive_regulation:T54 Cause:T26 Theme:T27

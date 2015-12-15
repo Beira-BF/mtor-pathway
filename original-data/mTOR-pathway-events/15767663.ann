@@ -1,0 +1,83 @@
+T1	Protein 40 44	mTOR
+T2	Protein 97 104	insulin
+T3	Protein 170 199	mammalian target of rapamycin
+T4	Protein 201 205	mTOR
+T5	Protein 412 416	mTOR
+T6	Protein 498 502	mTOR
+T7	Protein 629 678	Eukaryotic initiation factor 4E-binding protein 1
+T8	Protein 680 686	4E-BP1
+T9	Protein 812 818	4E-BP1
+T10	Protein 953 957	mTOR
+T11	Protein 976 983	insulin
+T12	Protein 1143 1147	mTOR
+T13	Protein 1159 1163	S6K1
+T14	Protein 1205 1209	mTOR
+T15	Protein 1246 1252	4E-BP1
+T16	Protein 1263 1269	4E-BP1
+T17	Protein 1274 1278	S6K1
+T18	Protein 1288 1292	mTOR
+T19	Protein 1350 1354	mTOR
+T20	Protein 1358 1364	4E-BP1
+T21	Protein 1369 1373	S6K1
+T22	Protein 1427 1433	4E-BP1
+T23	Protein 1468 1473	eIF4E
+T24	Protein 1502 1508	4E-BP1
+T25	Protein 1512 1516	mTOR
+T26	Protein 1633 1637	mTOR
+T27	Protein 1686 1690	mTOR
+T28	Protein 108 128	initiation factor 4E
+*	Equiv T3 T4
+*	Equiv T7 T8
+T29	Drug 847 856	rapamycin
+T30	Drug 919 928	rapamycin
+T31	Drug 1069 1078	rapamycin
+T32	Binding 129 136	binding
+E1	Binding:T32 Theme:T28
+T33	Positive_regulation 430 450	positively regulated
+E2	Positive_regulation:T33 Theme:T5
+T34	Phosphorylation 698 713	phosphorylation
+E3	Phosphorylation:T34 Theme:T8
+T35	Entity 776 786	N-terminal
+T36	Phosphorylation 787 802	phosphorylation
+E4	Phosphorylation:T36 Site:T35 Theme:T9
+T37	Regulation 763 771	regulate
+E5	Regulation:T37 Site:T38 Theme:T9
+T38	Entity 831 841	RAIP motif
+T39	Regulation 857 868	insensitive
+E6	Regulation:T39 Cause:T29 Theme:E5
+M1	Negation E6
+T40	Entity 1034 1039	Ser64
+T41	Entity 1040 1042	65
+T42	Phosphorylation 995 1010	phosphorylation
+E7	Phosphorylation:T42 Site:T41 Theme:T9
+E8	Phosphorylation:T42 Site:T40 Theme:T9
+T43	Positive_regulation 984 994	stimulated
+E9	Positive_regulation:T43 Cause:T11 Theme:E7
+E10	Positive_regulation:T43 Cause:T11 Theme:E8
+T44	Positive_regulation 1056 1065	sensitive
+E11	Positive_regulation:T44 Cause:T31 Theme:E8
+E12	Positive_regulation:T44 Cause:T31 Theme:E7
+T45	Phosphorylation 1086 1101	phosphorylation
+E13	Phosphorylation:T45 Theme:T13
+T46	Positive_regulation 1132 1138	target
+E14	Positive_regulation:T46 Cause:T12 Theme:E13
+T47	Phosphorylation 1219 1233	phosphorylates
+E15	Phosphorylation:T47 Site:T49 Theme:T15
+E16	Phosphorylation:T47 Site:T48 Theme:T15
+T48	Entity 1234 1239	Thr69
+T49	Entity 1240 1242	70
+T50	Catalysis 1219 1233	phosphorylates
+E17	Catalysis:T50 Cause:T14 Theme:E15
+E18	Catalysis:T50 Cause:T14 Theme:E16
+T51	Protein 1302 1308	raptor
+T52	Binding 1279 1283	bind
+E19	Binding:T52 Theme:T16 Theme:T51
+E20	Binding:T52 Theme:T17 Theme:T51
+T53	Phosphorylation 1408 1423	phosphorylation
+E21	Phosphorylation:T53 Theme:T22
+T54	Binding 1460 1464	bind
+E22	Binding:T54 Theme:T23 Theme:T22
+T55	Phosphorylation 1483 1498	phosphorylation
+E23	Phosphorylation:T55 Theme:T24
+T56	Catalysis 1483 1498	phosphorylation
+E24	Catalysis:T56 Cause:T25 Theme:E23

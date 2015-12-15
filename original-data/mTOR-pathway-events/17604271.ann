@@ -1,0 +1,83 @@
+T1	Protein 0 6	PRAS40
+T2	Complex 23 62	mammalian target of rapamycin complex 1
+T3	Complex 144 183	mammalian target of rapamycin complex 1
+T4	Complex 185 191	mTORC1
+T5	Protein 236 243	insulin
+T6	Protein 245 251	PRAS40
+T7	Complex 268 274	mTORC1
+T8	Protein 315 321	PRAS40
+T9	Protein 453 476	eIF4E-binding protein 1
+T10	Protein 478 484	4E-BP1
+T11	Protein 487 493	PRAS40
+T12	Protein 655 661	PRAS40
+T13	Protein 663 669	PRAS40
+T14	Protein 732 739	insulin
+T15	Protein 752 758	PRAS40
+T16	Protein 794 798	TSC1
+T17	Protein 799 800	2
+T18	Protein 825 831	mTORC1
+T19	Protein 851 855	Rheb
+T20	Protein 908 914	PRAS40
+T21	Protein 997 1003	PRAS40
+T22	Protein 1037 1044	insulin
+T23	Protein 1075 1081	4E-BP1
+T24	Protein 1174 1178	TSC2
+T25	Protein 1216 1222	PRAS40
+T26	Complex 1237 1243	mTORC1
+T27	Protein 1283 1287	S6K1
+T28	Protein 1292 1298	4E-BP1
+*	Equiv T3 T4
+T29	Complex 307 313	mTORC2
+T30	Protein 291 297	raptor
+T31	Protein 337 343	raptor
+T32	Protein 402 408	PRAS40
+*	Equiv T9 T10
+T33	Complex 532 538	mTORC1
+T34	Drug 615 624	rapamycin
+T35	Protein 676 682	14-3-3
+T36	Protein 762 768	14-3-3
+T37	Complex 794 800	TSC1/2
+T38	Drug 861 870	rapamycin
+T39	Complex 945 951	mTORC1
+T40	Protein 1183 1186	Akt
+T41	Protein 1167 1170	Akt
+T42	Regulation 207 216	regulated
+E1	Regulation:T42 Cause:T5 Theme:T4
+T43	Binding 252 262	associates
+E2	Binding:T43 Theme:T6 Theme:T7
+E3	Binding:T43 Theme:T6 Theme:T29
+M1	Negation E3
+T44	Binding 322 331	interacts
+E4	Binding:T44 Theme:T8 Theme:T31 Site:T45
+T45	Entity 373 386	TOR-signaling
+T46	Entity 388 391	TOS
+*	Equiv T46 T45
+T47	Phosphorylation 513 528	phosphorylation
+E5	Phosphorylation:T47 Theme:T11
+T48	Catalysis 513 528	phosphorylation
+E6	Catalysis:T48 Cause:T33 Theme:E5
+T49	Phosphorylation 636 651	phosphorylation
+E7	Phosphorylation:T49 Theme:T12
+T50	Regulation 625 631	alters
+E8	Regulation:T50 Cause:T34 Theme:E7
+T51	Binding 670 675	binds
+E9	Binding:T51 Theme:T13 Theme:T35
+T52	Positive_regulation 702 710	requires
+E10	Positive_regulation:T52 Theme:E9 Cause:T14
+T53	Binding 741 748	Binding
+E11	Binding:T53 Theme:T15 Theme:T36
+T54	Negative_regulation 781 790	inhibited
+E12	Negative_regulation:T54 Cause:T37 Theme:E11
+T55	Positive_regulation 837 847	stimulated
+E13	Positive_regulation:T55 Cause:T19 Theme:E11
+T56	Positive_regulation 871 880	sensitive
+E14	Positive_regulation:T56 Theme:E13 Cause:T38
+T57	Regulation 931 941	regulation
+E15	Regulation:T57 Cause:T39 Theme:T20
+T58	Phosphorylation 1056 1071	phosphorylation
+E16	Phosphorylation:T58 Theme:T23
+T59	Positive_regulation 1045 1055	stimulated
+E17	Positive_regulation:T59 Cause:T22 Theme:E16
+T60	Phosphorylation 1148 1163	phosphorylation
+E18	Phosphorylation:T60 Theme:T24
+E19	Phosphorylation:T60 Theme:T41

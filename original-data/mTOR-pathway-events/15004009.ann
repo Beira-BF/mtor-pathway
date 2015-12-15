@@ -1,0 +1,76 @@
+T1	Protein 0 4	mTOR
+T2	Protein 54 60	TIF-IA
+T3	Protein 256 285	mammalian target of rapamycin
+T4	Protein 287 291	mTOR
+T5	Protein 353 359	TIF-IA
+T6	Protein 448 452	mTOR
+T7	Protein 488 494	TIF-IA
+T8	Protein 607 613	TIF-IA
+T9	Protein 669 675	TIF-IA
+T10	Protein 806 812	TIF-IA
+T11	Protein 1025 1029	mTOR
+T12	RNA 67 71	rRNA
+T13	Protein 167 183	RNA polymerase I
+T14	Protein 185 190	Pol I
+*	Equiv T13 T14
+*	Equiv T3 T4
+T15	Protein 303 308	Pol I
+T16	Drug 466 475	rapamycin
+T17	Drug 561 570	rapamycin
+T18	Drug 634 643	Rapamycin
+T19	Protein 907 913	TIF-IA
+T20	Transcription 72 81	synthesis
+E1	Transcription:T20 Theme:T12
+T21	Regulation 61 66	links
+E2	Regulation:T21 Cause:E3 Theme:E1
+T22	Positive_regulation 15 25	activation
+E3	Positive_regulation:T22 Cause:T1 Theme:T2
+T23	RNA 144 157	ribosomal RNA
+T24	Transcription 127 140	transcription
+E4	Transcription:T24 Theme:T23
+T25	Catalysis 127 140	transcription
+E5	Catalysis:T25 Cause:T13 Theme:E4
+T26	Regulation 326 336	modulating
+E6	Regulation:T26 Cause:T4 Theme:T5
+T27	Negative_regulation 434 444	Inhibition
+E7	Negative_regulation:T27 Cause:T16 Theme:T6
+T28	Negative_regulation 476 487	inactivates
+E8	Negative_regulation:T28 Cause:E7 Theme:T7
+T29	Localization 590 603	translocation
+E9	Localization:T29 Theme:T8 toLoc:T31
+T30	Positive_regulation 581 586	leads
+E10	Positive_regulation:T30 Cause:T17 Theme:E9
+T31	Entity 623 632	cytoplasm
+T32	Negative_regulation 653 665	inactivation
+E11	Negative_regulation:T32 Theme:T9
+T33	Positive_regulation 644 652	mediated
+E12	Positive_regulation:T33 Cause:T18 Theme:E11
+T34	Entity 712 717	Se 44
+T35	Entity 719 722	S44
+T36	Entity 752 758	Se 199
+T37	Entity 760 764	S199
+*	Equiv T36 T37
+*	Equiv T34 T35
+T38	Phosphorylation 689 708	hypophosphorylation
+E13	Phosphorylation:T38 Site:T34 Theme:T9
+M1	Negation E13
+T39	Phosphorylation 728 748	hyperphosphorylation
+E14	Phosphorylation:T39 Site:T36 Theme:T9
+T40	Positive_regulation 679 685	caused
+E15	Positive_regulation:T40 Theme:E11 Cause:E14
+E16	Positive_regulation:T40 Theme:E11 Cause:E13
+T41	Phosphorylation 767 782	Phosphorylation
+E17	Phosphorylation:T41 Site:T37 Theme:T10
+E18	Phosphorylation:T41 Site:T35 Theme:T10
+T42	Regulation 798 805	affects
+E19	Regulation:T42 Cause:E17 Theme:T10
+E20	Regulation:T42 Cause:E18 Theme:T10
+T43	Phosphorylation 853 868	phosphorylation
+E21	Phosphorylation:T43 Site:T46 Theme:T19
+T44	Entity 872 875	S44
+T45	Positive_regulation 876 885	activates
+E22	Positive_regulation:T45 Cause:E24 Theme:T19
+T46	Entity 890 894	S199
+T47	Negative_regulation 895 906	inactivates
+E23	Negative_regulation:T47 Cause:E21 Theme:T19
+E24	Phosphorylation:T43 Site:T44 Theme:T19

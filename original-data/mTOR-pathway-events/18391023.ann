@@ -1,0 +1,90 @@
+T1	Protein 0 4	PTEN
+T2	Protein 92 96	PTEN
+T3	Protein 343 347	PTEN
+T4	Protein 489 493	PTEN
+T5	Protein 497 501	PTEN
+T6	Protein 573 577	PTEN
+T7	Protein 641 645	PTEN
+T8	Protein 665 669	PTEN
+T9	Protein 728 731	p53
+T10	Protein 733 737	PTEN
+T11	Protein 807 811	mTOR
+T12	Protein 851 855	PTEN
+T13	Protein 885 889	mTOR
+T14	Protein 979 983	Brf1
+T15	Protein 1016 1020	PTEN
+T16	Protein 1083 1087	Brf1
+T17	Protein 1200 1204	PTEN
+T18	Protein 1266 1270	Bdp1
+T19	Protein 1342 1346	PTEN
+T20	Protein 1405 1409	mTOR
+T21	Dissociation 919 929	disrupting
+E1	Dissociation:T21 Participant:T36 Participant:T14 Complex:T35
+T22	Protein 15 33	RNA polymerase III
+T23	Complex 75 89	TFIIIB complex
+T24	Protein 75 81	TFIIIB
+T25	Protein 223 252	phosphatidylinositol 3-kinase
+T26	Protein 254 258	PI3K
+*	Equiv T25 T26
+T27	Protein 377 401	RNA polymerase (Pol) III
+T28	RNA 436 441	tRNAs
+T29	RNA 446 454	5S rRNAs
+T30	Protein 528 539	RNA Pol III
+T31	Protein 798 802	PI3K
+T32	Protein 803 806	Akt
+T33	Protein 812 815	S6K
+T34	Protein 903 909	TFIIIB
+T35	Complex 903 917	TFIIIB complex
+T36	Protein 954 974	TATA-binding protein
+T37	Protein 1146 1152	TFIIIB
+T38	RNA 1165 1174	tRNA(Leu)
+T39	Protein 1396 1400	PI3K
+T40	Protein 1401 1404	Akt
+T41	Protein 1410 1413	S6K
+T42	Negative_regulation 213 222	represses
+E2	Negative_regulation:T42 Theme:T25
+T43	Regulation 351 359	regulate
+E3	Regulation:T43 Cause:T3 Theme:E4
+T44	Transcription 364 373	synthesis
+E4	Transcription:T44 Theme:T28
+T45	Catalysis 364 373	synthesis
+E5	Catalysis:T45 Cause:T27 Theme:E4
+E6	Transcription:T44 Theme:T29
+E7	Catalysis:T45 Cause:T27 Theme:E6
+E8	Regulation:T43 Cause:T3 Theme:E6
+T46	Gene_expression 475 485	expression
+E9	Gene_expression:T46 Theme:T4
+T47	Negative_regulation 518 527	repressed
+E10	Negative_regulation:T47 Theme:T30 Cause:E9
+T48	Gene_expression 578 588	expression
+E11	Gene_expression:T48 Theme:T6
+T49	Negative_regulation 563 572	decreased
+E12	Negative_regulation:T49 Theme:E11
+T50	Negative_regulation 869 881	inactivation
+E13	Negative_regulation:T50 Theme:T13
+T51	Positive_regulation 1031 1038	induces
+E14	Positive_regulation:T51 Theme:E15 Cause:T15
+T52	Negative_regulation 1041 1049	decrease
+E15	Negative_regulation:T52 Theme:E16
+T53	Entity 1057 1063	serine
+T54	Phosphorylation 1064 1079	phosphorylation
+E16	Phosphorylation:T54 Site:T53 Theme:T16
+T55	Gene_expression 1205 1215	expression
+E17	Gene_expression:T55 Theme:T17
+T56	Entity 1240 1246	serine
+T57	Phosphorylation 1247 1262	phosphorylation
+E18	Phosphorylation:T57 Site:T56 Theme:T18
+T58	Positive_regulation 1231 1239	enhanced
+E19	Positive_regulation:T58 Cause:E17 Theme:E18
+T59	Positive_regulation 1382 1392	activation
+E20	Positive_regulation:T59 Theme:T41
+E21	Positive_regulation:T59 Theme:T20
+E22	Positive_regulation:T59 Theme:T40
+E23	Positive_regulation:T59 Theme:T39
+T60	Negative_regulation 1370 1377	repress
+E24	Negative_regulation:T60 Theme:E21 Cause:T19
+E25	Negative_regulation:T60 Theme:E23 Cause:T19
+E26	Negative_regulation:T60 Theme:E22 Cause:T19
+E27	Negative_regulation:T60 Theme:E20 Cause:T19
+T61	Binding 934 945	association
+E28	Binding:T61 Theme:T35 Theme:T36 Theme:T14

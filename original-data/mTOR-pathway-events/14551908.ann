@@ -1,0 +1,60 @@
+T1	Protein 21 25	Axin
+T2	Protein 263 275	beta-catenin
+T3	Protein 315 319	axin
+T4	Protein 339 351	beta-catenin
+T5	Protein 691 699	GSK3beta
+T6	Protein 706 710	axin
+T7	Protein 712 724	beta-catenin
+T8	Protein 1229 1241	beta-catenin
+T9	Protein 1246 1250	axin
+T10	Protein 1453 1457	axin
+T11	Protein 1462 1465	APC
+T12	Protein 1575 1579	axin
+T13	Protein 1672 1676	axin
+T14	Protein 1787 1799	beta-catenin
+T15	Protein 13 16	APC
+T16	Protein 84 87	Wnt
+T17	Protein 98 101	Wnt
+T18	Protein 191 194	Wnt
+T19	Protein 439 442	Wnt
+T20	Protein 592 595	Wnt
+T21	Protein 663 666	Wnt
+T22	Protein 668 676	Frizzled
+T23	Protein 678 689	Dishevelled
+T24	Protein 701 704	APC
+T25	Protein 730 733	TCF
+T26	Protein 1210 1213	Wnt
+T27	Protein 1304 1307	Wnt
+T28	Protein 1625 1628	Wnt
+T29	Protein 1692 1695	APC
+T30	Protein 1813 1816	APC
+T31	Protein 1959 1962	Wnt
+T32	Positive_regulation 173 183	Activation
+E1	Positive_regulation:T32 Theme:T18
+T33	Regulation 327 338	coordinates
+E2	Regulation:T33 Theme:E3 Cause:T3
+T34	Protein_catabolism 352 363	degradation
+E3	Protein_catabolism:T34 Theme:T4
+T35	Protein_catabolism 375 383	degraded
+E4	Protein_catabolism:T35 Theme:T3
+T36	Binding 623 635	interactions
+E5	Binding:T36 Theme:T22 Theme:T5 Theme:T24 Theme:T6 Theme:T7 Theme:T25 Theme:T21 Theme:T23
+T37	Positive_regulation 1214 1225	stimulation
+E6	Positive_regulation:T37 Theme:E8 Cause:T26
+T38	Protein_catabolism 1251 1259	turnover
+E7	Protein_catabolism:T38 Theme:T8
+E8	Protein_catabolism:T38 Theme:T9
+E9	Positive_regulation:T37 Theme:E7 Cause:T26
+T39	Protein_catabolism 1580 1591	degradation
+E10	Protein_catabolism:T39 Theme:T12
+T40	Positive_regulation 1595 1605	amplifying
+E11	Positive_regulation:T40 Cause:E10 Theme:T28
+T41	Protein_catabolism 1677 1688	degradation
+E12	Protein_catabolism:T41 Theme:T13
+T42	Regulation 1658 1668	dependence
+E13	Regulation:T42 Cause:E12 Theme:T29
+M1	Speculation E13
+T43	Positive_regulation 1771 1783	accumulation
+E14	Positive_regulation:T43 Theme:T14
+T44	Negative_regulation 1758 1766	prevents
+E15	Negative_regulation:T44 Theme:E14

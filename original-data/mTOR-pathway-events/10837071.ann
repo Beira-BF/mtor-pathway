@@ -1,0 +1,86 @@
+T1	Protein 1509 1536	tumor necrosis factor-alpha
+T2	Protein 1748 1756	IKKalpha
+T3	Protein 1761 1768	IKKbeta
+T4	Protein 1916 1924	IKKalpha
+T5	Protein 1929 1936	IKKbeta
+T6	Protein 2077 2086	beta-TrCP
+T7	Protein 2104 2113	ubiquitin
+T8	Complex 53 64	NF-[kappa]B
+T9	Complex 76 85	NF-kappaB
+T10	Complex 87 108	nuclear factor-kappaB
+*	Equiv T9 T10
+T11	Complex 277 286	NF-kappaB
+T12	Complex 520 529	NF-kappaB
+T13	Complex 690 699	NF-kappaB
+T14	Protein 750 758	IkappaBs
+T15	Complex 771 780	NF-kappaB
+T16	Binding 766 770	bind
+E1	Binding:T16 Theme:T14 Theme:T15 Site:T17
+T17	Entity 794 821	nuclear localization signal
+T18	Negative_regulation 831 841	preventing
+E2	Negative_regulation:T18 Cause:E1 Theme:E3
+T19	Localization 850 856	uptake
+E3	Localization:T19 toLoc:T20 Theme:T15
+T20	Entity 842 849	nuclear
+T21	Localization 678 686	location
+E4	Localization:T21 Theme:T13
+T22	Regulation 703 713	controlled
+E5	Regulation:T22 Theme:E4 Cause:T14
+T23	Protein 1008 1015	IkappaB
+T24	Protein_catabolism 981 1004	proteolytic degradation
+E6	Protein_catabolism:T24 Theme:T23
+T25	Ubiquitination 950 964	ubiquitination
+E7	Ubiquitination:T25 Theme:T23
+T26	Phosphorylation 933 948	phosphorylation
+E8	Phosphorylation:T26 Theme:T23
+T27	Positive_regulation 1023 1028	frees
+E9	Positive_regulation:T27 Theme:E10 Cause:E6
+T28	Complex 1029 1038	NF-kappaB
+T29	Localization 1042 1053	translocate
+E10	Localization:T29 toLoc:T30 Theme:T28
+T30	Entity 1061 1068	nucleus
+T31	Complex 1108 1117	NF-kappaB
+T32	Positive_regulation 1118 1128	activation
+E11	Positive_regulation:T32 Theme:T31
+T33	Complex 1426 1435	NF-kappaB
+T34	Protein 1541 1554	interleukin-1
+T35	Regulation 1417 1425	regulate
+E12	Regulation:T35 Theme:T33
+T36	Complex 1711 1714	IKK
+T37	Protein 1820 1827	IkappaB
+T38	Phosphorylation 1806 1819	phosphorylate
+E13	Phosphorylation:T38 Theme:T37
+E14	Phosphorylation:T38 Theme:T37
+T39	Catalysis 1806 1819	phosphorylate
+E15	Catalysis:T39 Cause:T3 Theme:E14
+E16	Catalysis:T39 Cause:T2 Theme:E13
+T41	Phosphorylation 1944 1959	phosphorylation
+E18	Phosphorylation:T41 Theme:T43
+T42	Complex 1965 1968	IKK
+T43	Protein 1994 2001	IkappaB
+T44	Catalysis 1944 1959	phosphorylation
+E19	Catalysis:T44 Theme:E18 Cause:T42
+T45	Protein 2064 2068	E3RS
+T46	Protein 2069 2076	IkappaB
+T47	Complex 2145 2148	IKK
+T48	Protein 2158 2165	IkappaB
+T49	Regulation 2149 2157	controls
+E20	Regulation:T49 Cause:T47 Theme:E21
+T50	Ubiquitination 2166 2180	ubiquitination
+E21	Ubiquitination:T50 Theme:T48
+T51	Protein_catabolism 2185 2196	degradation
+E22	Protein_catabolism:T51 Theme:T48
+E23	Regulation:T49 Cause:T47 Theme:E22
+T52	Complex 2264 2273	NF-kappaB
+T53	Complex 2299 2302	IKK
+T54	Protein 2317 2324	IkappaB
+T55	Complex 2358 2367	NF-kappaB
+T56	Complex 2450 2459	NF-kappaB
+T57	Phosphorylation 2245 2260	phosphorylation
+E24	Phosphorylation:T57 Theme:T52
+T58	Phosphorylation 2275 2295	hyperphosphorylation
+E25	Phosphorylation:T58 Theme:T53
+T59	Gene_expression 2325 2334	synthesis
+E26	Gene_expression:T59 Theme:T54
+T60	Positive_regulation 2304 2313	induction
+E27	Positive_regulation:T60 Theme:E26

@@ -1,0 +1,82 @@
+T1	Protein 19 23	axin
+T2	Protein 61 91	glycogen synthase kinase-3beta
+T3	Protein 118 122	Axin
+T4	Protein 144 174	glycogen synthase kinase-3beta
+T5	Protein 176 185	GSK-3beta
+T6	Protein 191 203	beta-catenin
+T7	Protein 217 226	GSK-3beta
+T8	Protein 256 268	beta-catenin
+T9	Protein 309 321	beta-catenin
+T10	Protein 331 340	GSK-3beta
+T11	Protein 361 365	Axin
+T12	Protein 439 443	Axin
+T13	Protein 494 503	GSK-3beta
+T14	Protein 701 705	Axin
+T15	Protein 765 769	Axin
+T16	Protein 826 835	GSK-3beta
+T17	Protein 901 906	Dvl-1
+T18	Protein 960 969	GSK-3beta
+T19	Protein 1004 1008	Axin
+T20	Protein 1012 1021	GSK-3beta
+T21	Protein 1045 1051	Wnt-3a
+T22	Protein 1097 1101	Axin
+T23	Protein 1118 1130	beta-catenin
+T24	Protein 1160 1165	Dvl-1
+T25	Protein 1166 1174	DeltaPDZ
+T26	Protein 1298 1302	Axin
+T27	Protein 1380 1384	Axin
+*	Equiv T5 T4
+T28	Protein 1240 1246	Wnt-3a
+T29	Phosphorylation 0 15	Phosphorylation
+E1	Phosphorylation:T29 Theme:T1
+T30	Catalysis 0 15	Phosphorylation
+E2	Catalysis:T30 Theme:E1 Cause:T2
+T31	Binding 123 128	forms
+E3	Binding:T31 Theme:T3 Theme:T4 Theme:T6
+T32	Positive_regulation 208 216	promotes
+E4	Positive_regulation:T32 Theme:E5 Cause:T3
+T33	Catalysis 227 236	dependent
+E5	Catalysis:T33 Theme:E6 Cause:T7
+T34	Phosphorylation 237 252	phosphorylation
+E6	Phosphorylation:T34 Theme:T8
+T35	Positive_regulation 278 289	stimulating
+E7	Positive_regulation:T35 Theme:E8 Cause:E6
+T36	Protein_catabolism 294 305	degradation
+E8	Protein_catabolism:T36 Theme:T9
+T37	Phosphorylation 346 360	phosphorylates
+E9	Phosphorylation:T37 Theme:T11
+T38	Catalysis 346 360	phosphorylates
+E10	Catalysis:T38 Theme:E9 Cause:T10
+T39	Phosphorylation 420 435	phosphorylation
+E11	Phosphorylation:T39 Theme:T12
+T40	Protein 635 639	Axin
+T41	Phosphorylation 678 692	phosphorylated
+E12	Phosphorylation:T41 Theme:T14
+T42	Phosphorylation 731 747	unphosphorylated
+E13	Phosphorylation:T42 Theme:T14
+M1	Negation E13
+T43	Phosphorylation 800 815	phosphorylation
+E14	Phosphorylation:T43 Theme:T15
+T44	Catalysis 800 815	phosphorylation
+E15	Catalysis:T44 Theme:E14 Cause:T16
+T45	Protein 895 899	Axin
+T46	Negative_regulation 971 980	inhibited
+E16	Negative_regulation:T46 Theme:E17 Cause:T17
+T47	Phosphorylation 985 1000	phosphorylation
+E17	Phosphorylation:T47 Theme:T19
+T48	Catalysis 985 1000	phosphorylation
+E18	Catalysis:T48 Theme:E17 Cause:T20
+T49	Regulation 948 956	upstream
+E19	Regulation:T49 Theme:T18 Cause:T17
+T50	Negative_regulation 1082 1096	down-regulated
+E20	Negative_regulation:T50 Theme:T22 Cause:T21
+T51	Positive_regulation 1106 1117	accumulated
+E21	Positive_regulation:T51 Theme:T23
+T52	Gene_expression 1146 1156	expression
+E22	Gene_expression:T52 Theme:T25
+E23	Positive_regulation:T51 Theme:E22
+T53	Negative_regulation 1214 1224	suppressed
+E24	Negative_regulation:T53 Theme:T28 Cause:E21
+E25	Negative_regulation:T53 Theme:T28 Cause:E23
+T54	Phosphorylation 1279 1294	phosphorylation
+E26	Phosphorylation:T54 Theme:T26

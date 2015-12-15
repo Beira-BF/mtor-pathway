@@ -1,0 +1,63 @@
+T1	Protein 71 97	elongation factor-2 kinase
+T2	Protein 240 250	calmodulin
+T10	Protein 0 35	Cyclic AMP-dependent protein kinase
+T11	Protein 166 201	cyclic AMP-dependent protein kinase
+T12	Protein 203 206	PKA
+*	Equiv T11 T12
+T13	Simple_molecule 110 117	calcium
+T14	Simple_molecule 232 239	calcium
+T3	Protein 261 306	eukaryotic elongation factor-2 (eEF-2) kinase
+T4	Protein 409 421	eEF-2 kinase
+T5	Protein 433 445	eEF-2 kinase
+T6	Protein 450 453	PKA
+T7	Protein 504 516	eEF-2 kinase
+T15	Protein 520 523	PKA
+T16	Simple_molecule 532 539	calcium
+T17	Simple_molecule 636 643	calcium
+T18	Simple_molecule 671 678	calcium
+T19	Protein 730 733	PKA
+T8	Protein 811 823	eEF-2 kinase
+T9	Protein 851 863	eEF-2 kinase
+T20	Protein 903 906	PKA
+T21	Protein 971 974	PKA
+T22	Simple_molecule 1100 1107	calcium
+T23	Phosphorylation 36 50	phosphorylates
+E1	Phosphorylation:T23 Theme:T1
+T24	Catalysis 36 50	phosphorylates
+E2	Catalysis:T24 Cause:T10 Theme:E1
+T25	Phosphorylation 208 222	phosphorylated
+E3	Phosphorylation:T25 Theme:T3
+T26	Catalysis 208 222	phosphorylated
+E4	Catalysis:T26 Cause:T12 Theme:E3
+T27	Positive_regulation 251 260	dependent
+E5	Positive_regulation:T27 Cause:T14 Theme:T3
+E6	Positive_regulation:T27 Cause:T2 Theme:T3
+T28	Phosphorylation 485 500	Phosphorylation
+E7	Phosphorylation:T28 Theme:T7
+T29	Catalysis 485 500	Phosphorylation
+E8	Catalysis:T29 Cause:T15 Theme:E7
+T30	Phosphorylation 711 726	phosphorylation
+E9	Phosphorylation:T30 Theme:T7
+T31	Catalysis 711 726	phosphorylation
+E10	Catalysis:T31 Cause:T19 Theme:E9
+T32	Positive_regulation 754 761	induced
+E11	Positive_regulation:T32 Theme:E9 Cause:E12
+T33	Phosphorylation 788 807	autophosphorylation
+E12	Phosphorylation:T33 Theme:T8
+T34	Catalysis 788 807	autophosphorylation
+E13	Catalysis:T34 Cause:T8 Theme:E12
+T35	Phosphorylation 876 895	autophosphorylation
+E14	Phosphorylation:T35 Theme:T9
+T36	Catalysis 876 895	autophosphorylation
+E15	Catalysis:T36 Cause:T9 Theme:E14
+E16	Phosphorylation:T35 Theme:T9
+E17	Catalysis:T36 Cause:T20 Theme:E16
+T37	Phosphorylation 979 992	phosphorylate
+E18	Phosphorylation:T37 Theme:T9
+T38	Catalysis 979 992	phosphorylate
+E19	Catalysis:T38 Cause:T21 Theme:E18
+M1	Speculation E19
+T39	Phosphorylation 1020 1034	phosphorylated
+E20	Phosphorylation:T39 Theme:T9
+T40	Catalysis 1020 1034	phosphorylated
+E21	Catalysis:T40 Cause:T9 Theme:E20

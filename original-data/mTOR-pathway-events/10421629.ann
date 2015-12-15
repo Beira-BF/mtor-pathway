@@ -1,0 +1,71 @@
+T1	Protein 33 37	axin
+T2	Protein 47 59	beta-catenin
+T3	Protein 69 73	axin
+T4	Protein 105 117	beta-catenin
+T5	Protein 244 248	Axin
+T6	Protein 278 287	GSK-3beta
+T7	Protein 317 329	beta-catenin
+T8	Protein 403 415	beta-catenin
+T9	Protein 482 494	beta-catenin
+T10	Protein 522 526	Axin
+T11	Protein 598 602	Axin
+T12	Protein 609 621	beta-catenin
+T13	Protein 696 700	Axin
+T14	Protein 716 728	beta-catenin
+T15	Protein 750 762	beta-catenin
+T16	Complex 69 81	axin complex
+T17	Dephosphorylation 12 29	dephosphorylation
+E1	Dephosphorylation:T17 Theme:T1
+T18	Catalysis 4 11	induced
+E2	Catalysis:T18 Cause:T19 Theme:E3
+T19	Protein 0 3	Wnt
+T20	Dissociation 38 46	releases
+E3	Dissociation:T20 Participant:T3 Complex:T16 Participant:T2
+T21	Protein 250 253	APC
+T22	Phosphorylation 330 345	phosphorylation
+E4	Phosphorylation:T22 Theme:T7
+T23	Regulation 306 316	regulating
+E5	Regulation:T23 Theme:E4 Cause:T6
+M1	Speculation E5
+E6	Regulation:T23 Theme:E4 Cause:T21
+M2	Speculation E6
+E7	Regulation:T23 Theme:E4 Cause:T5
+M3	Speculation E7
+T24	Protein_catabolism 365 376	degradation
+E8	Protein_catabolism:T24 Theme:T7
+E9	Regulation:T23 Theme:E8 Cause:T21
+M4	Speculation E9
+E10	Regulation:T23 Theme:E8 Cause:T6
+M5	Speculation E10
+E11	Regulation:T23 Theme:E8 Cause:T5
+M6	Speculation E11
+T25	Complex 482 502	beta-catenin complex
+T26	Binding 212 223	interacting
+E12	Binding:T26 Theme:T7 Theme:T5
+E13	Binding:T26 Theme:T7 Theme:T21
+E14	Binding:T26 Theme:T7 Theme:T6
+T27	Protein 454 457	Wnt
+T28	Protein 378 381	Wnt
+T29	Regulation 468 477	regulates
+E15	Regulation:T29 Theme:T25 Cause:T27
+M7	Speculation E15
+T30	Phosphorylation 530 546	dephosphorylated
+E16	Phosphorylation:T30 Theme:T10
+T31	Regulation 550 558	response
+E17	Regulation:T31 Cause:T32 Theme:E16
+T32	Protein 562 565	Wnt
+T33	Dephosphorylation 581 597	dephosphorylated
+E18	Dephosphorylation:T33 Theme:T11
+T34	Binding 603 608	binds
+E19	Binding:T34 Theme:T11 Theme:T12
+T35	Phosphorylation 648 662	phosphorylated
+E20	Phosphorylation:T35 Theme:T11
+T36	Protein 675 678	Wnt
+T37	Negative_regulation 689 695	lowers
+E21	Negative_regulation:T37 Theme:E22 Cause:T36
+T38	Binding 703 711	affinity
+E22	Binding:T38 Theme:T14 Theme:T13
+T39	Protein_catabolism 772 783	degradation
+E23	Protein_catabolism:T39 Theme:T15
+T40	Negative_regulation 738 749	disengaging
+E24	Negative_regulation:T40 Theme:E23 Cause:E21

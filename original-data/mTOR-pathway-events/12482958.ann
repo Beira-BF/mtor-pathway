@@ -1,0 +1,86 @@
+T1	Protein 30 35	Pdcd4
+T2	Protein 135 140	Pdcd4
+T3	Protein 363 368	Pdcd4
+T4	Protein 501 506	Pdcd4
+T5	Protein 524 529	eIF4A
+T6	Protein 548 553	eIF4A
+T7	Protein 645 650	Pdcd4
+T8	Protein 699 704	eIF4A
+T9	Protein 709 714	eIF4F
+T10	Protein 755 760	Pdcd4
+T12	Protein 915 920	eIF4A
+T13	Protein 1021 1026	Pdcd4
+T14	Protein 1037 1042	eIF4A
+T15	Protein 1084 1089	eIF4G
+T16	Protein 1149 1154	eIF4G
+T17	Protein 1199 1204	Pdcd4
+T19	Protein 1252 1257	eIF4G
+T20	Protein 1282 1287	Pdcd4
+T21	Protein 1347 1352	eIF4A
+T22	Protein 1381 1386	eIF4A
+T23	Protein 1417 1422	eIF4G
+T24	Protein 1442 1447	eIF4A
+T25	Protein 1484 1489	eIF4G
+T26	Protein 1491 1496	Pdcd4
+T27	Protein 1508 1513	eIF4A
+T28	Protein 1571 1576	Pdcd4
+T29	Protein 1577 1582	eIF4A
+T30	Protein 1649 1654	Pdcd4
+T31	Dissociation 1399 1411	dissociation
+E1	Dissociation:T31 Participant:T22 Participant:T23
+T32	Protein 47 90	eukaryotic translation initiation factor 4A
+T33	Protein 431 437	eIF4AI
+T34	Protein 442 449	eIF4AII
+T35	Simple_molecule 560 563	ATP
+T36	Binding 91 98	binding
+E2	Binding:T36 Theme:T32 Theme:T1
+T37	Binding 369 379	associates
+E3	Binding:T37 Theme:T3 Theme:T34
+E4	Binding:T37 Theme:T3 Theme:T33
+T38	Localization 507 518	colocalizes
+E5	Localization:T38 Theme:T4 Theme:T5 atLoc:T39
+T39	Entity 537 546	cytoplasm
+T40	Positive_regulation 564 573	dependent
+E6	Positive_regulation:T40 Cause:T35 Theme:T6
+T41	Negative_regulation 664 673	inhibited
+E7	Negative_regulation:T41 Cause:T7 Theme:T9
+E8	Negative_regulation:T41 Cause:T7 Theme:T8
+T11	Protein 865 877	Pdcd4(D418A)
+T42	Negative_regulation 888 899	inactivated
+E9	Negative_regulation:T42 Theme:E10
+T43	Binding 904 911	binding
+E10	Binding:T43 Theme:T12 Theme:T11
+T44	Binding 1048 1055	binding
+E11	Binding:T44 Site:T45 Theme:T15 Theme:T14
+T45	Entity 1063 1080	C-terminal region
+T46	Negative_regulation 1027 1036	prevented
+E12	Negative_regulation:T46 Cause:T13 Theme:E11
+T47	Entity 1091 1115	amino acids 1040 to 1560
+*	Equiv T47 T45
+T48	Entity 1132 1145	middle region
+T49	Entity 1155 1178	amino acids 635 to 1039
+*	Equiv T49 T48
+E13	Binding:T44 Site:T48 Theme:T16 Theme:T14
+E14	Negative_regulation:T46 Cause:T13 Theme:E13
+M1	Negation E14
+T18	Protein 1209 1221	Pdcd4(D418A)
+T50	Binding 1222 1227	bound
+E15	Binding:T50 Site:T51 Theme:T19 Theme:T17
+E16	Binding:T50 Site:T51 Theme:T19 Theme:T18
+T51	Entity 1235 1248	middle region
+T52	Negative_regulation 1333 1343	inhibition
+E17	Negative_regulation:T52 Theme:T21 Cause:T20
+T53	Negative_regulation 1363 1375	interference
+E18	Negative_regulation:T53 Cause:T20 Theme:E19
+T54	Binding 1387 1398	association
+E19	Binding:T54 Theme:T22 Theme:T23
+E20	Negative_regulation:T53 Cause:T20 Theme:E1
+T55	Negative_regulation 1428 1438	inhibition
+E21	Negative_regulation:T55 Cause:T20 Theme:E22
+T56	Binding 1448 1455	binding
+E22	Binding:T56 Site:T57 Theme:T25 Theme:T24
+T57	Entity 1463 1480	C-terminal domain
+T58	Binding 1497 1504	binding
+E23	Binding:T58 Theme:T26 Theme:T27
+T59	Binding 1583 1590	binding
+E24	Binding:T59 Theme:T29 Theme:T28

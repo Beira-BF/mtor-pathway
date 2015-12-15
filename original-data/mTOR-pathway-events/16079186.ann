@@ -1,0 +1,64 @@
+T1	Protein 0 4	mTOR
+T2	Protein 191 220	mammalian target of rapamycin
+T3	Protein 222 226	mTOR
+T4	Protein 640 654	retinoblastoma
+T5	Protein 656 658	Rb
+T6	Protein 767 790	upstream binding factor
+T7	Protein 792 795	UBF
+T8	Protein 844 853	cyclin D1
+T9	Protein 935 944	cyclin D1
+T10	Protein 1003 1005	Rb
+T11	Protein 1134 1143	cyclin D1
+T12	Protein 1164 1169	CDK-4
+T13	Protein 1180 1182	Rb
+T14	Protein 1282 1286	mTOR
+T15	Protein 1353 1357	mTOR
+T16	Protein 1381 1390	cyclin D1
+T17	Protein 1401 1406	CDK-4
+T18	Protein 1437 1439	Rb
+T19	RNA 56 69	ribosomal RNA
+*	Equiv T2 T3
+*	Equiv T4 T5
+*	Equiv T6 T7
+T20	Protein 955 986	cyclin-dependent kinase (CDK)-4
+T21	Protein 1220 1223	UBF
+T22	Phosphorylation 660 675	phosphorylation
+E1	Phosphorylation:T22 Theme:T5
+T23	Positive_regulation 603 611	increase
+E2	Positive_regulation:T23 Theme:E1
+T24	Positive_regulation 696 704	increase
+E3	Positive_regulation:T24 Theme:T6
+T25	Gene_expression 862 872	expression
+E4	Gene_expression:T25 Theme:T8
+T26	Positive_regulation 821 828	induced
+E5	Positive_regulation:T26 Theme:E14
+T27	Positive_regulation 945 954	dependent
+E6	Positive_regulation:T27 Cause:T9 Theme:E15
+T28	Drug 1076 1085	rapamycin
+T29	Gene_expression 1152 1162	expression
+E7	Gene_expression:T29 Theme:T11
+T30	Positive_regulation 1122 1130	increase
+E8	Positive_regulation:T30 Theme:E7
+T31	Negative_regulation 1108 1117	prevented
+E9	Negative_regulation:T31 Theme:E7
+E10	Negative_regulation:T31 Theme:T12
+T32	Phosphorylation 1183 1198	phosphorylation
+E11	Phosphorylation:T32 Theme:T13
+E12	Negative_regulation:T31 Theme:E11
+T34	Positive_regulation 832 840	increase
+E14	Positive_regulation:T34 Theme:E4
+T33	Positive_regulation 1208 1216	increase
+E13	Positive_regulation:T33 Theme:T21
+T35	Regulation 987 995	activity
+E15	Regulation:T35 Cause:T20 Theme:T10
+T36	Regulation 1372 1380	modulate
+E16	Regulation:T36 Cause:T15 Theme:E18
+T37	Positive_regulation 1391 1400	dependent
+E17	Positive_regulation:T37 Cause:T16 Theme:T17
+T38	Regulation 1423 1433	regulation
+E18	Regulation:T38 Cause:T17 Theme:T18
+T39	RNA 1444 1457	ribosomal RNA
+T40	Transcription 1458 1467	synthesis
+E19	Transcription:T40 Theme:T39
+E20	Regulation:T38 Theme:E19
+E21	Regulation:T36 Cause:T15 Theme:E20

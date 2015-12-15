@@ -1,0 +1,97 @@
+T1	Protein 9 21	beta-catenin
+T2	Protein 242 246	TSC1
+T3	Protein 247 251	TSC2
+T4	Protein 264 268	mTOR
+T5	Protein 300 312	beta-catenin
+T6	Protein 377 381	TSC1
+T7	Protein 382 386	TSC2
+T8	Protein 420 424	Axin
+T9	Protein 438 450	beta-catenin
+T10	Protein 541 553	beta-catenin
+T11	Protein 573 582	cyclin D1
+T12	Protein 587 598	connexin 43
+T13	Protein 738 742	TSC2
+T14	Protein 819 823	TSC1
+T15	Protein 824 828	TSC2
+T16	Protein 851 863	beta-catenin
+T17	Protein 938 945	tuberin
+T18	Protein 958 962	Axin
+T19	Protein 1010 1017	tuberin
+T20	Protein 1218 1222	TSC1
+T21	Protein 1275 1279	TSC1
+T22	Protein 1308 1312	TSC2
+T23	Protein 1317 1321	TSC1
+T24	Protein 1376 1388	beta-catenin
+T25	Protein 1491 1495	TSC1
+T26	Protein 1496 1500	TSC2
+T27	Protein 1517 1521	TSC1
+T28	Protein 411 415	GSK3
+T29	Protein 474 477	Wnt
+T30	Protein 489 492	TCF
+T31	Protein 493 496	LEF
+T32	Protein 771 774	Wnt
+T33	Protein 901 904	Wnt
+T34	Protein 949 953	GSK3
+T35	Protein 994 997	Wnt
+T36	Protein 1018 1029	Dishevelled
+T37	Protein 1057 1061	GSK3
+T38	Protein 1164 1168	GSK3
+T39	Simple_molecule 1172 1188	lithium chloride
+T40	Protein 1245 1249	GSK3
+T41	Protein 1468 1472	GSK3
+T42	Negative_regulation 210 234	negative regulatory role
+E1	Negative_regulation:T42 Cause:T3 Theme:T4
+E2	Negative_regulation:T42 Cause:T2 Theme:T4
+T43	Regulation 290 296	effect
+E3	Regulation:T43 Cause:T3 Theme:T5
+E4	Regulation:T43 Cause:T2 Theme:T5
+T44	Complex 377 386	TSC1/TSC2
+T45	Binding 395 405	associates
+E6	Binding:T45 Theme:T44 Theme:T28 Theme:T8
+T46	Positive_regulation 429 437	promotes
+E7	Positive_regulation:T46 Theme:E8 Cause:E6
+T47	Protein_catabolism 451 462	degradation
+E8	Protein_catabolism:T47 Theme:T9
+T48	Positive_regulation 605 617	up-regulated
+E5	Positive_regulation:T48 Theme:T11
+E9	Positive_regulation:T48 Theme:T12
+T49	Negative_regulation 763 770	inhibit
+E10	Negative_regulation:T49 Cause:T13 Theme:T32
+T50	Complex 819 828	TSC1/TSC2
+T51	Binding 799 810	interaction
+E11	Binding:T51 Theme:T50
+T52	Complex 851 883	beta-catenin degradation complex
+T53	Positive_regulation 888 897	dependent
+E12	Positive_regulation:T53 Cause:E13 Theme:E11
+T54	Positive_regulation 905 916	stimulation
+E13	Positive_regulation:T54 Theme:T33
+T55	Binding 927 934	binding
+E14	Binding:T55 Theme:T17 Theme:T34 Theme:T18
+T56	Negative_regulation 967 974	reduced
+E15	Negative_regulation:T56 Cause:T35 Theme:E14
+T57	Binding 1030 1041	interaction
+E16	Binding:T57 Theme:T19 Theme:T36
+T58	Positive_regulation 1046 1055	increased
+E17	Positive_regulation:T58 Cause:T35 Theme:E16
+T59	Negative_regulation 1150 1160	Inhibition
+E18	Negative_regulation:T59 Cause:T39 Theme:T38
+T60	Binding 1201 1212	association
+E19	Binding:T60 Theme:T38 Theme:T20
+T61	Negative_regulation 1189 1196	reduced
+E20	Negative_regulation:T61 Cause:E18 Theme:E19
+T62	Phosphorylation 1250 1265	phosphorylation
+E21	Phosphorylation:T62 Theme:T21
+M1	Negation E21
+T63	Catalysis 1250 1265	phosphorylation
+E22	Catalysis:T63 Theme:E21 Cause:T40
+T64	Negative_regulation 1280 1287	reduced
+E23	Negative_regulation:T64 Cause:E21 Theme:E24
+T65	Binding 1288 1299	interaction
+E24	Binding:T65 Theme:T22 Theme:T23
+T66	Complex 1491 1500	TSC1/TSC2
+T67	Phosphorylation 1522 1537	phosphorylation
+E25	Phosphorylation:T67 Theme:T27
+T68	Regulation 1476 1486	modulating
+E26	Regulation:T68 Cause:T41 Theme:T66
+T69	Positive_regulation 1509 1516	through
+E27	Positive_regulation:T69 Cause:E25 Theme:E26

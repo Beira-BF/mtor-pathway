@@ -1,0 +1,71 @@
+T1	Protein 734 744	PKC betaII
+T2	Protein 860 870	PKC betaII
+T3	Dissociation 1136 1146	disruption
+E1	Dissociation:T3 Participant:T18 Participant:T19
+T4	Protein 84 100	protein kinase C
+T5	Protein 106 111	Hsp70
+T6	Protein 342 347	Hsp70
+T7	Protein 364 380	protein kinase C
+T8	Protein 382 385	PKC
+*	Equiv T7 T8
+T9	Protein 553 556	PKC
+T10	Protein 586 591	Hsp70
+T11	Protein 620 625	Hsp70
+T12	Protein 849 854	Hsp70
+T13	Protein 906 911	Hsp70
+T14	Protein 927 931	PKCs
+T15	Protein 976 979	PKC
+T16	Protein 1043 1048	Hsp70
+T17	Protein 1131 1134	PKC
+T18	Protein 1150 1155	Hsp70
+T19	Protein 1241 1244	PKC
+T20	Protein 1322 1327	Hsp70
+T21	Protein 1371 1374	PKC
+T22	Protein 1493 1498	Hsp70
+T23	Protein 1564 1567	PKC
+T24	Binding 69 80	interaction
+E2	Binding:T24 Theme:T4 Theme:T5
+T25	Binding 348 358	associates
+E3	Binding:T25 Theme:T6 Theme:T7
+T26	Positive_regulation 414 423	triggered
+E4	Positive_regulation:T26 Cause:E5 Theme:E6
+T27	Dephosphorylation 427 444	dephosphorylation
+E5	Dephosphorylation:T27 Theme:T8 Site:T29
+T28	Binding 394 405	interaction
+E6	Binding:T28 Theme:T8 Theme:T6
+T29	Entity 452 478	turn phosphorylation motif
+T30	Binding 575 582	binding
+E7	Binding:T30 Theme:T9 Theme:T10
+T31	Binding 626 631	binds
+E8	Binding:T31 Site:T32 Theme:T1 Theme:T11
+T32	Entity 640 647	Leu-640
+T33	Phosphorylation 696 715	autophosphorylation
+E9	Phosphorylation:T33 Site:T34 Theme:T1
+T34	Entity 722 729	Thr-641
+T35	Catalysis 696 715	autophosphorylation
+E10	Catalysis:T35 Cause:T1 Theme:E9
+T36	Binding 834 845	interaction
+E11	Binding:T36 Theme:T12 Theme:T2
+T37	Negative_regulation 820 829	decreases
+E12	Negative_regulation:T37 Theme:E11
+T38	Binding 886 897	interaction
+E13	Binding:T38 Theme:T13 Theme:T14
+T39	Dephosphorylation 959 975	dephosphorylated
+E14	Dephosphorylation:T39 Theme:T15
+T40	Binding 1049 1056	binding
+E15	Binding:T40 Theme:T16
+T41	Dephosphorylation 1185 1202	dephosphorylation
+E16	Dephosphorylation:T41 Theme:T19
+T42	Ubiquitination 1216 1230	ubiquitination
+E17	Ubiquitination:T42 Theme:T19
+T43	Binding 1343 1348	binds
+E18	Binding:T43 Theme:T20 Theme:T21
+T44	Dephosphorylation 1391 1407	dephosphorylated
+E19	Dephosphorylation:T44 Theme:T21
+T45	Phosphorylation 1471 1485	phosphorylated
+E20	Phosphorylation:T45 Theme:T21
+T46	Binding 1499 1504	binds
+E21	Binding:T46 Site:T47 Theme:T22 Theme:T23
+T47	Entity 1507 1526	hydrophobic residue
+T48	Negative_regulation 1573 1588	down-regulation
+E22	Negative_regulation:T48 Theme:T23

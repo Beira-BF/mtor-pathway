@@ -1,0 +1,39 @@
+T1	Protein 47 51	TSC2
+T2	Protein 188 192	TSC1
+T3	Protein 196 200	TSC2
+T4	Protein 387 391	TSC1
+T5	Protein 395 399	TSC2
+T6	Protein 514 518	TSC2
+T7	Protein 559 563	TSC1
+T8	Protein 564 568	TSC2
+T9	Protein 603 607	TSC2
+T10	Protein 627 631	mTOR
+T11	Protein 747 751	TSC2
+T12	Protein 762 766	TSC2
+T13	Protein 867 871	TSC2
+T14	Protein 993 997	mTOR
+T15	Protein 1090 1094	TSC2
+T16	Phosphorylation 0 15	Phosphorylation
+E1	Phosphorylation:T16 Theme:T1
+T17	Negative_regulation 31 43	inactivation
+E2	Negative_regulation:T17 Theme:T1
+T18	Negative_regulation 498 510	inactivation
+E3	Negative_regulation:T18 Theme:T6
+T19	Phosphorylation 534 549	phosphorylation
+E4	Phosphorylation:T19 Theme:T20
+T20	Complex 559 568	TSC1-TSC2
+T21	Dissociation 569 581	dissociation
+E5	Dissociation:T21 Complex:T20 Participant:T8 Participant:T7
+T22	Positive_regulation 524 533	dependent
+E6	Positive_regulation:T22 Theme:E4
+T23	Positive_regulation 550 555	leads
+E7	Positive_regulation:T23 Theme:E5 Cause:E4
+T24	Negative_regulation 619 626	inhibit
+E8	Negative_regulation:T24 Cause:T9 Theme:T10
+T25	Complex 947 958	TSC complex
+T26	Regulation 984 992	modulate
+E9	Regulation:T26 Theme:T14
+T27	Phosphorylation 1054 1069	phosphorylation
+E10	Phosphorylation:T27 Theme:T15
+T28	Negative_regulation 1074 1086	inactivation
+E11	Negative_regulation:T28 Theme:T15
